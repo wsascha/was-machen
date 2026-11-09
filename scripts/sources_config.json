@@ -495,6 +495,36 @@
       "type": "municipal_calendar",
       "description": "Erlebniswege, Kletter- & Naturerlebnisse für Familien im wildromantischen Murgtal.",
       "enabled": true
+    },
+    {
+      "id": "volksschauspiele-oetigheim",
+      "name": "Volksschauspiele Ötigheim",
+      "region": "Rastatt",
+      "country": "DE",
+      "url": "https://www.volksschauspiele.de",
+      "type": "theater",
+      "description": "Deutschlands größte Freilichtbühne präsentiert jährlich liebevoll inszenierte Kinder- und Familienstücke sowie Märchen- und Theaterproduktionen.",
+      "enabled": true
+    },
+    {
+      "id": "vogtsbauernhof-gutach",
+      "name": "Schwarzwälder Freilichtmuseum Vogtsbauernhof",
+      "region": "Ortenau",
+      "country": "DE",
+      "url": "https://www.vogtsbauernhof.de",
+      "type": "museum",
+      "description": "Das historische Freilichtmuseum bietet ein dichtes Ferien- und Wochenendprogramm mit Mitmachwerkstätten, Handwerksaktionen und Naturerlebnissen für Kinder.",
+      "enabled": true
+    },
+    {
+      "id": "tjp-strasbourg",
+      "name": "TJP – Centre Dramatique National de Strasbourg",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.tjp-strasbourg.com",
+      "type": "theater",
+      "description": "Führendes Kinder- und Jugendtheater in Straßburg mit visuellem Figuren-, Objekt- und Bewegungstheater, das sich ideal für bilinguale oder deutschsprachige Kinder ab 4 Jahren eignet.",
+      "enabled": true
     }
   ]
 }
