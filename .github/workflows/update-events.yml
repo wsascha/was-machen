@@ -1,0 +1,94 @@
+name: "Populate Events & Deploy (uv)"
+
+on:
+  schedule:
+    # Every Wednesday at 06:00 UTC for weekend planning
+    - cron: "0 6 * * 3"
+    # Every Friday at 05:00 UTC for a final update before the weekend
+    - cron: "0 5 * * 5"
+  workflow_dispatch:
+    inputs:
+      target_weekend:
+        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
+        required: false
+        default: ""
+  workflow_run:
+    workflows: ["Populate Sources"]
+    types: [completed]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-and-data-update"
+  cancel-in-progress: false
+
+jobs:
+  update-events:
+    name: "Populate Weekend Events from Sources (Bühl + 60 min)"
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv & enable cache
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync dependencies via uv
+        run: uv sync --frozen
+
+      - name: Run unit tests
+        run: uv run pytest
+
+      - name: Run multi-source aggregator and scoring
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TARGET_WEEKEND: ${{ github.event.inputs.target_weekend }}
+        run: uv run update-events
+
+      - name: Commit and push updated event database
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/events.json data/sources.json
+          if git diff --staged --quiet; then
+            echo "No changes detected in data/events.json or data/sources.json."
+          else
+            git commit -m "chore(data): populate weekend events from sources [skip ci]"
+            git push
+          fi
+
+  deploy-pages:
+    name: "Deploy static site to GitHub Pages"
+    needs: [update-events]
+    if: always() && (needs.update-events.result == 'success' || needs.update-events.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
