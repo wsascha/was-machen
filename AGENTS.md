@@ -1,0 +1,31 @@
+# Agent Guidelines
+
+## Language & Code Style
+
+- **Alphabetical Sorting**: Prefer alphabetical sorting in unordered lists.
+- **Code in English**: All code (variables, functions, classes, expressions, comments, commit messages, and developer documentation) must be written in English.
+- **German Content**: User-facing content and regional data (e.g., event descriptions, categories, UI copy) remain in German.
+
+## Git & Commits
+
+- **Atomic Commits**: Keep commits small, self-contained, and easy to review.
+- **Conventional Commits**: Format as `<type>(<scope>): <summary>` (imperative, lower-case, English).
+  - **Types**: `chore`, `ci`, `data`, `docs`, `feat`, `fix`, `refactor`, `test`.
+  - **Scopes**:
+    - `ci`: GitHub Actions workflows (`.github/workflows/`).
+    - `crawler`: Ingestion, scoring, and source discovery pipeline (`scripts/discover_sources.py`, `scripts/update_events.py`).
+    - `data`: Event database and sources configuration (`data/events.json`, `data/sources.json`, `sources_config.json`).
+    - `deps`: Dependencies and lockfile (`pyproject.toml`, `uv.lock`).
+    - `docs`: Documentation files.
+    - `ui`: Web app interface, maps, styles, scripts (`index.html`, `sources.html`, `js/`, `css/`).
+- **Linear History**: Always rebase; avoid merge commits.
+- **Pre-Commit**: Ensure hooks are installed via `pre-commit install` so linting and formatting run automatically before each commit.
+
+## Documentation
+
+- `AGENTS.md`: Operational instructions and rules for AI coding agents.
+- `README.md`: Written in English for human readers (project overview, features, local setup).
+
+## Testing
+
+- **Behavioral Unit Tests**: There should be unit tests covering user / call-site behavior for every function.
