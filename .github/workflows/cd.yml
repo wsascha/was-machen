@@ -6,6 +6,11 @@ on:
     - cron: "0 6 * * 4"
   workflow_dispatch:
     inputs:
+      skip_crawler:
+        description: "Skip crawling and immediately deploy static site to GitHub Pages"
+        type: boolean
+        required: false
+        default: false
       target_weekend:
         description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
         required: false
@@ -26,12 +31,14 @@ env:
 jobs:
   sources:
     name: "Populate Sources"
+    if: inputs.skip_crawler != true
     uses: ./.github/workflows/discover-sources.yml
     secrets:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
   events:
     name: "Populate Events"
+    if: inputs.skip_crawler != true
     needs: [sources]
     uses: ./.github/workflows/update-events.yml
     secrets:
@@ -60,25 +67,20 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
-        continue-on-error: true
-        with:
-          enablement: true
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
-        continue-on-error: true
         with:
           path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
-        continue-on-error: true
         uses: actions/deploy-pages@v5
 
   release:
     name: "Create Weekly GitHub Release"
     needs: [events, deploy-pages]
-    if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped')
+    if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped') && inputs.skip_crawler != true
     runs-on: ubuntu-latest
     permissions:
       contents: write
