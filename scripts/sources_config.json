@@ -3,7 +3,7 @@
     "name": "Bühl (Baden)",
     "postal_code": "77815",
     "lat": 48.6953,
-    "lon": 8.1350,
+    "lon": 8.135,
     "max_drive_minutes": 60
   },
   "target_age_group": {
@@ -21,7 +21,7 @@
     {
       "id": "experience_value",
       "name": "Erlebnis- & Mitmach-Faktor",
-      "weight": 0.20,
+      "weight": 0.2,
       "description": "Hands-on-Aktivitäten, Staun-Momente, Interaktivität statt passivem Zuschauen."
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "infrastructure_food",
       "name": "Familien-Infrastruktur & Gastro",
-      "weight": 0.10,
+      "weight": 0.1,
       "description": "Kinderfreundliche Verpflegung, saubere Toiletten, Garderobe, Pausenbereiche."
     },
     {
@@ -434,6 +434,36 @@
       "url": "https://www.alsace-des-petits.fr/agenda/",
       "type": "family_portal",
       "description": "Speziell für Familien mit Kindern von 0 bis 12 Jahren kuratierter Ausflugs- und Eventkalender für das gesamte Elsass.",
+      "enabled": true
+    },
+    {
+      "id": "naturzentrum-rheinauen-rust",
+      "name": "Naturzentrum Rheinauen Rust – Familien- & Naturerlebnis",
+      "region": "Ortenau / Rust",
+      "country": "DE",
+      "url": "https://www.naturzentrum-rheinauen.de/",
+      "type": "nature_center",
+      "description": "Naturlehrpfad, Ranger-Führungen und Mitmach-Ausstellung über die Rheinauen für Kita- & Grundschulkinder.",
+      "enabled": true
+    },
+    {
+      "id": "schloss-favorite-rastatt",
+      "name": "Schloss Favorite Rastatt – Familienführungen & Schlosspark",
+      "region": "Rastatt",
+      "country": "DE",
+      "url": "https://www.schloss-favorite-rastatt.de/",
+      "type": "museum",
+      "description": "Ältestes deutsches Porzellanschloss mit weitläufigem Park, Entdecker-Rallyes und Kinderführungen.",
+      "enabled": true
+    },
+    {
+      "id": "ecomusee-d-alsace",
+      "name": "Écomusée d'Alsace – Freilichtmuseum für Familien",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.ecomusee.alsace/",
+      "type": "museum",
+      "description": "Größtes lebendiges Freilichtmuseum Frankreichs mit Handwerksvorführungen, Bauernhoftieren und Mitmach-Ateliers.",
       "enabled": true
     }
   ]

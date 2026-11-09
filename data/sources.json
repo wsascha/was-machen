@@ -11,9 +11,9 @@
     "weekend_start": "2026-11-13",
     "weekend_end": "2026-11-15",
     "weekend_label": "13.–15. November",
-    "last_updated": "2026-11-09T21:35:19Z",
+    "last_updated": "2026-11-09T21:49:45Z",
     "last_updated_display": "08.11.2026",
-    "sources_checked_count": 37,
+    "sources_checked_count": 40,
     "total_events": 28,
     "sources_with_events_count": 26
   },
@@ -668,6 +668,45 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Speziell für Familien mit Kindern von 0 bis 12 Jahren kuratierter Ausflugs- und Eventkalender für das gesamte Elsass.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "naturzentrum-rheinauen-rust",
+      "name": "Naturzentrum Rheinauen Rust – Familien- & Naturerlebnis",
+      "region": "Ortenau / Rust",
+      "country": "DE",
+      "url": "https://www.naturzentrum-rheinauen.de/",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Naturlehrpfad, Ranger-Führungen und Mitmach-Ausstellung über die Rheinauen für Kita- & Grundschulkinder.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "schloss-favorite-rastatt",
+      "name": "Schloss Favorite Rastatt – Familienführungen & Schlosspark",
+      "region": "Rastatt",
+      "country": "DE",
+      "url": "https://www.schloss-favorite-rastatt.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Ältestes deutsches Porzellanschloss mit weitläufigem Park, Entdecker-Rallyes und Kinderführungen.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "ecomusee-d-alsace",
+      "name": "Écomusée d'Alsace – Freilichtmuseum für Familien",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.ecomusee.alsace/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Größtes lebendiges Freilichtmuseum Frankreichs mit Handwerksvorführungen, Bauernhoftieren und Mitmach-Ateliers.",
       "events_count": 0,
       "selected_events": []
     }
