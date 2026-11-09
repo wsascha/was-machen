@@ -1,7 +1,7 @@
 > [!NOTE]
 > This project is completely vibe-coded.
 
-# 🧭 What are we doing this weekend? (Was machen wir am Wochenende?)
+# 🧭 "Was machen wir am Wochenende?"
 
 A static web app and automated event crawler for family-friendly weekend activities around **77815 Bühl, Germany** (within a ~60-minute driving radius covering the Black Forest, Karlsruhe, Ortenau, and Alsace/France).
 
@@ -66,3 +66,8 @@ The repository uses two decoupled GitHub Actions workflows with distinct respons
 2. **Populate Events from Sources** (`.github/workflows/update-events.yml`):
    - Crawls active sources, extracts weekend events, computes driving distances from Bühl, scores activities across the 7 family criteria, writes `data/events.json`, and deploys the app to GitHub Pages.
    - Runs Wednesdays at 06:00 UTC, Fridays at 05:00 UTC, on manual dispatch, and automatically after "Populate Sources" completes.
+3. **Weekly Continuous Deployment (CD)** (`.github/workflows/cd.yml`):
+   - End-to-end orchestration pipeline calling "Populate Sources" and "Populate Events & Deploy".
+   - Generates release notes summarizing newly added sources and events by title via `uv run release-notes`.
+   - Publishes a tagged GitHub release (e.g. `vYYYY.WW`) and deploys the updated app to GitHub Pages.
+   - Runs every Thursday at 06:00 UTC and on manual dispatch.
