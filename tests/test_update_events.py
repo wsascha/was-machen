@@ -310,11 +310,13 @@ class TestEnrichWithGeminiIfAvailable:
             assert result == []
 
     @patch("google.genai.Client")
-    def test_parses_gemini_event_objects(self, mock_client_cls: MagicMock) -> None:
+    def test_parses_gemini_event_objects(
+        self, mock_client_cls: MagicMock, capsys: pytest.CaptureFixture[str]
+    ) -> None:
         mock_client = MagicMock()
         mock_client_cls.return_value = mock_client
-        mock_resp = MagicMock()
-        mock_resp.text = json.dumps(
+        chunk = MagicMock()
+        chunk.text = json.dumps(
             [
                 {
                     "id": "new-puppet-theater",
@@ -329,7 +331,7 @@ class TestEnrichWithGeminiIfAvailable:
                 }
             ]
         )
-        mock_client.models.generate_content.return_value = mock_resp
+        mock_client.models.generate_content_stream.return_value = [chunk]
 
         weekend = (dt.date(2026, 11, 13), dt.date(2026, 11, 14), dt.date(2026, 11, 15))
         results = enrich_with_gemini_if_available(
@@ -339,6 +341,9 @@ class TestEnrichWithGeminiIfAvailable:
         assert results[0].id == "new-puppet-theater"
         assert results[0].title == "Puppentheater Zauberwald"
         assert results[0].category == "theater"
+        captured = capsys.readouterr()
+        assert "[AI STREAM: Event Enrichment]" in captured.out
+        assert "Puppentheater Zauberwald" in captured.out
 
 
 class TestCheckSourcesHealth:

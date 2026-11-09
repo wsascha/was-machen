@@ -20,6 +20,9 @@ concurrency:
   group: "weekly-cd-pipeline"
   cancel-in-progress: false
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   sources:
     name: "Populate Sources"

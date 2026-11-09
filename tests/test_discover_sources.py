@@ -145,8 +145,8 @@ class TestFetchCandidatesFromGemini:
     def test_parses_json_response(self, mock_client_cls: MagicMock) -> None:
         mock_client = MagicMock()
         mock_client_cls.return_value = mock_client
-        mock_response = MagicMock()
-        mock_response.text = json.dumps(
+        chunk = MagicMock()
+        chunk.text = json.dumps(
             [
                 {
                     "id": "gemini-theater-ka",
@@ -160,7 +160,7 @@ class TestFetchCandidatesFromGemini:
                 }
             ]
         )
-        mock_client.models.generate_content.return_value = mock_response
+        mock_client.models.generate_content_stream.return_value = [chunk]
 
         candidates = fetch_candidates_from_gemini("test-key", ["existing"])
         assert len(candidates) == 1
@@ -171,14 +171,14 @@ class TestFetchCandidatesFromGemini:
     def test_handles_markdown_wrapped_json(self, mock_client_cls: MagicMock) -> None:
         mock_client = MagicMock()
         mock_client_cls.return_value = mock_client
-        mock_response = MagicMock()
-        mock_response.text = (
+        chunk = MagicMock()
+        chunk.text = (
             "```json\n"
             '[{"id": "alsace-park", "name": "Alsace Park", "region": "Elsass", '
             '"country": "FR", "url": "https://alsacepark.fr", "type": "nature_center", '
             '"description": "Naturpark", "enabled": true}]\n```'
         )
-        mock_client.models.generate_content.return_value = mock_response
+        mock_client.models.generate_content_stream.return_value = [chunk]
 
         candidates = fetch_candidates_from_gemini("test-key", ["existing"])
         assert len(candidates) == 1
@@ -189,10 +189,34 @@ class TestFetchCandidatesFromGemini:
     def test_handles_api_exception_gracefully(self, mock_client_cls: MagicMock) -> None:
         mock_client = MagicMock()
         mock_client_cls.return_value = mock_client
-        mock_client.models.generate_content.side_effect = RuntimeError("Quota exceeded")
+        mock_client.models.generate_content_stream.side_effect = RuntimeError(
+            "Quota exceeded"
+        )
 
         candidates = fetch_candidates_from_gemini("test-key", ["existing"])
         assert candidates == []
+
+    @patch("google.genai.Client")
+    def test_streams_output_tokens(
+        self, mock_client_cls: MagicMock, capsys: pytest.CaptureFixture[str]
+    ) -> None:
+        mock_client = MagicMock()
+        mock_client_cls.return_value = mock_client
+        chunk1 = MagicMock()
+        chunk1.text = '[{"id": "stream-src", "name": "Stream Source", '
+        chunk2 = MagicMock()
+        chunk2.text = (
+            '"region": "Baden", "country": "DE", "url": "https://stream.de", '
+            '"type": "museum", "description": "Streamed Museum", "enabled": true}]'
+        )
+        mock_client.models.generate_content_stream.return_value = [chunk1, chunk2]
+
+        candidates = fetch_candidates_from_gemini("test-key", ["existing"])
+        assert len(candidates) == 1
+        assert candidates[0].id == "stream-src"
+        captured = capsys.readouterr()
+        assert "[AI STREAM: Source Discovery]" in captured.out
+        assert "Streamed Museum" in captured.out
 
 
 class TestDiscoverAndSaveSources:

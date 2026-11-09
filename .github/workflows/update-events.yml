@@ -32,6 +32,9 @@ concurrency:
   group: "events-pipeline"
   cancel-in-progress: false
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   update-events:
     name: "Populate Weekend Events from Sources"

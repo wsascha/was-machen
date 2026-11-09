@@ -361,11 +361,22 @@ def enrich_with_gemini_if_available(
             f"Gib eine JSON-Liste aus passenden Event-Objekten zurück, falls unter den Rohdaten neue Top-Events sind. "
             f"Jedes Event-Objekt muss mindestens 'id', 'title', 'category', 'weather_type' enthalten."
         )
-        response = client.models.generate_content(
+        response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
             contents=f"{prompt}\n\nRohdaten:\n{json.dumps(raw_candidates[:15], ensure_ascii=False)}",
         )
-        raw_text = (response.text or "").strip()
+        print("[AI STREAM: Event Enrichment] Rating raw candidates...", flush=True)
+        chunks: list[str] = []
+        try:
+            for chunk in response_stream:
+                chunk_text = getattr(chunk, "text", "") or ""
+                if chunk_text:
+                    print(chunk_text, end="", flush=True)
+                    chunks.append(chunk_text)
+            raw_text = "".join(chunks).strip()
+        except TypeError:
+            raw_text = (getattr(response_stream, "text", "") or "").strip()
+        print("\n[AI STREAM: Event Enrichment] Stream complete.\n", flush=True)
         if "```json" in raw_text:
             raw_text = raw_text.split("```json")[1].split("```")[0].strip()
         elif "```" in raw_text:
