@@ -1,0 +1,65 @@
+name: "Populate Sources"
+
+on:
+  schedule:
+    # Run every Monday at 03:00 UTC before the weekly Wednesday event crawl
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (simulate discovery without committing files)"
+        required: false
+        default: "false"
+      max_sources:
+        description: "Maximum number of new sources to discover and save"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "sources-pipeline"
+  cancel-in-progress: false
+
+jobs:
+  populate-sources:
+    name: "Discover & Populate Sources"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv & enable cache
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync dependencies via uv
+        run: uv sync --frozen
+
+      - name: Run unit tests
+        run: uv run pytest
+
+      - name: Run autonomous source discovery and catalog population
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MAX_SOURCES: ${{ github.event.inputs.max_sources || '3' }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            uv run discover-sources --dry-run
+          else
+            uv run discover-sources
+          fi
+
+      - name: Commit and push newly populated sources
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add scripts/sources_config.json data/sources.json
+          if git diff --staged --quiet; then
+            echo "No new sources discovered or changed."
+          else
+            git commit -m "chore(crawler): discover and populate event sources [skip ci]"
+            git push
+          fi
