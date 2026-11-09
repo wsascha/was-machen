@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regionale Datenquellen &amp; Portale | Was machen wir am Wochenende?</title>
+  <meta name="description" content="Übersicht aller 37 regionalen Veranstaltungsportale, Theater-Spielpläne, Museen und Stadtkalender in Baden, im Schwarzwald und im Elsass (max. 60 Min. Fahrzeit).">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=20261109_14">
+  <style>
+    .subpage-main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .subpage-nav-bar {
+      margin-bottom: 1.5rem;
+    }
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--bg-surface);
+      color: var(--brand-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.55rem 1rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+    }
+    .btn-back-home:hover {
+      background: var(--brand-primary-soft);
+      border-color: var(--brand-primary);
+    }
+    .sources-search-box {
+      margin-top: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .sources-search-box input {
+      width: 100%;
+      max-width: 480px;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-family: inherit;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+    }
+    .sources-search-box input:focus {
+      outline: 2px solid var(--brand-primary);
+      outline-offset: 1px;
+    }
+    .site-footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem;
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+    .site-footer a {
+      color: var(--brand-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <div class="brand-logo" aria-hidden="true">🧭</div>
+        <div class="brand-titles">
+          <h1>
+            Was machen wir am Wochenende?
+          </h1>
+          <p class="brand-subtitle">
+            Regionale Datenquellen &amp; Recherche-Katalog (Baden, Schwarzwald &amp; Elsass)
+          </p>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <a href="index.html" class="btn-header-info">
+          <span aria-hidden="true">🗺️</span>
+          <span>Zurück zur Karte &amp; Events</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage-main">
+    <div class="subpage-nav-bar">
+      <a href="index.html" class="btn-back-home">
+        <span aria-hidden="true">←</span>
+        <span>Zurück zur Wochenend-Übersicht &amp; Karte</span>
+      </a>
+    </div>
+
+    <section class="sources-container" aria-labelledby="sources-page-title">
+      <div class="sources-header">
+        <div>
+          <span class="badge badge-cat-museum">📚 Regionale Quellen (DE &amp; FR)</span>
+          <h2 id="sources-page-title" class="sources-title">
+            Alle ausgewerteten regionalen Veranstaltungs-Quellen (DE &amp; FR)
+          </h2>
+          <p class="sources-subtitle">
+            Diese regionalen Familienportale, Theater-Spielpläne, Museen, Science Center und Stadt-Kalender in Baden, im Schwarzwald, in der Südpfalz und im Elsass bilden die Basis für unsere wöchentliche Recherche.
+          </p>
+        </div>
+        <div class="sources-stats-box" id="sources-stats-box">
+          <strong id="sources-count-display">37</strong>
+          <span>Aktive Quellen</span>
+        </div>
+      </div>
+
+      <!-- Sources Metrics Grid -->
+      <div class="sources-stats-summary-grid">
+        <div class="stat-metric-card">
+          <span class="stat-metric-val" id="stat-total-sources">37</span>
+          <span class="stat-metric-label">Quellen insgesamt</span>
+          <span class="stat-metric-hint">Baden, Schwarzwald &amp; Elsass (&le; 60 Min.)</span>
+        </div>
+        <div class="stat-metric-card">
+          <span class="stat-metric-val" id="stat-active-sources" style="color: var(--score-top);">25</span>
+          <span class="stat-metric-label">Quellen ausgewählt</span>
+          <span class="stat-metric-hint">Mit Events am kommenden Wochenende</span>
+        </div>
+        <div class="stat-metric-card">
+          <span class="stat-metric-val" id="stat-total-events" style="color: var(--cat-theater);">28</span>
+          <span class="stat-metric-label">Ausgewählte Events</span>
+          <span class="stat-metric-hint">Nach 7 Kriterien bewertet</span>
+        </div>
+      </div>
+
+      <div class="sources-search-box">
+        <input
+          type="search"
+          id="sources-search-input"
+          placeholder="Quelle oder Region filtern (z. B. Karlsruhe, Baden-Baden, Elsass, Theater)..."
+          aria-label="Quelle oder Region suchen"
+        >
+      </div>
+
+      <div class="sources-sort-bar" role="group" aria-label="Quellen sortieren">
+        <span class="sources-sort-label">Sortierung:</span>
+        <button type="button" class="chip-btn source-sort-btn" data-sort="perf" aria-pressed="true">
+          Meiste Events zuerst
+        </button>
+        <button type="button" class="chip-btn source-sort-btn" data-sort="alpha" aria-pressed="false">
+          Alphabetisch (A–Z)
+        </button>
+        <button type="button" class="chip-btn source-sort-btn" data-sort="has-events" aria-pressed="false">
+          Nur Quellen mit Events (&gt;0)
+        </button>
+      </div>
+
+      <div class="sources-filter-bar" role="group" aria-label="Quellen nach Kategorie filtern">
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="all" aria-pressed="true">
+          Alle Quellen
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="family_portal" aria-pressed="false">
+          👨‍👩‍👧‍👦 Familienportale
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="theater" aria-pressed="false">
+          🎭 Theater &amp; Kultur
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="museum" aria-pressed="false">
+          🏛️ Museen &amp; Schlösser
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="science_center" aria-pressed="false">
+          🔬 Wissenschaft &amp; Planetarien
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="nature_center" aria-pressed="false">
+          🌲 Natur, Zoo &amp; Freizeitparks
+        </button>
+        <button type="button" class="chip-btn source-filter-btn" data-source-filter="municipal_calendar" aria-pressed="false">
+          🏙️ Städte &amp; Tourismus
+        </button>
+      </div>
+
+      <ul id="sources-directory-grid" class="sources-directory-grid"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <strong>Was machen wir am Wochenende?</strong> · Kuratierte Wochenend-Highlights für Familien mit Kindern (4–9 Jahre).
+      <br>
+      <a href="index.html">← Zurück zur Hauptseite mit Karte &amp; Events</a>
+    </p>
+  </footer>
+
+  <script src="js/sources.js?v=20261109_2" defer></script>
+</body>
+</html>

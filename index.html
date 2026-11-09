@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Was machen wir am Wochenende? · Regionaler Familien-Kompass (Baden · Schwarzwald · Elsass)</title>
+  <meta name="description" content="Kuratierte und nach 7 Familien-Kriterien bewertete Wochenend-Veranstaltungen für Kinder von 4 bis 9 Jahren im Umkreis von max. 60 Fahrminuten (1 Std.).">
+
+  <!-- Leaflet OpenStreetMap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=20261109_16">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <div class="brand-logo" aria-hidden="true">🧭</div>
+        <div class="brand-titles">
+          <h1>
+            Was machen wir am Wochenende?
+            <span id="weekend-badge-text" class="weekend-badge">13.–15. November</span>
+          </h1>
+          <p class="brand-subtitle">
+            Speziell recherchiert &amp; bewertet für <strong>Kinder von 4 bis 9 Jahren</strong> · Maximal <strong>1 Std. Fahrzeit</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <a href="sources.html" class="btn-header-info">
+          <span aria-hidden="true">📚</span>
+          <span id="meta-sources-count">37 regionale Quellen</span>
+        </a>
+        <button type="button" id="btn-open-methodology" class="btn-header-info">
+          <span aria-hidden="true">⭐</span>
+          <span>So bewerten wir (Kriterien)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Native <search> landmark per Modern Web Guidance -->
+  <search class="filter-section" aria-label="Veranstaltungen filtern">
+    <div class="filter-container">
+      <form id="filter-form" class="filter-single-row">
+        <div class="filter-control">
+          <select id="filter-day" name="day" aria-label="Wochentag auswählen">
+            <option value="all">📅 Wochentag: Alle (Fr–So)</option>
+            <option value="2026-11-13">Freitag, 13.11.</option>
+            <option value="2026-11-14">Samstag, 14.11.</option>
+            <option value="2026-11-15">Sonntag, 15.11.</option>
+          </select>
+        </div>
+
+        <div class="filter-control filter-control-slider">
+          <span class="slider-icon" aria-hidden="true">🚗</span>
+          <input
+            type="range"
+            id="filter-drive"
+            name="drive"
+            min="15"
+            max="60"
+            step="5"
+            value="60"
+            aria-label="Maximale Fahrzeit in Minuten"
+          >
+          <output id="drive-val" for="filter-drive" class="slider-val">max. 60 Min.</output>
+        </div>
+
+        <div class="filter-divider" aria-hidden="true"></div>
+
+        <div class="chip-scroll" role="group" aria-label="Schnellfilter für Familien">
+          <button type="button" class="chip-btn" data-preset="bad-weather" aria-pressed="false">
+            <span aria-hidden="true">☔</span> Schlechtwetter (Indoor)
+          </button>
+          <button type="button" class="chip-btn" data-preset="hands-on" aria-pressed="false">
+            <span aria-hidden="true">🛠️</span> Aktiv-Mitmachen
+          </button>
+          <button type="button" class="chip-btn" data-preset="calm" aria-pressed="false">
+            <span aria-hidden="true">🌿</span> Entspannt &amp; wenig Trubel
+          </button>
+          <button type="button" id="btn-reset-filters" class="btn-reset-filters" aria-label="Alle Filter zurücksetzen">
+            <span aria-hidden="true">↺</span> Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </search>
+
+  <main class="workspace-main">
+    <!-- Interactive Map Column -->
+    <section class="map-panel" aria-label="Interaktive Veranstaltungskarte">
+      <div class="map-legend-top" aria-label="Karten-Legende nach Kategorien">
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-theater);"></span> Theater &amp; Musik</span>
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-museum);"></span> Museum &amp; Wissen</span>
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-market);"></span> Markt &amp; Lichter</span>
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-creative);"></span> Kreativ &amp; Genuss</span>
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-nature);"></span> Natur &amp; Burg</span>
+        <span class="legend-item"><span class="legend-dot" style="background: var(--cat-action);"></span> Freizeitpark</span>
+      </div>
+
+      <div id="map" class="map-canvas"></div>
+    </section>
+
+    <!-- Curated & Scored Event Cards Column -->
+    <section class="feed-panel" aria-label="Bewertete Veranstaltungen für Familien">
+      <div class="feed-status-bar">
+        <h2 id="feed-count" class="feed-count">Lade Events...</h2>
+        <span class="feed-divider-dot" aria-hidden="true">·</span>
+        <span id="feed-updated" class="feed-subtitle"></span>
+      </div>
+
+      <ul id="events-list" class="events-grid"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span><strong>Was machen wir am Wochenende?</strong> · Wochenend-Highlights für Familien mit Kindern (4–9 Jahre)</span>
+      <div class="footer-links">
+        <a href="sources.html">📚 Alle 37 regionalen Quellen &amp; Portale (max. 60 Min. Radius) ansehen</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Event Detail Modal Dialog (Native <dialog> with closedby="any" per Modern Web Guidance) -->
+  <dialog id="event-dialog" closedby="any" aria-labelledby="dialog-event-title">
+    <div class="dialog-header">
+      <div>
+        <div id="dialog-badges" class="card-badges" style="margin-bottom: 0.45rem;"></div>
+        <h2 id="dialog-event-title" class="card-title" style="font-size: 1.35rem;">Veranstaltungsdetails</h2>
+      </div>
+      <form method="dialog">
+        <button type="submit" value="close" class="btn-dialog-close" aria-label="Dialog schließen" autofocus>✕</button>
+      </form>
+    </div>
+    <div id="dialog-event-body" class="dialog-body"></div>
+  </dialog>
+
+  <!-- Methodology & Family Scoring Dialog -->
+  <dialog id="methodology-dialog" closedby="any" aria-labelledby="methodology-title">
+    <div class="dialog-header">
+      <div>
+        <span class="badge badge-cat-museum">🧭 Unser Familien-Scoring</span>
+        <h2 id="methodology-title" class="card-title" style="font-size: 1.3rem; margin-top: 0.35rem;">
+          Wie wir Events für Kinder (4–9 J.) recherchieren &amp; bewerten
+        </h2>
+      </div>
+      <form method="dialog">
+        <button type="submit" value="close" class="btn-dialog-close" aria-label="Dialog schließen" autofocus>✕</button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+        Jedes Event im Umkreis von <strong>maximal 60 Fahrminuten (1 Stunde)</strong> (inkl. Elsass, Karlsruhe, Nordschwarzwald, Südpfalz und Ortenau) wird unabhängig vom Preis nach <strong>7 gewichteten Familien-Kriterien</strong> auf einer Skala von 1 bis 10 bewertet:
+      </p>
+
+      <div class="evaluation-matrix">
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">👧🧒</span> 1. Alters-Eignung (4–9 Jahre)</span>
+            <span class="eval-card-score">22% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Wie gut fesselt das Angebot sowohl Vorschulkinder (4–5 J.) als auch Grundschulkinder (6–9 J.)? Gibt es gestufte Angebote für Geschwisterkinder?</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">✨</span> 2. Erlebnis- &amp; Mitmach-Faktor</span>
+            <span class="eval-card-score">20% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Hands-on-Stationen, Workshops, Theater zum Mitfiebern oder echte Staun-Momente statt rein passivem Anschauen.</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">☔</span> 3. Wetter- &amp; November-Eignung</span>
+            <span class="eval-card-score">16% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Ist das Event 100% regensicher &amp; beheizt (Indoor-Champion) oder bietet es bei typischem November-Nebel gute Aufwärmmöglichkeiten?</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">🧘</span> 4. Entspannungs-Faktor (Eltern-Score)</span>
+            <span class="eval-card-score">12% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Wie übersichtlich und stressfrei ist der Besuch? Feste Sitzplatzreservierung oder gemütlicher Geheimtipp vs. lauter Massenandrang.</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">🚗</span> 5. Anfahrt &amp; Parken</span>
+            <span class="eval-card-score">12% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Reale PKW-Fahrzeit (max. 60 Min. / 1 Std.) sowie stressfreie Familien-Parkplätze direkt vor Ort oder per P+R.</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">🥨</span> 6. Infrastruktur &amp; Familien-Gastro</span>
+            <span class="eval-card-score">10% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Kinderfreundliches Essen vor Ort, Picknick-Erlaubnis, saubere Toiletten, Garderoben und Barrierefreiheit.</p>
+        </div>
+        <div class="eval-card">
+          <div class="eval-card-head">
+            <span class="eval-card-title"><span aria-hidden="true">🇫🇷🇩🇪</span> 7. Sprach-Komfort (DE / FR)</span>
+            <span class="eval-card-score">8% Gewicht</span>
+          </div>
+          <p class="eval-card-text">Besonders für Ausflüge ins Elsass: Ist die Ausstellung zweisprachig (DE/FR), gibt es deutsche Audioguides oder funktioniert das Erlebnis visuell?</p>
+        </div>
+      </div>
+
+      <details class="info-accordion" name="methodology-details">
+        <summary>🔄 Wann wird diese Übersicht aktualisiert?</summary>
+        <p style="margin: 0.4rem 0; font-size: 0.84rem; color: var(--text-secondary);">
+          Die Termine und Öffnungszeiten werden <strong>jeden Mittwoch und Freitag</strong> frisch für das jeweils kommende Wochenende recherchiert und aktualisiert.
+        </p>
+      </details>
+
+      <details class="info-accordion" name="methodology-details">
+        <summary>📚 Ausgewertete Datenquellen (Deutschland &amp; Frankreich)</summary>
+        <ul id="methodology-sources-list" style="margin: 0.4rem 0 0; padding-left: 1.2rem; font-size: 0.82rem; color: var(--text-secondary); columns: 2;"></ul>
+      </details>
+    </div>
+  </dialog>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- App Logic -->
+  <script src="js/app.js?v=20261109_19" defer></script>
+</body>
+</html>
