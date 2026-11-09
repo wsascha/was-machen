@@ -16,6 +16,7 @@ dependencies = [
 
 [project.scripts]
 discover-sources = "scripts.discover_sources:main"
+release-notes = "scripts.release_notes:main"
 update-events = "scripts.update_events:main"
 
 [build-system]
