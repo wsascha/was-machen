@@ -1,0 +1,440 @@
+{
+  "home_base": {
+    "name": "Bühl (Baden)",
+    "postal_code": "77815",
+    "lat": 48.6953,
+    "lon": 8.1350,
+    "max_drive_minutes": 60
+  },
+  "target_age_group": {
+    "min_age": 4,
+    "max_age": 9,
+    "label": "Kinder von 4 bis 9 Jahren (Kita & Grundschule)"
+  },
+  "evaluation_criteria": [
+    {
+      "id": "age_fit",
+      "name": "Alters-Eignung (4–9 J.)",
+      "weight": 0.22,
+      "description": "Wie gut fesselt das Angebot sowohl Vorschulkinder (4–5 J.) als auch Grundschulkinder (6–9 J.)?"
+    },
+    {
+      "id": "experience_value",
+      "name": "Erlebnis- & Mitmach-Faktor",
+      "weight": 0.20,
+      "description": "Hands-on-Aktivitäten, Staun-Momente, Interaktivität statt passivem Zuschauen."
+    },
+    {
+      "id": "weather_suitability",
+      "name": "Wetter- & Saison-Eignung",
+      "weight": 0.16,
+      "description": "Indoor-Sicherheit bei Regen/Nebel oder wetterfeste Outdoor-Infrastruktur."
+    },
+    {
+      "id": "relaxation_parents",
+      "name": "Entspannungs-Faktor (Eltern)",
+      "weight": 0.12,
+      "description": "Übersichtlichkeit, angenehmes Besucheraufkommen, wenig Wartezeit-Stress."
+    },
+    {
+      "id": "travel_parking",
+      "name": "Anfahrt & Parken",
+      "weight": 0.12,
+      "description": "Fahrzeit (max. 60 Min.), entspannte Strecke und direkte Familienparkplätze."
+    },
+    {
+      "id": "infrastructure_food",
+      "name": "Familien-Infrastruktur & Gastro",
+      "weight": 0.10,
+      "description": "Kinderfreundliche Verpflegung, saubere Toiletten, Garderobe, Pausenbereiche."
+    },
+    {
+      "id": "language_accessibility",
+      "name": "Sprach-Komfort (DE / FR)",
+      "weight": 0.08,
+      "description": "Besonders für Elsass-Events: Zweisprachigkeit oder selbsterklärendes visuelles Erlebnis."
+    }
+  ],
+  "source_types": {
+    "family_portal": {
+      "label": "Familien- & Kinderportal",
+      "icon": "👨‍👩‍👧‍👦"
+    },
+    "theater": {
+      "label": "Theater, Bühne & Konzerte",
+      "icon": "🎭"
+    },
+    "museum": {
+      "label": "Museum, Schloss & Kunst",
+      "icon": "🏛️"
+    },
+    "science_center": {
+      "label": "Wissenschaft, Technik & Planetarium",
+      "icon": "🔬"
+    },
+    "nature_center": {
+      "label": "Natur, Tierpark & Freizeitpark",
+      "icon": "🌲"
+    },
+    "municipal_calendar": {
+      "label": "Stadt- & Tourismus-Kalender",
+      "icon": "🏙️"
+    }
+  },
+  "sources": [
+    {
+      "id": "stadt-buehl",
+      "name": "Stadt Bühl Veranstaltungskalender & Bürgerhaus Neuer Markt",
+      "region": "Bühl (77815)",
+      "country": "DE",
+      "url": "https://www.buehl.de/veranstaltungen",
+      "type": "municipal_calendar",
+      "description": "Offizieller Kalender der Stadt Bühl inkl. Kindertheater-Reihe im Bürgerhaus Neuer Markt."
+    },
+    {
+      "id": "tourismus-buehl-buehlertal",
+      "name": "Zweckverband Tourismus Bühl – Bühlertal – Ottersweier",
+      "region": "Bühl & Umgebung",
+      "country": "DE",
+      "url": "https://www.buehl-buehlertal-ottersweier.de/",
+      "type": "municipal_calendar",
+      "description": "Regionale Feste, Märkte und Naturerlebnisse rund um Bühl, Bühlertal und Ottersweier (Toubiz-System)."
+    },
+    {
+      "id": "spieleclub-achern",
+      "name": "Stadt Achern & Spieleclub Achern e.V.",
+      "region": "Achern / Ortenau",
+      "country": "DE",
+      "url": "https://spieleclub-achern.de",
+      "type": "family_portal",
+      "description": "Veranstalter der jährlichen Acherner Spieletage in der Hornisgrindehalle und lokaler Familienaktionen."
+    },
+    {
+      "id": "toccarion-baden-baden",
+      "name": "TOCCARION Kinder-Musik-Welt Baden-Baden (Festspielhaus)",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://toccarion.de/programm/",
+      "type": "science_center",
+      "description": "Interaktives Kindermusikmuseum der Sigmund Kiener Stiftung mit Wochenend-Workshops & Führungen ab 5 Jahren."
+    },
+    {
+      "id": "baden-baden-events",
+      "name": "Baden-Baden Events & Kurhaus Kinderprogramm",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.badenbadenevents.de/",
+      "type": "theater",
+      "description": "Gastspiele, Figurentheater im Runden Saal des Kurhauses und saisonale Familien-Highlights."
+    },
+    {
+      "id": "theater-baden-baden",
+      "name": "Theater Baden-Baden – Junges Theater",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.theater-baden-baden.de/",
+      "type": "theater",
+      "description": "Kinder- und Familienstücke sowie Märcheninszenierungen am Goetheplatz und im TIK."
+    },
+    {
+      "id": "museum-frieder-burda",
+      "name": "Museum Frieder Burda – Kunstwerkstatt für Familien",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.museum-frieder-burda.de/de/kunstwerkstatt/",
+      "type": "museum",
+      "description": "Kreativ-Workshops für Kinder, Eltern und Großeltern in der Lichtentaler Allee."
+    },
+    {
+      "id": "unimog-museum-gaggenau",
+      "name": "Unimog-Museum Gaggenau – Familien- & Technikprogramm",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.unimog-museum.com/",
+      "type": "museum",
+      "description": "Technik-Erlebnismuseum mit LEGO-Bautagen, Tüftel-Workshops und Mitfahrten auf dem Außenparcours."
+    },
+    {
+      "id": "klag-buehne-gaggenau",
+      "name": "klag-Bühne Gaggenau – Kulturrausch für Kids",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.kulturrausch-gaggenau.de/",
+      "type": "theater",
+      "description": "Kleinkunst- und Kindertheater-Reihe für Familien im Murgtal."
+    },
+    {
+      "id": "landkreis-rastatt",
+      "name": "Landkreis Rastatt & Barockschloss Rastatt Kalender",
+      "region": "Rastatt / Murgtal",
+      "country": "DE",
+      "url": "https://www.landkreis-rastatt.de/",
+      "type": "municipal_calendar",
+      "description": "Gebündelter Kalender der Kommunen im Landkreis Rastatt sowie Familienführungen im Schloss Rastatt."
+    },
+    {
+      "id": "nationalpark-schwarzwald",
+      "name": "Nationalparkzentrum Ruhestein – Veranstaltungskalender",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.nationalpark-schwarzwald.de/de/erleben/veranstaltungskalender",
+      "type": "nature_center",
+      "description": "Ranger-Touren, Walderlebnis und Ausstellung an der Schwarzwaldhochstraße (inkl. Revisions-Infos)."
+    },
+    {
+      "id": "kaltenbronn-infozentrum",
+      "name": "Infozentrum Kaltenbronn – Familien- & Naturführungen",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.infozentrum-kaltenbronn.de/",
+      "type": "nature_center",
+      "description": "Naturpädagogische Familienprogramme rund um Hochmoor, Wildgehege und Auerhahn."
+    },
+    {
+      "id": "schloss-ettlingen",
+      "name": "Museum im Schloss Ettlingen – Kindermuseum",
+      "region": "Ettlingen / Albtal",
+      "country": "DE",
+      "url": "https://www.ettlingen.de/kunst-kultur/museum",
+      "type": "museum",
+      "description": "Interaktive Mitmach-Ausstellungen („Zeitsprung Römer“ & „Leben auf der Burg“) für Kinder."
+    },
+    {
+      "id": "karlsruher-kind",
+      "name": "Karlsruher Kind – Familienmagazin & Terminkalender",
+      "region": "Karlsruhe & Umgebung",
+      "country": "DE",
+      "url": "https://www.karlsruher-kind.de/",
+      "type": "family_portal",
+      "description": "Umfassendster tagesaktueller Familienkalender für Karlsruhe, Ettlingen, Bruchsal und die TechnologieRegion."
+    },
+    {
+      "id": "kafami-karlsruhe",
+      "name": "KaFaMi – Karlsruher Familienportal",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.kafami.de/",
+      "type": "family_portal",
+      "description": "Kostenlose Stadtteil-Events, Familienzentren, Bewegungsangebote und Fahrradparcours in Karlsruhe."
+    },
+    {
+      "id": "marotte-figurentheater",
+      "name": "marotte Figurentheater Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.marotte-figurentheater.de/spielplan/",
+      "type": "theater",
+      "description": "Renommiertes Figurentheater mit fast täglichen Vorstellungen für Kinder ab 3, 4 und 6 Jahren."
+    },
+    {
+      "id": "junges-staatstheater-ka",
+      "name": "Junges Staatstheater (JUST) Karlsruhe – Spielstätte INSEL",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.staatstheater-karlsruhe.de/",
+      "type": "theater",
+      "description": "Kinderopern, Schauspiel und Sitzkissenkonzerte des Badischen Staatstheaters."
+    },
+    {
+      "id": "zkm-karlsruhe",
+      "name": "ZKM Karlsruhe & Junge Kunsthalle – Familienprogramm",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://zkm.de/de/veranstaltungen",
+      "type": "museum",
+      "description": "Medienkunst, zkm_gameplay, Art-Action!-Sonntage und Robotik-/Kreativ-Workshops."
+    },
+    {
+      "id": "planet-ka-karlsruhe",
+      "name": "PLANET KA – Planetarium Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.planet-ka.de/programm/",
+      "type": "science_center",
+      "description": "360°-Fulldome-Sternenshows und Kinderprogramme auf dem Kreativpark Alter Schlachthof."
+    },
+    {
+      "id": "naturkundemuseum-ka",
+      "name": "Staatliches Museum für Naturkunde Karlsruhe (SMNK)",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.smnk.de/",
+      "type": "museum",
+      "description": "Vivarium mit lebenden Tieren, Dinosaurier-Saal und Familienführungen am Friedrichsplatz."
+    },
+    {
+      "id": "kulturhalle-remchingen",
+      "name": "Kulturhalle Remchingen – Familien- & Kinderkultur",
+      "region": "Enzkreis / Remchingen",
+      "country": "DE",
+      "url": "https://www.kulturhalle-remchingen.de",
+      "type": "theater",
+      "description": "Große Familienshows, Kinderrock-Konzerte (z. B. Heavysaurus) und Kindermusicals zwischen KA und PF."
+    },
+    {
+      "id": "schloss-bruchsal",
+      "name": "Schloss Bruchsal & Deutsches Musikautomaten-Museum",
+      "region": "Kraichgau / Bruchsal",
+      "country": "DE",
+      "url": "https://www.schloss-bruchsal.de/",
+      "type": "museum",
+      "description": "Barockschloss mit großen Familien-Sonderausstellungen (z. B. Faszination LEGO) und selbstspielenden Orgeln."
+    },
+    {
+      "id": "mottenkaefig-pforzheim",
+      "name": "Figurentheater Mottenkäfig & Familienportal Pforzheim",
+      "region": "Pforzheim / Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.familie-pforzheim.de/veranstaltungen/",
+      "type": "family_portal",
+      "description": "Gebündelte Kindertermine in Pforzheim inkl. Figurentheater Mottenkäfig, CCP und Winterwelt."
+    },
+    {
+      "id": "zoo-landau-pfalz",
+      "name": "Zoo Landau & Pfalz mit Kids",
+      "region": "Südpfalz / Landau",
+      "country": "DE",
+      "url": "https://www.landau.de/Verwaltung-Politik/Einrichtungen/Zoo/",
+      "type": "nature_center",
+      "description": "Familienfreundlicher Zoo mit Zooschule-Kinder-Uni sowie Ausflugstipps an der Südlichen Weinstraße."
+    },
+    {
+      "id": "le-vaisseau-strasbourg",
+      "name": "Le Vaisseau Strasbourg – Wissenschaftszentrum für Kinder (DE/FR)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.levaisseau.com/",
+      "type": "science_center",
+      "description": "Dreisprachiges Hands-on-Wissenschaftszentrum (3–12 J.) mit Wasserwelt, Baustelle und Wochenend-Ateliers."
+    },
+    {
+      "id": "planetarium-strasbourg",
+      "name": "Planétarium du Jardin des Sciences & Musée Zoologique Strasbourg",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://jardin-sciences.unistra.fr/visite/le-planetarium/",
+      "type": "science_center",
+      "description": "Neues 360°-Planetarium (mit deutschen Audioguides) direkt neben dem wiedereröffneten Zoologischen Museum."
+    },
+    {
+      "id": "musees-strasbourg",
+      "name": "Musées de la Ville de Strasbourg (Musée Tomi Ungerer & Agenda)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.musees.strasbourg.eu/musee-tomi-ungerer",
+      "type": "museum",
+      "description": "Zweisprachiges Bilderbuch- und Spielzeugmuseum Tomi Ungerer sowie Familienprogramm der Straßburger Museen."
+    },
+    {
+      "id": "kidiklik-alsace",
+      "name": "Kidiklik Alsace – Sorties Enfants & Famille (Bas-Rhin 67)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://67.kidiklik.fr/",
+      "type": "family_portal",
+      "description": "Wichtigstes elsässisches Familienportal mit nach Alter (3–6 J. / 7–12 J.) gefilterten Wochenend-Tipps."
+    },
+    {
+      "id": "jds-alsace-enfants",
+      "name": "JDS.fr – Agenda Manifestations pour Enfants Alsace",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.jds.fr/strasbourg/agenda/manifestations-pour-enfants/",
+      "type": "family_portal",
+      "description": "Großer Veranstaltungskalender für Kinderfeste, Märkte, Ausstellungen und Shows im Elsass."
+    },
+    {
+      "id": "soufflenheim-haguenau-tourisme",
+      "name": "Office de Tourisme Soufflenheim & Visit Haguenau",
+      "region": "Nord-Elsass",
+      "country": "FR",
+      "url": "https://www.visithaguenau.alsace/fr",
+      "type": "municipal_calendar",
+      "description": "Töpferwerkstätten in Soufflenheim, Waldspielplatz Gros Chêne und erste Dorf-Weihnachtsmärkte im Nord-Elsass."
+    },
+    {
+      "id": "palais-pain-depices-gertwiller",
+      "name": "Le Palais du Pain d'Épices Gertwiller & Musée du Chocolat",
+      "region": "Mittel-Elsass",
+      "country": "FR",
+      "url": "https://www.lepalaisdupaindepices.com",
+      "type": "museum",
+      "description": "Lebkuchenpalast in Gertwiller und Schokoladenmuseum in Geispolsheim mit Kinder-Back- & Dekorier-Workshops."
+    },
+    {
+      "id": "haut-koenigsbourg-selestat",
+      "name": "Château du Haut-Koenigsbourg & Maison du Pain Sélestat",
+      "region": "Mittel-Elsass / Sélestat",
+      "country": "FR",
+      "url": "https://www.haut-koenigsbourg.fr/de/",
+      "type": "nature_center",
+      "description": "Ritterburg (ca. 65 Min., außerhalb des 60-Min.-Radius) & Brot-Erlebnismuseum Sélestat.",
+      "enabled": false
+    },
+    {
+      "id": "offenburg-messe-kultur",
+      "name": "Messe Offenburg (Eisläss) & Kultur Stadt Offenburg",
+      "region": "Ortenau / Offenburg",
+      "country": "DE",
+      "url": "https://www.offenburg-kultur.de/",
+      "type": "municipal_calendar",
+      "description": "Indoor-Eislaufarena Eisläss, Museum im Ritterhaus und Familienveranstaltungen in Offenburg und Oberkirch."
+    },
+    {
+      "id": "europa-park-hallowinter",
+      "name": "Europa-Park & Rulantica Rust (HALLOWinter Saison)",
+      "region": "Ortenau / Rust",
+      "country": "DE",
+      "url": "https://www.europapark.de/de/events",
+      "type": "nature_center",
+      "description": "Freizeitpark-Saison HALLOWinter und ganzjährige Indoor-Wasserwelt Rulantica in Rust."
+    },
+    {
+      "id": "schwarzwald-tourismus-kinzigtal",
+      "name": "Schwarzwald Tourismus (Schloss Hornberg & Dorotheenhütte Wolfach)",
+      "region": "Schwarzwald / Kinzigtal",
+      "country": "DE",
+      "url": "https://www.schwarzwald-tourismus.info/erleben/veranstaltungen",
+      "type": "municipal_calendar",
+      "description": "Familien-Events im mittleren Schwarzwald wie die Weihnachtsmann-Werkstatt Hornberg und Kinderglashütte Wolfach."
+    },
+    {
+      "id": "elztalmuseum-waldkirch",
+      "name": "Elztalmuseum & Schwarzwaldzoo Waldkirch",
+      "region": "Breisgau / Elztal",
+      "country": "DE",
+      "url": "https://www.elztalmuseum.de",
+      "type": "museum",
+      "description": "Drehorgel- & Regionalmuseum mit großem Indoor-Weihnachtsmarkt sowie familienfreundlicher Tierpark in Waldkirch."
+    },
+    {
+      "id": "freiburg-naturmuseum-kultur",
+      "name": "Museum Natur und Mensch, Planetarium & Vorderhaus Freiburg",
+      "region": "Freiburg im Breisgau",
+      "country": "DE",
+      "url": "https://museen.freiburg.de/museen/mnm",
+      "type": "museum",
+      "description": "Familien-Aktionstage der Städtischen Museen Freiburg (ca. 62 Min., außerhalb des 60-Min.-Radius).",
+      "enabled": false
+    },
+    {
+      "id": "bz-ticket-familien",
+      "name": "Badische Zeitung Veranstaltungskalender (Ortenau & Breisgau)",
+      "region": "Südbaden",
+      "country": "DE",
+      "url": "https://www.badische-zeitung.de/veranstaltungen/",
+      "type": "family_portal",
+      "description": "Überregionaler Veranstaltungskalender für ganz Südbaden von der Ortenau über Emmendingen bis Freiburg."
+    },
+    {
+      "id": "alsace-des-petits",
+      "name": "Alsace des Petits – Familien-Freizeitführer Elsass (0–12 J.)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.alsace-des-petits.fr/agenda/",
+      "type": "family_portal",
+      "description": "Speziell für Familien mit Kindern von 0 bis 12 Jahren kuratierter Ausflugs- und Eventkalender für das gesamte Elsass.",
+      "enabled": true
+    }
+  ]
+}

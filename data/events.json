@@ -1,0 +1,3297 @@
+{
+  "metadata": {
+    "title": "Was machen wir am Wochenende?",
+    "home_base": {
+      "name": "77815 Bühl (Baden)",
+      "lat": 48.6953,
+      "lon": 8.135,
+      "max_drive_minutes": 60
+    },
+    "target_age_group": "4–9 Jahre (Kita & Grundschule)",
+    "weekend_start": "2026-11-13",
+    "weekend_end": "2026-11-15",
+    "weekend_label": "13.–15. November",
+    "last_updated": "2026-11-09T21:35:19Z",
+    "last_updated_display": "08.11.2026",
+    "sources_checked_count": 37,
+    "total_events": 28,
+    "sources_with_events_count": 26
+  },
+  "events": [
+    {
+      "id": "le-vaisseau-strasbourg-lune-workshops",
+      "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops",
+      "subtitle": "Dreisprachiges Kinder-Wissenschaftszentrum („Verboten, nicht anzufassen!“) inkl. Mond-Abenteuer",
+      "short_pin_label": "Straßburg · Le Vaisseau",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Komplett auf Deutsch & FR",
+      "region": "Elsass / Straßburg",
+      "city": "Strasbourg",
+      "venue_name": "Le Vaisseau – Wissenschaftszentrum für Kinder",
+      "address": "1 bis rue Philippe Dollinger, 67000 Strasbourg, Frankreich",
+      "coordinates": {
+        "lat": 48.5725,
+        "lon": 7.7719
+      },
+      "drive_minutes_from_buehl": 42,
+      "distance_km_from_buehl": 44,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–18:00 Uhr",
+      "duration_display": "3,5 bis 5 Stunden (Tageshighlight)",
+      "family_score": 9.7,
+      "summary": "Der absolute Schlechtwetter-Champion für 4–9-Jährige im Elsass: Über 120 interaktive Stationen (riesige Wasserbaustelle, Kinder-Kranbauplatz, Ameisenbau) plus die neue Sonderausstellung „LUNE“ (Mond-Expedition) und Wochenend-Workshops – alles komplett auf Deutsch!",
+      "detailed_description": "Im Le Vaisseau gilt das Motto „Verboten, nicht anzufassen!“. Neben der legendären Wasser-Experimentierwelt und der Baustelle ist seit Oktober 2026 die große neue Sonderausstellung „LUNE : Préparez, explorez, rêvez !“ geöffnet, in der Kinder als Nachwuchs-Astronauten trainieren. Zusätzlich laufen am Wochenende 14./15.11. der Eltern-Kind-Workshop „Les lanternes d'automne“ (Herbstlaternen basteln, ab 3 J.), der Rover-Bau-Workshop „Fabrication d'engins lunaires“ (ab 7 J.) sowie 3D-Filme.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Perfekt für beide Altersstufen!)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Eigene Baustelle (3–6 J.) mit Schaumstoff-Ziegeln, Kränen, riesiger Wasserwelt (Kittel vor Ort!) und Laternen-Workshop.",
+        "notes_6_9": "Die neue „LUNE“-Mondstation, der Bau von Mondfahrzeugen (ab 7 J.) und Logik-/Physikexperimente fesseln 6–9-Jährige stundenlang."
+      },
+      "parking_info": "Eigener Parkplatz direkt am Haus + großes P+R Parkhaus Danube / Winston Churchill direkt nebenan.",
+      "booking_info": "Online-Zeitticket über levaisseau.com/de empfohlen (Familienticket 4 Pers.: 40 €).",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.9,
+          "reason": "Exakt für Kinder von 3 bis 12 Jahren gebaut – 4 bis 9 Jahre ist das Kernalter."
+        },
+        "experience_value": {
+          "score": 9.9,
+          "reason": "Über 120 Mitmach-Stationen + brandneue Mond-Ausstellung „LUNE“."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "Riesige Indoor-Erlebniswelt, perfekt für November-Schmuddelwetter."
+        },
+        "relaxation_parents": {
+          "score": 9.0,
+          "reason": "Sehr sicher, übersichtlich, mit Cafeteria und Picknickraum."
+        },
+        "travel_parking": {
+          "score": 9.3,
+          "reason": "42 Min. Fahrtzeit (über Kehl/Europabrücke), direkt im Süden Straßburgs ohne Innenstadt-Stau."
+        },
+        "infrastructure_food": {
+          "score": 9.5,
+          "reason": "Cafeteria vor Ort + großer Indoor-Picknickbereich für eigenes Essen, Wickelräume, Trockner an der Wasserwelt."
+        },
+        "language_accessibility": {
+          "score": 9.8,
+          "reason": "Alle Texte, Spiele und Audio-Stationen sind konsequent dreisprachig (DE/FR/EN), deutschsprachiges Personal."
+        }
+      },
+      "pros": [
+        "Keinerlei Sprachbarriere – 100 % zweisprachig Deutsch/Französisch",
+        "Brandneue Sonderausstellung „LUNE“ (Mond-Abenteuer) + Laternen- & Mondrover-Workshops",
+        "Bester Ganztages-Indoor-Ausflug im Umkreis von 45 Minuten"
+      ],
+      "tips_and_watchouts": [
+        "Wechselkleidung (Shirt/Hose) für 4–6-Jährige mitnehmen – die Wasserbaustelle ist trotz Wachskitteln unwiderstehlich!",
+        "Gleich um 10:00 Uhr starten, dann ist es an den beliebtesten Stationen am ruhigsten."
+      ],
+      "tags": [
+        "Le Vaisseau",
+        "Straßburg",
+        "Elsass",
+        "Wissenschaft",
+        "Wasserwelt",
+        "Mond",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Le Vaisseau (Offizielle deutsche Seite)",
+          "url": "https://www.levaisseau.com/"
+        },
+        {
+          "name": "JDS Strasbourg Enfants",
+          "url": "https://www.jds.fr/strasbourg/agenda/manifestations-pour-enfants/"
+        }
+      ],
+      "price_info": "Kinder (3–18 J.): 9 € · Erwachsene: 12 € · Familienticket (4 Pers.): 40 €"
+    },
+    {
+      "id": "acherner-spieletage-34",
+      "title": "34. Acherner Spieletage in der Hornisgrindehalle",
+      "subtitle": "Über 500 Brett-, Kinder- & Familienspiele kostenlos testen + Spieleflohmarkt",
+      "short_pin_label": "Achern · Spieletage",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Ortenau / Achern",
+      "city": "Achern",
+      "venue_name": "Hornisgrindehalle Achern",
+      "address": "Berliner Straße 30, 77855 Achern",
+      "coordinates": {
+        "lat": 48.6305,
+        "lon": 8.0672
+      },
+      "drive_minutes_from_buehl": 13,
+      "distance_km_from_buehl": 10,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (ab 13:00 Uhr) & So, 15.11.2026 (11:00–18:00 Uhr)",
+      "duration_display": "2 bis 4 Stunden",
+      "family_score": 9.6,
+      "summary": "Hunderte Kinder-, Geschicklichkeits- und Familienspiele kostenlos ausleihen und mit Hilfe von „Erklärbären“ sofort losspielen – inklusive großem Spieleflohmarkt und Puzzle-Aktionen.",
+      "detailed_description": "Der Spieleclub Achern e.V. und die Stadt Achern verwandeln die Hornisgrindehalle in ein riesiges Spielzimmer. Familien können aus über 500 aktuellen und klassischen Kinder- und Gesellschaftsspielen wählen. Freundliche Helfer erklären sofort die Regeln, sodass Eltern keine Anleitungen lesen müssen. Dazu gibt es einen großen Spieleflohmarkt (perfekt vor Weihnachten!) und günstige Bewirtung.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Riesige Kinderspiel-Auswahl)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Eigene Sektion mit HABA-, Geschicklichkeits- und Vorschulspielen ab 3–4 Jahren.",
+        "notes_6_9": "Perfekt zum Ausprobieren von Kinderspiel-des-Jahres-Siegern, Qwirkle, Kooperationsspielen und ersten Strategiespielen."
+      },
+      "parking_info": "Kostenfreie Parkplätze direkt an der Hornisgrindehalle und am Gymnasium Achern.",
+      "booking_info": "Freier/günstiger Familieneintritt vor Ort, keine Reservierung erforderlich.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.6,
+          "reason": "Vom ersten Würfelspiel (4 J.) bis zum spannenden Familienspiel (9 J.) alles vorhanden."
+        },
+        "experience_value": {
+          "score": 9.4,
+          "reason": "Gemeinsames Spielen mit Regel-Erklärern und Turnier-/Puzzle-Ecken."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % wetterunabhängig in der warmen Halle – ideal für einen grauen Novembertag."
+        },
+        "relaxation_parents": {
+          "score": 9.3,
+          "reason": "Kein Regellesen dank Erklärbären, entspannte Vereinsatmosphäre und faire Preise."
+        },
+        "travel_parking": {
+          "score": 9.9,
+          "reason": "Katzensprung (nur ca. 12–15 Min. über die B3)."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Familienfreundliche Bewirtung (Kuchen, Brezeln, Würstchen) durch Schulklassen."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachige Spielerklärer direkt am Tisch."
+        }
+      },
+      "pros": [
+        "Nächstgelegenes Wochenend-Highlight (nur ~13 Min. Fahrt)",
+        "Erklärbären nehmen den Eltern das Lesen der Spielanleitungen ab",
+        "Großer Spieleflohmarkt für günstige Weihnachtsgeschenke"
+      ],
+      "tips_and_watchouts": [
+        "Für den Spieleflohmarkt am besten gleich zu Beginn (Sa 13 Uhr / So 11 Uhr) vorbeischauen und etwas Bargeld mitnehmen."
+      ],
+      "tags": [
+        "Brettspiele",
+        "Spieletage",
+        "Achern",
+        "Flohmarkt",
+        "Indoor",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "Spieleclub Achern e.V.",
+          "url": "https://spieleclub-achern.de"
+        },
+        {
+          "name": "Eventfrog Achern",
+          "url": "https://eventfrog.de"
+        }
+      ],
+      "price_info": "Kostenloser Eintritt (Spenden willkommen)"
+    },
+    {
+      "id": "unimog-museum-bauen-tuefteln-lego",
+      "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)",
+      "subtitle": "Große Klemmbaustein-Erlebniswelt, LEGO-Education-Challenge & Unimog-Parcours",
+      "short_pin_label": "Gaggenau · LEGO",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Murgtal / Gaggenau",
+      "city": "Gaggenau",
+      "venue_name": "Unimog-Museum Gaggenau",
+      "address": "An der B462 (Ausfahrt Schloss Rotenfels), 76571 Gaggenau",
+      "coordinates": {
+        "lat": 48.8172,
+        "lon": 8.3125
+      },
+      "drive_minutes_from_buehl": 23,
+      "distance_km_from_buehl": 22,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–17:00 Uhr",
+      "duration_display": "2,5 bis 4 Stunden",
+      "family_score": 9.6,
+      "summary": "In Kooperation mit Schwabenstein 2×4 e.V. verwandelt sich das Unimog-Museum in ein riesiges LEGO®-Paradies mit freiem Baubereich, Kurbelbahn, LEGO®-Education-Challenge, Kinder-Robotik und echten Unimogs.",
+      "detailed_description": "Zusammen mit dem Stuttgarter Verein Schwabenstein 2×4 e.V., Betzold und Fritz Automation bietet das Unimog-Museum ein interaktives Technik- und Bauwochenende. Kinder können an tausenden Steinen frei bauen, spektakuläre Schau-Modelle bestaunen, eine Kurbelbahn bedienen und erste Robotik-Experimente machen. Bei trockenem Wetter sind zudem Mitfahrten im echten Unimog auf dem Außenparcours möglich.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Top für Kita & Grundschule)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Freier Baubereich, Kurbelbahn und riesige Unimogs zum Reinsetzen begeistern schon 4-Jährige sofort.",
+        "notes_6_9": "Die LEGO®-Education-Challenge und Robotik-Stationen (Fritz Automation) treffen genau den Forscherdrang von 6–9-Jährigen."
+      },
+      "parking_info": "Großer, kostenfreier Besucherparkplatz direkt vor dem Museum an der B462.",
+      "booking_info": "Keine Voranmeldung nötig, Tickets direkt an der Tageskasse.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.8,
+          "reason": "Perfekte Brücke zwischen freiem Bauen (ab 4 J.) und Technik/Robotik (6–9 J.)."
+        },
+        "experience_value": {
+          "score": 9.8,
+          "reason": "100 % Hands-on: Bauen, Kurbeln, Tüfteln und echte Unimogs erleben."
+        },
+        "weather_suitability": {
+          "score": 9.6,
+          "reason": "Komplett überdacht in der modernen Museumshalle; Außenparcours als Bonus."
+        },
+        "relaxation_parents": {
+          "score": 9.0,
+          "reason": "Kinder sind stundenlang vertieft; gutes Museumscafé mit Blick aufs Geschehen."
+        },
+        "travel_parking": {
+          "score": 9.6,
+          "reason": "Nur ~23 Min. Fahrt über B3/B462, Parkplatz direkt vor der Tür."
+        },
+        "infrastructure_food": {
+          "score": 9.2,
+          "reason": "Museumscafé mit Familien-Snacks, Kuchen, Wickelraum und breiten Wegen."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig und durch das Bauen völlig selbsterklärend."
+        }
+      },
+      "pros": [
+        "Nur 23 Minuten Fahrzeit",
+        "Kombiniert kreatives LEGO-Bauen mit echten Geländefahrzeugen",
+        "Keine Vorab-Reservierung notwendig – flexibel am Samstag oder Sonntag"
+      ],
+      "tips_and_watchouts": [
+        "Vormittags ab 10:00 Uhr ist an den Bau-Tischen am meisten Platz.",
+        "Für eine optionale Unimog-Mitfahrt im Außenbereich wetterfeste Jacken mitnehmen."
+      ],
+      "tags": [
+        "LEGO",
+        "Technik",
+        "Robotik",
+        "Unimog",
+        "Gaggenau",
+        "Murgtal",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Unimog-Museum Gaggenau",
+          "url": "https://www.unimog-museum.com/"
+        },
+        {
+          "name": "Landkreis Rastatt Kalender",
+          "url": "https://www.landkreis-rastatt.de/"
+        }
+      ],
+      "price_info": "Kinder: 5,90 € · Erwachsene: 8,90 € · Familienkarte: 18,90 €"
+    },
+    {
+      "id": "europa-park-hallowinter-rulantica-endspurt",
+      "title": "Europa-Park „HALLOWinter“ & Rulantica (Letztes Wochenende vor Revision!)",
+      "subtitle": "Goldener Herbst trifft ersten Winterzauber – geringste Wartezeiten des Jahres!",
+      "short_pin_label": "Rust · HALLOWinter & Rulantica",
+      "category": "action",
+      "weather_type": "mixed",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Ortenau / Rust",
+      "city": "Rust",
+      "venue_name": "Europa-Park & Wasserwelt Rulantica",
+      "address": "Europa-Park-Straße 2, 77977 Rust",
+      "coordinates": {
+        "lat": 48.266,
+        "lon": 7.722
+      },
+      "drive_minutes_from_buehl": 38,
+      "distance_km_from_buehl": 52,
+      "days": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Fr, 13.11. bis So, 15.11.2026 · Europa-Park 11:00–19:00 Uhr · Rulantica 09:30–22:00 Uhr",
+      "duration_display": "Ganztagesausflug (5 bis 8 Stunden)",
+      "family_score": 9.6,
+      "summary": "Geheimtipp für Familien, bei denen Kosten keine Rolle spielen: Mitte November („HALLOWinter“) erlebt ihr den Europa-Park mit Kürbis- UND Tannenbaum-Deko fast ohne Warteschlangen! Und Achtung: Für die Indoor-Wasserwelt Rulantica ist der 14./15.11. das letzte geöffnete Wochenende vor der jährlichen November-Revision (ab 16.11. geschlossen)!",
+      "detailed_description": "In der HALLOWinter-Saison verschmelzen Herbstzauber und erste Weihnachtsbeleuchtung. Da fast alle Indoor-Themenfahrten (Piraten in Batavia, Snorri Touren, Arthur im Königreich der Minimoys, Madame Freudenreichs Curiosités, Voletarium) und großen Familien-Shows beheizt sind, ist der Park mit 4–9-Jährigen im November ein Traum ohne Sommer-Anstehstress. Wer 100 % karibische 30 °C bevorzugt, nutzt in Rulantica das letzte Wochenende vor der Wartungspause.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Ideal ab 100–130 cm Körpergröße)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Snorri Touren, Madame Freudenreich (Dinos!), Elfenfahrt, Arthur (ab 100 cm) und die Eisshow sind magisch für 4–5-Jährige.",
+        "notes_6_9": "Voletarium, Piraten in Batavia, Alpenexpress Enzian und Rulantica-Rutschen bieten volle Action für 6–9-Jährige."
+      },
+      "parking_info": "Direkt auf dem Hauptparkplatz Europa-Park bzw. Rulantica (VIP/Reserviertes Parken buchbar).",
+      "booking_info": "Datierte Tagestickets online über europapark.de buchen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.8,
+          "reason": "Dutzende Themenfahrten und Shows exakt für Kinder von 4 bis 9 Jahren."
+        },
+        "experience_value": {
+          "score": 9.9,
+          "reason": "Weltklasse-Thematisierung und riesiges Show-Programm."
+        },
+        "weather_suitability": {
+          "score": 9.1,
+          "reason": "Rulantica 100 % Indoor (30 °C); im Europa-Park über 25 Indoor-Attraktionen & Shows."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Im HALLOWinter-November extrem kurze Wartezeiten (oft 5–10 Min. statt 60 Min. im Sommer!)."
+        },
+        "travel_parking": {
+          "score": 9.5,
+          "reason": "Nur 38 Min. Fahrt direkt über die A5 (eigene Autobahnausfahrt Rust)."
+        },
+        "infrastructure_food": {
+          "score": 9.8,
+          "reason": "Perfekte Familien-Infrastruktur, Baby-Service, erstklassige Themenrestaurants."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutsch / Französisch / Englisch."
+        }
+      },
+      "pros": [
+        "Kürzeste Wartezeiten des gesamten Jahres im Europa-Park dank HALLOWinter-Zeitraum",
+        "Letzte Chance für Rulantica im November (ab Montag, 16.11.2026 geht Rulantica für 12 Tage in die Wartungspause!)"
+      ],
+      "tips_and_watchouts": [
+        "Bei Regenwetter im Europa-Park auf die Indoor-Perlen fokussieren: Voletarium, Piraten in Batavia, Arthur, Snorri Touren, JUNIOR CLUB Studios und die Eis-Show!"
+      ],
+      "tags": [
+        "Europa-Park",
+        "Rulantica",
+        "Rust",
+        "Freizeitpark",
+        "Wasserwelt",
+        "Hallowinter",
+        "Action"
+      ],
+      "sources": [
+        {
+          "name": "Europa-Park HALLOWinter",
+          "url": "https://www.europapark.de/de/events"
+        }
+      ],
+      "price_info": "Kinder (4–11 J.): ab 52 € · Erwachsene: ab 61,50 € (Kinder unter 4 J. frei)"
+    },
+    {
+      "id": "toccarion-baden-baden-tuten-pfeifen",
+      "title": "TOCCARION Kinder-Musik-Welt: „Von Tuten und Pfeifen“ & Entdeckertour",
+      "subtitle": "Interaktives Musik-Mitmachmuseum im Festspielhaus + Familien-Orgelbau-Workshop",
+      "short_pin_label": "Baden-Baden · Toccarion",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Baden-Baden",
+      "city": "Baden-Baden",
+      "venue_name": "TOCCARION im Festspielhaus Baden-Baden",
+      "address": "Beim Alten Bahnhof 2, 76530 Baden-Baden",
+      "coordinates": {
+        "lat": 48.7694,
+        "lon": 8.2325
+      },
+      "drive_minutes_from_buehl": 17,
+      "distance_km_from_buehl": 15,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 (Führungen) · Spezial-Workshop So, 15.11. um 14:00 Uhr",
+      "duration_display": "75 bis 90 Minuten",
+      "family_score": 9.5,
+      "summary": "Im interaktiven Kindermusikmuseum im Festspielhaus Baden-Baden tanzen Kinder über ein Riesenklavier, dirigieren ein virtuelles Orchester oder bauen am Sonntag um 14 Uhr gemeinsam eine echte funktionierende Orgel.",
+      "detailed_description": "Das TOCCARION der Sigmund Kiener Stiftung bietet geführte Kleingruppen-Entdeckertouren durch spektakuläre Klangräume (ab 5 Jahren) sowie am Sonntag um 14:00 Uhr den 90-minütigen Familienworkshop „Von Tuten und Pfeifen – Orgelbau für die ganze Familie“ (ab 7 Jahren), bei dem aus Pfeifen, Blasebalg und Windlade ein spielbares Instrument entsteht.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "5–9 Jahre (Entdeckertour ab 5 J., Orgel-Workshop ab 7 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Die reguläre Entdeckertour mit Riesenbodenklavier, Gesangsbox und Fühlstationen ist super für 5-Jährige.",
+        "notes_6_9": "Der Workshop „Von Tuten und Pfeifen“ (So 14 Uhr) verbindet Musik und handwerkliches Tüfteln für 7–9-Jährige."
+      },
+      "parking_info": "Parkhaus Festspielhaus direkt am Gebäude (Beim Alten Bahnhof 2).",
+      "booking_info": "Vorab-Online-Buchung über toccarion.de zwingend erforderlich (begrenzte Kleingruppen).",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.4,
+          "reason": "Maßgeschneiderte Formate für Vorschul-/Schulanfänger (Tour) und Grundschüler (Workshop)."
+        },
+        "experience_value": {
+          "score": 9.7,
+          "reason": "Hochwertige, pädagogisch betreute Mitmach-Stationen ohne Reizüberflutung."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % Indoor direkt über das Parkhaus erreichbar."
+        },
+        "relaxation_parents": {
+          "score": 9.5,
+          "reason": "Feste Gruppengröße (max. ~15–20 Personen), kein Gedränge, sehr angenehme Akustik."
+        },
+        "travel_parking": {
+          "score": 9.6,
+          "reason": "Nur ca. 17 Min. Fahrt, Parkhaus direkt im Haus."
+        },
+        "infrastructure_food": {
+          "score": 8.6,
+          "reason": "Moderne Sanitärräume und Garderobe; Cafés/Bäckereien 3 Gehminuten entfernt."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachige Musikpädagoginnen und -pädagogen."
+        }
+      },
+      "pros": [
+        "Exklusive Kleingruppen-Atmosphäre ohne Warteschlangen",
+        "Nur 17 Minuten Anfahrt",
+        "Einzigartige Kombination aus Musik, Bewegung und Technik"
+      ],
+      "tips_and_watchouts": [
+        "Tickets unbedingt vorab online buchen, da Zeitfenster vor Ort schnell ausgebucht sind.",
+        "Rutschfeste Socken für die Kinder mitnehmen (im TOCCARION wird auf Socken gelaufen!)."
+      ],
+      "tags": [
+        "Musik",
+        "TOCCARION",
+        "Baden-Baden",
+        "Workshop",
+        "Festspielhaus",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "TOCCARION Programm",
+          "url": "https://toccarion.de/programm/"
+        }
+      ],
+      "price_info": "6 € pro Person (Kinder & Erwachsene)"
+    },
+    {
+      "id": "zkm-kunsthalle-karlsruhe-art-action-gameplay",
+      "title": "ZKM & Junge Kunsthalle Karlsruhe: „Art-Action!“, „Open Space“ & zkm_gameplay",
+      "subtitle": "Interaktive Medienkunst-Spielewelt, sensorische Familienführung & offene Kunstwerkstatt",
+      "short_pin_label": "Karlsruhe · ZKM & Kunst",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe",
+      "city": "Karlsruhe",
+      "venue_name": "ZKM Karlsruhe (Lichthof 1+2)",
+      "address": "Lorenzstraße 19, 76135 Karlsruhe",
+      "coordinates": {
+        "lat": 49.0014,
+        "lon": 8.3833
+      },
+      "drive_minutes_from_buehl": 33,
+      "distance_km_from_buehl": 39,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (15:00 Führung) & So, 15.11.2026 (11:00–14:00 Art-Action!) · Ausstellung 11–18 Uhr",
+      "duration_display": "2 bis 4 Stunden",
+      "family_score": 9.5,
+      "summary": "Im ZKM warten an diesem Wochenende gleich mehrere kostenlose Familien-Formate: die interaktive Spielewelt „zkm_gameplay“, die sensorische Familienführung „Wahrnehmen und spüren“ (Sa 15 Uhr) und das offene Mitmach-Format „Art-Action!“ (So 11–14 Uhr).",
+      "detailed_description": "In den riesigen historischen Industriehallen des ZKM können Kinder Kunst durch Bewegung, Sensoren und Spiele erleben. Am Samstag (15:00–16:00 Uhr) führt die kostenlose Tour „Wahrnehmen und spüren“ Familien spielerisch durch die Werke. Am Sonntag (11:00–14:00 Uhr) lädt „Art-Action! Aktiv Kunst erleben“ zum direkten Mitmachen ohne Voranmeldung ein. Parallel ist die legendäre Ausstellung „zkm_gameplay. the next level“ geöffnet.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Eintritt für Kinder unter 18 J. frei!)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Riesige Lichthöfe zum Staunen, interaktive Projektionen und „Art-Action!“ funktionieren super ab 4 Jahren.",
+        "notes_6_9": "Die historischen und modernen Games in „zkm_gameplay“ und die offene Werkstatt sind ein Paradies für 6–9-Jährige."
+      },
+      "parking_info": "Große ZKM-Tiefgarage direkt unter dem Vorplatz (Zufahrt über Südendstraße / Brauerstraße).",
+      "booking_info": "Art-Action! (So 11–14 Uhr) und zkm_gameplay ohne Anmeldung; Kinder unter 18 Jahren kostenlos!",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.4,
+          "reason": "Sowohl für 4–5 J. (Sensorik/Art-Action) als auch 6–9 J. (Gameplay/Werkstatt) top."
+        },
+        "experience_value": {
+          "score": 9.7,
+          "reason": "Weltklasse-Medienkunst zum Anfassen, Bewegen und Spielen."
+        },
+        "weather_suitability": {
+          "score": 9.9,
+          "reason": "Riesige Indoor-Lichthöfe, direkter Zugang aus der Tiefgarage."
+        },
+        "relaxation_parents": {
+          "score": 9.1,
+          "reason": "Viel Platz in den Lichthöfen, entspanntes Café „mint“ direkt im Foyer."
+        },
+        "travel_parking": {
+          "score": 9.2,
+          "reason": "33 Min. Fahrt über A5/Südtangente, Parkhaus direkt am Haus."
+        },
+        "infrastructure_food": {
+          "score": 9.5,
+          "reason": "Café mint im ZKM + Restaurant-Meile am Filmpalast direkt gegenüber."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutsch/Englisch und stark visuell-interaktiv."
+        }
+      },
+      "pros": [
+        "Eintritt und Familienprogramme („Art-Action!“) für Kinder komplett kostenlos",
+        "Gigantische Indoor-Fläche – selbst bei Dauerregen kein Engegefühl"
+      ],
+      "tips_and_watchouts": [
+        "Am Sonntag lässt sich „Art-Action!“ (11–14 Uhr) perfekt mit einem Mittagessen im Café mint und „zkm_gameplay“ verbinden."
+      ],
+      "tags": [
+        "ZKM",
+        "Karlsruhe",
+        "Medienkunst",
+        "Gaming",
+        "Workshop",
+        "Indoor",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "ZKM Karlsruhe Veranstaltungen",
+          "url": "https://zkm.de/de/veranstaltungen"
+        },
+        {
+          "name": "Staatliche Kunsthalle Karlsruhe",
+          "url": "https://www.kunsthalle-karlsruhe.de/kalender/"
+        }
+      ],
+      "price_info": "Kinder unter 18 J. frei · Erwachsene: 8 € (Workshops sonntags kostenlos)"
+    },
+    {
+      "id": "planet-ka-fritz-fliege-weltall",
+      "title": "PLANET KA Planetarium Karlsruhe: „Fritz Fliege fliegt ins Weltall“",
+      "subtitle": "360°-Fulldome-Sternenreise mit der Pusteblumenrakete für Kinder ab 4 Jahren",
+      "short_pin_label": "Karlsruhe · Planetarium",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe",
+      "city": "Karlsruhe",
+      "venue_name": "PLANET KA – Planetarium Karlsruhe",
+      "address": "Alter Schlachthof 4, 76131 Karlsruhe",
+      "coordinates": {
+        "lat": 49.0081,
+        "lon": 8.4286
+      },
+      "drive_minutes_from_buehl": 35,
+      "distance_km_from_buehl": 43,
+      "days": [
+        "2026-11-15"
+      ],
+      "date_display": "So, 15.11.2026 · 13:30 Uhr",
+      "duration_display": "ca. 50 Minuten",
+      "family_score": 9.5,
+      "summary": "Im neuen Karlsruher Planetarium auf dem Kreativpark Alter Schlachthof startet Fritz Fliege mit einer Pusteblumenrakete zu einer kindgerechten 360°-Reise zu Sonne, Mond und Planeten.",
+      "detailed_description": "Warum funkeln die Sterne und wie sieht es auf den Planeten aus? In der modernen 360°-Kuppel von PLANET KA erleben Kinder ab 4 Jahren eine fantasievolle Weltraumgeschichte ohne Reizüberflutung, kombiniert mit einem altersgerechten Blick an den echten Sternenhimmel.",
+      "age_suitability": {
+        "min": 4,
+        "max": 8,
+        "label": "Ab 4 bis 8 Jahren",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Speziell ab 4 Jahren konzipiert – sanfte Bilder und eine niedliche Hauptfigur.",
+        "notes_6_9": "6–8-Jährige nehmen bereits viel Wissen über unser Sonnensystem mit."
+      },
+      "parking_info": "Parkplätze direkt auf dem Gelände Alter Schlachthof / Durlacher Allee (2 Min. ab A5-Ausfahrt Durlach).",
+      "booking_info": "Online-Tickets über pretix.eu/planetka vorab sichern.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.4,
+          "reason": "Ideales Einstiegs-Planetariumsprogramm für 4–8 Jahre."
+        },
+        "experience_value": {
+          "score": 9.3,
+          "reason": "Immersives 360°-Kuppelerlebnis."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % Indoor."
+        },
+        "relaxation_parents": {
+          "score": 9.5,
+          "reason": "Zurücklehnen im Kuppelsessel, kein Trubel."
+        },
+        "travel_parking": {
+          "score": 9.3,
+          "reason": "Direkt an der A5-Ausfahrt Karlsruhe-Durlach (35 Min. Fahrt)."
+        },
+        "infrastructure_food": {
+          "score": 9.2,
+          "reason": "Tolle Familien-Gastronomie (z. B. Purino) direkt auf dem Schlachthof-Areal."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Sehr schnelle Erreichbarkeit über die A5-Ausfahrt Durlach",
+        "Tolle Restaurants (Pizza/Pasta bei Purino) direkt nebenan für das Sonntags-Mittagessen"
+      ],
+      "tips_and_watchouts": [
+        "Tickets frühzeitig online im Pretix-Shop buchen, da die Sonntagsvorstellung sehr gefragt ist."
+      ],
+      "tags": [
+        "Planetarium",
+        "Weltall",
+        "Karlsruhe",
+        "Sonntag",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "PLANET KA Programm",
+          "url": "https://www.planet-ka.de/programm/"
+        }
+      ],
+      "price_info": "Kinder: 5 € · Erwachsene: 8 € · Familienkarte: 20 €"
+    },
+    {
+      "id": "schloss-ettlingen-zeitsprung-roemer-burg",
+      "title": "Kindermuseum im Schloss Ettlingen: „Zeitsprung Römer“ & „Leben auf der Burg“",
+      "subtitle": "Ritterrüstungen & Römer-Tunika anprobieren in zwei interaktiven Mitmach-Ausstellungen",
+      "short_pin_label": "Ettlingen · Mitmach-Schloss",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe / Albtal",
+      "city": "Ettlingen",
+      "venue_name": "Museum im Schloss Ettlingen",
+      "address": "Schlossplatz 3, 76275 Ettlingen",
+      "coordinates": {
+        "lat": 48.9403,
+        "lon": 8.4064
+      },
+      "drive_minutes_from_buehl": 29,
+      "distance_km_from_buehl": 34,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 11:00–18:00 Uhr",
+      "duration_display": "1,5 bis 2,5 Stunden",
+      "family_score": 9.4,
+      "summary": "Im Ettlinger Schloss dürfen Kinder zwischen 4 und 9 Jahren fast alles anfassen: Kettenhemden und Römerhelme aufsetzen, Marschgepäck heben, in der Burgküche kochen und geheime Schubladen öffnen.",
+      "detailed_description": "Das Museum im Schloss Ettlingen beherbergt zwei speziell für Familien konzipierte Hands-on-Ausstellungen. In „Leben auf der Burg“ schlüpfen Kinder in Rittergewänder und erforschen den Alltag im Mittelalter; in „Zeitsprung – Mit der Familie bei den Römern“ wird ein römisches Haus samt Bad, Küche und Spielen lebendig.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Perfektes Anfass-Museum)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Verkleiden, Burgküche bespielen und Fühlstationen machen schon 4-Jährigen riesigen Spaß.",
+        "notes_6_9": "Römer-Rätsel, Katapult-Mechanik und das Gewicht echter Kettenhemden begeistern Grundschulkinder."
+      },
+      "parking_info": "Tiefgarage Schlossgartenhalle / Zentrum direkt neben dem Schloss.",
+      "booking_info": "Ohne Voranmeldung direkt an der Museumskasse.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.4,
+          "reason": "Genau auf das Vor- und Grundschulalter (4–9 J.) zugeschnitten."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Verkleiden und Anfassen ausdrücklich erwünscht."
+        },
+        "weather_suitability": {
+          "score": 9.6,
+          "reason": "100 % Indoor in den warmen Schlossräumen."
+        },
+        "relaxation_parents": {
+          "score": 9.3,
+          "reason": "Deutlich entspannter und ruhiger als große Großstadtmuseen."
+        },
+        "travel_parking": {
+          "score": 9.2,
+          "reason": "Knapp 30 Min. über die A5, Tiefgarage direkt am Schloss."
+        },
+        "infrastructure_food": {
+          "score": 9.2,
+          "reason": "Ettlinger Fußgängerzone mit tollen Cafés und Eiscafés direkt vor dem Schlosstor."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig und spielerisch aufgebaut."
+        }
+      },
+      "pros": [
+        "Echter Geheimtipp ohne Gedränge unter 30 Minuten Fahrt",
+        "Wunderschöne Ettlinger Altstadt und Horbachpark-Spielplatz direkt nebenan"
+      ],
+      "tips_and_watchouts": [
+        "Nach dem Museumsbesuch lohnt sich ein Abstecher in die Fußgängerzone auf eine Waffel oder Brezel."
+      ],
+      "tags": [
+        "Ritter",
+        "Römer",
+        "Schloss",
+        "Ettlingen",
+        "Mitmachmuseum",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Museum im Schloss Ettlingen",
+          "url": "https://www.ettlingen.de/kunst-kultur/museum"
+        }
+      ],
+      "price_info": "Kinder bis 14 J. frei · Erwachsene: 5 € · Museumspass frei"
+    },
+    {
+      "id": "marotte-figurentheater-maulwurf-knitterbart",
+      "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)",
+      "subtitle": "Zwei Kult-Kinderbuchklassiker in Karlsruhes beliebtestem Figurentheater",
+      "short_pin_label": "Karlsruhe · Marotte",
+      "category": "theater",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe",
+      "city": "Karlsruhe",
+      "venue_name": "marotte Figurentheater Karlsruhe",
+      "address": "Kaiserallee 11, 76133 Karlsruhe",
+      "coordinates": {
+        "lat": 49.0094,
+        "lon": 8.3822
+      },
+      "drive_minutes_from_buehl": 35,
+      "distance_km_from_buehl": 41,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (11:00 Uhr: Kleiner Maulwurf) & So, 15.11.2026 (11:00 & 14:00 Uhr: Käpten Knitterbart)",
+      "duration_display": "ca. 45–50 Minuten",
+      "family_score": 9.4,
+      "summary": "Am Samstag sucht der kleine Maulwurf den Übeltäter auf seinem Kopf (ab 3 J.), am Sonntag kapert Cornelia Funkes „Käpten Knitterbart und seine Bande“ (ab 4 J.) die Bühne der Marotte!",
+      "detailed_description": "Das Marotte Figurentheater am Mühlburger Tor gehört zu den besten Figurentheatern Süddeutschlands. An diesem Wochenende stehen zwei absolute Publikumslieblinge auf dem Programm. Tipp für Samstag: Direkt nebenan auf der Nottingham-Anlage findet von 11:00 bis 13:00 Uhr zudem der kostenlose ADFC-Kinder-Fahrradparcours statt!",
+      "age_suitability": {
+        "min": 4,
+        "max": 8,
+        "label": "4–8 Jahre (Sa ab 3 J., So ab 4 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Beide Stücke sind für 4–5-Jährige ein Volltreffer mit enormem Wiedererkennungswert aus den Bilderbüchern.",
+        "notes_6_9": "„Käpten Knitterbart“ am Sonntag ist mit seinem Piraten-Witz auch für 6–8-Jährige urkomisch."
+      },
+      "parking_info": "Parkhaus am Mühlburger Tor oder Seitenstraßen der Karlsruher Weststadt.",
+      "booking_info": "Online-Reservierung über marotte-theater.de dringend empfohlen (oft schnell ausverkauft).",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.5,
+          "reason": "Cornelia Funkes Käpten Knitterbart und der kleine Maulwurf sind Klassiker für 4–8 J."
+        },
+        "experience_value": {
+          "score": 9.4,
+          "reason": "Hautnahe Bühnenatmosphäre, bei der Kinder sofort mitfiebern."
+        },
+        "weather_suitability": {
+          "score": 9.6,
+          "reason": "100 % Indoor im gemütlichen Theatersaal."
+        },
+        "relaxation_parents": {
+          "score": 9.1,
+          "reason": "Sehr hoher Unterhaltungswert auch für Erwachsene."
+        },
+        "travel_parking": {
+          "score": 8.8,
+          "reason": "35 Min. Fahrt; in der Weststadt 5–10 Min. für die Parkplatzsuche einplanen."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Zahlreiche familienfreundliche Cafés und Bäckereien rund ums Mühlburger Tor."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachiges Figurentheater."
+        }
+      },
+      "pros": [
+        "Zwei absolute Lieblings-Bilderbücher an einem Wochenende",
+        "Am Samstag direkt kombinierbar mit dem ADFC-Kinder-Radparcours nebenan"
+      ],
+      "tips_and_watchouts": [
+        "Karten unbedingt vorab online reservieren!"
+      ],
+      "tags": [
+        "Figurentheater",
+        "Marotte",
+        "Karlsruhe",
+        "Käpten Knitterbart",
+        "Maulwurf",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Marotte Figurentheater Spielplan",
+          "url": "https://www.marotte-figurentheater.de/spielplan/"
+        },
+        {
+          "name": "Karlsruher Kind",
+          "url": "https://www.karlsruher-kind.de/"
+        }
+      ],
+      "price_info": "Kinder: 7,50 € · Erwachsene: 9,50 €"
+    },
+    {
+      "id": "planetarium-zoologisches-museum-strasbourg",
+      "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg",
+      "subtitle": "360°-Kindershow „Polaris“ (mit deutschem Audioguide!) + brandneues Naturkundemuseum nebenan",
+      "short_pin_label": "Straßburg · Planetarium & Zoo-Museum",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Deutscher Audioguide & DE/FR Texte",
+      "region": "Elsass / Straßburg",
+      "city": "Strasbourg",
+      "venue_name": "Planétarium du Jardin des Sciences & Musée Zoologique",
+      "address": "27–29 boulevard de la Victoire, 67000 Strasbourg, Frankreich",
+      "coordinates": {
+        "lat": 48.583,
+        "lon": 7.7644
+      },
+      "drive_minutes_from_buehl": 44,
+      "distance_km_from_buehl": 45,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (14:00 Polaris / 15:30 Sonnensystem) & So, 15.11.2026 (11:00 Polaris / 14:00 Sonnensystem) · Museum 10–18 Uhr",
+      "duration_display": "2,5 bis 4 Stunden (Kombi)",
+      "family_score": 9.4,
+      "summary": "Zwei Tür-an-Tür-Highlights im Universitätsgarten Straßburg: Erst im spektakulären neuen Holz-Planetarium die Kindershow „Polaris“ (ab 5 J., mit deutschem Kopfhörer!) oder „Système solaire“ (ab 8 J.) erleben und direkt nebenan das frisch sanierte Zoologische Museum besuchen (Kinder unter 18 J. frei!).",
+      "detailed_description": "Das neue Planétarium du Jardin des Sciences zeigt unter seiner 15-Meter-Kuppel am Samstag (14:00 Uhr) und Sonntag (11:00 Uhr) das beliebte Kinderabenteuer „Polaris : Le sous-marin spatial“ mit Pinguin James und Eisbär Vladimir (ab 5 J.) sowie für 8–9-Jährige „La grande aventure du Système solaire“ (Sa 15:30 / So 14:00 Uhr). Nur 30 Meter weiter begeistert das nach jahrelanger Sanierung wiedereröffnete Musée Zoologique mit riesigen Wal-Skeletten, Tier-Dioramen und der Sonderausstellung „BiodiverCité“.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Museum ab 4 J., Polaris ab 5 J., Sonnensystem ab 8 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Das neue Zoologische Museum mit hunderten Tieren zum Bestaunen und „Polaris“ (ab 5 J.) sind ideal.",
+        "notes_6_9": "6–9-Jährige lieben die interaktiven Stationen im Museum und die Kuppelshows."
+      },
+      "parking_info": "Parkhaus Parking des Pêcheurs oder P+R Rotonde / Elsau + Straßenbahn bis Haltestelle „Université“.",
+      "booking_info": "Planetarium vorab online buchen; im Musée Zoologique haben Kinder unter 18 Jahren freien Eintritt!",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.5,
+          "reason": "Tiere + Weltall direkt nebeneinander deckt 4 bis 9 Jahre perfekt ab."
+        },
+        "experience_value": {
+          "score": 9.6,
+          "reason": "Architektonisch und inhaltlich zwei der modernsten Museen am Oberrhein."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "Beide Häuser 100 % Indoor, nur 30 Meter Fußweg dazwischen."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Kein Standortwechsel nötig, Botanischer Garten direkt dazwischen."
+        },
+        "travel_parking": {
+          "score": 9.0,
+          "reason": "44 Min. Fahrtzeit."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Cafés und Bäckereien im Viertel Krutenau direkt um die Ecke."
+        },
+        "language_accessibility": {
+          "score": 9.1,
+          "reason": "Im Planetarium kostenlose deutsche Audioguides für den Film an der Kasse; im Museum mehrsprachige Tafeln (FR/DE/EN)."
+        }
+      },
+      "pros": [
+        "Zwei Top-Attraktionen auf demselben Campus (kein Umparken nötig)",
+        "Im wiedereröffneten Musée Zoologique ist der Eintritt für Kinder kostenlos",
+        "Kostenlose deutsche Übersetzungs-Kopfhörer im Planetarium"
+      ],
+      "tips_and_watchouts": [
+        "Am Planetariums-Empfang beim Ticketscan direkt nach den kostenlosen deutschen Audioguides („audioguide en allemand“) fragen!"
+      ],
+      "tags": [
+        "Planetarium",
+        "Naturkundemuseum",
+        "Tiere",
+        "Straßburg",
+        "Elsass",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Jardin des Sciences Planetarium",
+          "url": "https://jardin-sciences.unistra.fr/visite/le-planetarium/"
+        },
+        {
+          "name": "Musée Zoologique de Strasbourg",
+          "url": "https://www.musees.strasbourg.eu/musee-zoologique"
+        }
+      ],
+      "price_info": "Planetarium: Kinder 6 € / Erw. 8 € · Musée Zoologique: Kinder unter 18 frei / Erw. 7 €"
+    },
+    {
+      "id": "schloss-bruchsal-lego-musikautomaten",
+      "title": "Schloss Bruchsal: Sonderausstellung „Faszination LEGO®“ & Musikautomaten",
+      "subtitle": "Gigantische LEGO®-Miniaturwelten im Barockschloss + selbstspielende Orgeln & Klangwand",
+      "short_pin_label": "Bruchsal · Schloss & LEGO",
+      "category": "museum",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Kraichgau / Bruchsal",
+      "city": "Bruchsal",
+      "venue_name": "Schloss Bruchsal & Deutsches Musikautomaten-Museum",
+      "address": "Schlossraum 4, 76646 Bruchsal",
+      "coordinates": {
+        "lat": 49.1283,
+        "lon": 8.5986
+      },
+      "drive_minutes_from_buehl": 45,
+      "distance_km_from_buehl": 58,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–17:00 Uhr",
+      "duration_display": "2,5 bis 3,5 Stunden",
+      "family_score": 9.4,
+      "summary": "Im prächtigen Barockschloss Bruchsal staunen Familien über riesige LEGO®-Landschaften und entdecken im selben Gebäude das Deutsche Musikautomaten-Museum mit Kinder-Klangwand und Jahrmarktorgeln.",
+      "detailed_description": "Drei Erlebnisse unter einem Dach: Das prunkvolle Treppenhaus von Balthasar Neumann, die große Familien-Winterausstellung „Faszination LEGO®“ mit versteckten Minifigur-Suchspielen und das Musikautomaten-Museum über drei Etagen. Für 8–9-Jährige spielt zudem am Sonntag um 15:00 Uhr nebenan im theater treppab das Mitmach-Stück „Die Bademattenrepublik“.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Schloss + LEGO + Musikautomaten)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Die bunten LEGO-Züge, Ritterburgen und die interaktive Klangwand fesseln schon 4-Jährige.",
+        "notes_6_9": "Grundschulkinder lieben die technischen Details der LEGO-Bauten und der mechanischen Musikautomaten."
+      },
+      "parking_info": "Parkplätze direkt am Schlossraum 4 sowie im Parkhaus Bürgerzentrum.",
+      "booking_info": "Tickets direkt an der Schlosskasse (günstige Familienkarte der Staatlichen Schlösser & Gärten).",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.5,
+          "reason": "Kombiniert Märchenschloss-Flair mit LEGO und mechanischen Wundern."
+        },
+        "experience_value": {
+          "score": 9.3,
+          "reason": "Suchspiele in den LEGO-Welten und interaktive Klangstationen."
+        },
+        "weather_suitability": {
+          "score": 9.7,
+          "reason": "Komplett Indoor im weitläufigen Schloss; Schlosspark für kurze Pause draußen."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Sehr weitläufige Säle, kein Gedränge, wunderschönes Ambiente für Eltern."
+        },
+        "travel_parking": {
+          "score": 8.9,
+          "reason": "45 Min. direkt über die A5, Parken direkt vor dem Schloss."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Schlosscafé und Restaurants direkt am Schlossplatz."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Drei Attraktionen mit einem Ticket im selben Gebäude",
+        "Weitläufig und wetterfest – ideal für einen entspannten Familien-Vor- oder Nachmittag"
+      ],
+      "tips_and_watchouts": [
+        "An der Kasse nach dem kostenlosen Kinder-Entdeckerbogen für das Musikautomaten-Museum fragen!"
+      ],
+      "tags": [
+        "Schloss",
+        "LEGO",
+        "Bruchsal",
+        "Museum",
+        "Musikautomaten",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Schloss Bruchsal Veranstaltungen",
+          "url": "https://www.schloss-bruchsal.de/"
+        },
+        {
+          "name": "Deutsches Musikautomaten-Museum",
+          "url": "https://www.dmm-bruchsal.de"
+        }
+      ],
+      "price_info": "Kinder: 4,50 € · Erwachsene: 9 € · Familienkarte: 22,50 €"
+    },
+    {
+      "id": "gertwiller-lebkuchenpalast-verzierworkshop",
+      "title": "Palais du Pain d'Épices Gertwiller: Märchen-Rundgang & Lebkuchen-Verzieren",
+      "subtitle": "800 m² leuchtende Lebkuchen-Märchenwelt mit dem „Mannele“ + Kinder-Backatelier",
+      "short_pin_label": "Gertwiller · Lebkuchenpalast",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Deutscher Audioguide & DE Personal",
+      "region": "Mittel-Elsass / Barr",
+      "city": "Gertwiller",
+      "venue_name": "Le Palais du Pain d'Épices (Fortwenger)",
+      "address": "144 Route de Strasbourg, 67140 Gertwiller, Frankreich",
+      "coordinates": {
+        "lat": 48.4116,
+        "lon": 7.4694
+      },
+      "drive_minutes_from_buehl": 56,
+      "distance_km_from_buehl": 68,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (09:00–12:00 & 14:00–18:00 Uhr) & So, 15.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
+      "duration_display": "1,5 bis 2 Stunden",
+      "family_score": 9.4,
+      "summary": "Im Lebkuchen-Dorf Gertwiller duftet es schon Mitte November herrlich nach Zimt und Honig: Kinder wandern durch eine bunt beleuchtete Hänsel-&-Gretel-Erlebniswelt und verzieren im Workshop ihr eigenes Lebkuchenmännchen („Mannele“).",
+      "detailed_description": "Auf über 800 m² führt das Lebkuchenmännchen „Mannele“ (per deutschem Audioguide!) durch die Dachboden- und Märchenwelt des Lebkuchenpalastes – inklusive Probierstationen. Im anschließenden Kinder-Atelier („Atelier de décoration“) gestalten Kinder ab 4 Jahren ihren eigenen großen Lebkuchen mit buntem Zuckerguss und Süßigkeiten.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Unter 5 Jahren Eintritt frei!)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Die bunte Märchen-Kulisse (Hänsel & Gretel) und das Verzieren mit Zuckerguss verzaubern 4–5-Jährige.",
+        "notes_6_9": "6–9-Jährige lieben die deutsche Hörspiel-Führung durch die Gewürzwelt und das kreative Dekorieren."
+      },
+      "parking_info": "Großer kostenloser Parkplatz direkt vor dem Lebkuchenpalast.",
+      "booking_info": "Museum jederzeit ohne Anmeldung (Erw. 4 €, Kinder 2 €); für den Verzier-Workshop kurze telefonische Reservierung (+33 3 88 08 04 26) empfohlen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.6,
+          "reason": "Sinnliches Märchen- und Back-Erlebnis genau für 4 bis 9 Jahre."
+        },
+        "experience_value": {
+          "score": 9.4,
+          "reason": "Riechen, Schmecken, Hören und eigenes Lebkuchenherz verzieren."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % gemütlich und warm Indoor."
+        },
+        "relaxation_parents": {
+          "score": 9.3,
+          "reason": "Mitte November noch deutlich entspannter als im Dezember-Adventsrummel."
+        },
+        "travel_parking": {
+          "score": 8.6,
+          "reason": "Ca. 56 Min. Fahrt über die A35, Parken kostenlos direkt vor der Tür."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Verkostungen inklusive, gemütliche Stube und riesiger Werksverkauf."
+        },
+        "language_accessibility": {
+          "score": 9.8,
+          "reason": "Kompletter Audioguide auf Deutsch, Personal spricht Deutsch."
+        }
+      },
+      "pros": [
+        "Wunderbare vorweihnachtliche Stimmung ohne den Dezember-Massentourismus",
+        "Sehr familienfreundliche Eintrittspreise (2–6 €) inklusive Verkostung",
+        "Komplett deutschsprachige Führung"
+      ],
+      "tips_and_watchouts": [
+        "Auf die französische Mittagspause zwischen 12:00 und 14:00 Uhr achten (am besten um 14:00 Uhr starten oder vormittags um 10:00 Uhr da sein)!"
+      ],
+      "tags": [
+        "Lebkuchen",
+        "Elsass",
+        "Gertwiller",
+        "Backen",
+        "Märchen",
+        "Workshop",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Le Palais du Pain d'Épices Gertwiller",
+          "url": "https://www.lepalaisdupaindepices.com"
+        }
+      ],
+      "price_info": "Museum: Kinder 2 € / Erw. 4 € · Verzier-Atelier: ca. 4,50 €"
+    },
+    {
+      "id": "eislaess-offenburg-saisoneroeffnung",
+      "title": "Saisoneröffnung „Eisläss“ Offenburg – Große Indoor-Eislaufarena",
+      "subtitle": "Wetterfestes Schlittschuhlaufen in der Messehalle 1 + Pre-Opening-Eisdisco (Fr)",
+      "short_pin_label": "Offenburg · Eisläss Halle",
+      "category": "action",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Ortenau / Offenburg",
+      "city": "Offenburg",
+      "venue_name": "Messe Offenburg – Freizeit-Arena (Halle 1)",
+      "address": "Schutterwälder Straße 3, 77656 Offenburg",
+      "coordinates": {
+        "lat": 48.4633,
+        "lon": 7.9347
+      },
+      "drive_minutes_from_buehl": 28,
+      "distance_km_from_buehl": 33,
+      "days": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Fr, 13.11. (18–22 Uhr Opening) · Sa, 14.11. (10–21 Uhr) & So, 15.11.2026 (10–20 Uhr)",
+      "duration_display": "2 bis 3,5 Stunden",
+      "family_score": 9.3,
+      "summary": "Genau am Samstag, 14. November 2026, startet die große überdachte Eislaufarena „Eisläss“ in der Messe Offenburg in die Wintersaison! 100 % regensicher in Halle 1 mit Schlittschuhverleih ab kleinsten Kindergrößen und Pinguin-Lernhilfen.",
+      "detailed_description": "Während Outdoor-Eisbahnen bei Novemberregen schnell unter Wasser stehen, bietet die „Eisläss“ in der Messehalle 1 in Offenburg perfektes Eis unter dem Hallendach. Für Familien mit 4–9-Jährigen sind besonders die Vormittags- und frühen Nachmittagsstunden am Samstag und Sonntag (ab 10:00 Uhr) ideal.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Lernhilfen & Gleitschuhe vor Ort)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Mit den stabilen Eislauf-Lernhilfen drehen schon 4–5-Jährige sicher ihre ersten Runden.",
+        "notes_6_9": "6–9-Jährige lieben das freie Flitzen über die große Eisfläche zu Musik."
+      },
+      "parking_info": "Große Messe-Parkplätze direkt an der Schutterwälder Straße.",
+      "booking_info": "Tickets online über messe-offenburg.de oder an der Tageskasse.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.2,
+          "reason": "Bewegungshighlight für Vorschul- und Grundschulkinder."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Erstes Eislaufen des Winters in echter Hallen-Atmosphäre."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % überdacht in der Messehalle 1."
+        },
+        "relaxation_parents": {
+          "score": 8.8,
+          "reason": "Übersichtliche Bande und warme Gastronomie-Zone direkt an der Eisfläche."
+        },
+        "travel_parking": {
+          "score": 9.4,
+          "reason": "Nur 28 Min. Fahrt über die A5 (Ausfahrt Offenburg)."
+        },
+        "infrastructure_food": {
+          "score": 9.1,
+          "reason": "Warme Snacks, Pommes, Waffeln und Kinderpunsch direkt an der Eisbahn."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Komplett wetterunabhängige Indoor-Eishalle (nur 28 Minuten Fahrt)",
+        "Samstag und Sonntag bereits ab 10:00 Uhr morgens geöffnet"
+      ],
+      "tips_and_watchouts": [
+        "Unbedingt feste Fingerhandschuhe (und gerne Fahrrad-/Skihelm für jüngere Kinder) einpacken!"
+      ],
+      "tags": [
+        "Eislaufen",
+        "Eisläss",
+        "Offenburg",
+        "Sport",
+        "Action",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Eisläss Messe Offenburg",
+          "url": "https://www.messe-offenburg.de"
+        }
+      ],
+      "price_info": "Kinder (bis 14 J.): 4,50 € · Erwachsene: 6,50 € · Leihschuhe: 4,50 €"
+    },
+    {
+      "id": "heavysaurus-remchingen-kinderrock",
+      "title": "Heavysaurus Live in Concert – „Pommesgabel-Tour“ für Kinder",
+      "subtitle": "Vier Dinos & ein Drache spielen echten Rock mit kindgerechter Lautstärke",
+      "short_pin_label": "Remchingen · Heavysaurus",
+      "category": "action",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Enzkreis / Raum Karlsruhe",
+      "city": "Remchingen",
+      "venue_name": "Kulturhalle Remchingen",
+      "address": "Hauptstraße 115, 75196 Remchingen",
+      "coordinates": {
+        "lat": 48.9511,
+        "lon": 8.5761
+      },
+      "drive_minutes_from_buehl": 42,
+      "distance_km_from_buehl": 50,
+      "days": [
+        "2026-11-14"
+      ],
+      "date_display": "Sa, 14.11.2026 · 11:00 Uhr",
+      "duration_display": "ca. 75–90 Minuten",
+      "family_score": 9.3,
+      "summary": "Mr. Heavysaurus und seine Dino-Band rocken am Samstagvormittag die Kulturhalle Remchingen! Ein mitreißendes Familienspektakel mit deutschen Mitsing-Hits („Kaugummi ist mega!“) und kinderfreundlichem Dezibel-Pegel.",
+      "detailed_description": "Vier Dinosaurier und ein Drache bringen echtes Live-Konzert-Feeling für 4- bis 9-Jährige auf die Bühne – mit Lichtshow, Nebel, Luftballons und witzigen deutschen Texten. Die Lautstärke ist speziell auf Kinderohren abgestimmt.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Für alle Dino- & Musikfans)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Die lebensgroßen Dino-Kostüme und Mitmach-Lieder begeistern schon 4–5-Jährige.",
+        "notes_6_9": "Für 6–9-Jährige das erste „echte“ coole Rockkonzert zum Abtanzen."
+      },
+      "parking_info": "Kostenlose Parkplätze direkt an der Kulturhalle und am Rathaus Remchingen.",
+      "booking_info": "Restkarten prüfen über Kulturhalle Remchingen / Eventim.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.6,
+          "reason": "Genau für die Zielgruppe 4–9 Jahre gemacht."
+        },
+        "experience_value": {
+          "score": 9.7,
+          "reason": "Unvergessliches Live-Show-Erlebnis mit Dinos."
+        },
+        "weather_suitability": {
+          "score": 9.5,
+          "reason": "100 % Indoor in der Kulturhalle."
+        },
+        "relaxation_parents": {
+          "score": 8.2,
+          "reason": "Hoher Action- und Stimmungstrubel, aber riesiger Spaß für rockbegeisterte Eltern."
+        },
+        "travel_parking": {
+          "score": 8.8,
+          "reason": "42 Min. Fahrt (A5/A8), entspanntes Parken direkt vor Ort."
+        },
+        "infrastructure_food": {
+          "score": 8.8,
+          "reason": "Hallengastronomie und Bäckereien direkt am Platz."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutsche Songtexte zum Mitsingen."
+        }
+      },
+      "pros": [
+        "Perfekte Uhrzeit am Samstagvormittag (11:00 Uhr)",
+        "Riesiger Energie-Ablass bei trübem Novemberwetter"
+      ],
+      "tips_and_watchouts": [
+        "Für geräuschempfindliche Vorschulkinder vorsichtshalber einen leichten Kinder-Gehörschutz (Kapselgehörschutz) einpacken."
+      ],
+      "tags": [
+        "Konzert",
+        "Heavysaurus",
+        "Dinosaurier",
+        "Musik",
+        "Remchingen",
+        "Action",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Kulturhalle Remchingen",
+          "url": "https://www.kulturhalle-remchingen.de"
+        }
+      ],
+      "price_info": "Konzertticket: ca. 34–38 € pro Person"
+    },
+    {
+      "id": "geispolsheim-secrets-du-chocolat-workshop",
+      "title": "Les Secrets du Chocolat (Geispolsheim): Schokoladenmuseum & Kinder-Chocolatier-Atelier",
+      "subtitle": "Interaktive Reise von den Azteken bis in die Schoko-Werkstatt mit eigener Tafel-Kreation",
+      "short_pin_label": "Geispolsheim · Schoko-Museum",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Deutscher Audioguide verfügbar",
+      "region": "Elsass / Süd-Straßburg",
+      "city": "Geispolsheim",
+      "venue_name": "Musée Les Secrets du Chocolat par Schaal",
+      "address": "Rue du Pont du Péage, 67118 Geispolsheim, Frankreich",
+      "coordinates": {
+        "lat": 48.5085,
+        "lon": 7.6841
+      },
+      "drive_minutes_from_buehl": 45,
+      "distance_km_from_buehl": 52,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (10:00–19:00 Uhr) & So, 15.11.2026 (14:00–18:00 Uhr) · Workshops 14/15/16 Uhr",
+      "duration_display": "1,5 bis 2 Stunden",
+      "family_score": 9.3,
+      "summary": "Südlich von Straßburg tauchen Familien in die Welt der Schokolade ein: mit Maya-Tempel, historischem Kolonialwarenladen, Schoko-Verkostung an mehreren Stationen und Nachmittags-Workshops zum Selbergießen.",
+      "detailed_description": "Im Schokoladenmuseum der elsässischen Traditionsmarke Schaal begleiten Familien den Weg der Kakaobohne durch verschiedene Erlebnisräume (inkl. deutschem Audioguide und Schokoladen-Brunnen/Kostproben). Am Samstag- und Sonntagnachmittag (14:00, 15:00 und 16:00 Uhr) können Kinder im Atelier ihre eigene Schokoladenkreation verzieren.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Rundgang ab 4 J., Kreativ-Atelier ideal ab 6/7 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Der Rundgang mit Kostproben, Schoko-Theater und historischen Maschinen begeistert schon 4–5-Jährige.",
+        "notes_6_9": "6–9-Jährige können im Nachmittags-Atelier selbst als kleine Chocolatiers arbeiten."
+      },
+      "parking_info": "Großer kostenloser Parkplatz direkt vor dem Museum (direkt an der A35).",
+      "booking_info": "Für das Kinder-Schokoladen-Atelier (14/15/16 Uhr) vorab online/telefonisch reservieren.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.1,
+          "reason": "Schokolade zieht bei 4- wie 9-Jährigen gleichermaßen."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Kulinarischer Rundgang mit Verkostung + Handwerks-Einblick."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % Indoor."
+        },
+        "relaxation_parents": {
+          "score": 9.0,
+          "reason": "Gemütliches Café mit heißer Trinkschokolade direkt im Haus."
+        },
+        "travel_parking": {
+          "score": 9.3,
+          "reason": "45 Min. Fahrt direkt an der Autobahn A35, Parkplatz vor der Tür."
+        },
+        "infrastructure_food": {
+          "score": 9.2,
+          "reason": "Salon de Thé & Bistro vor Ort."
+        },
+        "language_accessibility": {
+          "score": 9.2,
+          "reason": "Deutscher Audioguide für den gesamten Rundgang."
+        }
+      },
+      "pros": [
+        "Direkt an der A35 ohne Innenstadtverkehr erreichbar",
+        "Mehrfache Schokoladen-Verkostung im Eintritt enthalten"
+      ],
+      "tips_and_watchouts": [
+        "Am Sonntag öffnet das Museum erst ab 14:00 Uhr (am Samstag schon ab 10:00 Uhr)!"
+      ],
+      "tags": [
+        "Schokolade",
+        "Museum",
+        "Workshop",
+        "Elsass",
+        "Geispolsheim",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Les Secrets du Chocolat",
+          "url": "https://www.musee-du-chocolat.com"
+        }
+      ],
+      "price_info": "Museum: Kinder 5 € / Erw. 8 € · Kinder-Schoko-Workshop: 5 € Aufpreis"
+    },
+    {
+      "id": "kurhaus-baden-baden-schaf-ahoi",
+      "title": "Kindertheater im Kurhaus: „Schaf Ahoi!“ (Hohenloher Figurentheater)",
+      "subtitle": "Warmherziges Figurentheater im festlichen Runden Saal des Kurhauses Baden-Baden",
+      "short_pin_label": "Baden-Baden · Figurentheater",
+      "category": "theater",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Baden-Baden",
+      "city": "Baden-Baden",
+      "venue_name": "Kurhaus Baden-Baden (Runder Saal)",
+      "address": "Kaiserallee 1, 76530 Baden-Baden",
+      "coordinates": {
+        "lat": 48.7606,
+        "lon": 8.2364
+      },
+      "drive_minutes_from_buehl": 19,
+      "distance_km_from_buehl": 16,
+      "days": [
+        "2026-11-15"
+      ],
+      "date_display": "So, 15.11.2026 · 15:00 Uhr",
+      "duration_display": "ca. 50 Minuten (plus Kurpark-Bummel)",
+      "family_score": 9.2,
+      "summary": "Im wunderschönen Runden Saal des Kurhauses erzählt das Hohenloher Figurentheater die poetische und lustige Geschichte von Jungschaf Berthold auf einer kleinen Nordseeinsel.",
+      "detailed_description": "Jungschaf Berthold lebt auf einer winzigen Insel im Meer. Zwischen steifer Brise, Wellen und schrulligen Inselbewohnern sucht er seinen eigenen Weg und entdeckt, was echte Freundschaft bedeutet. Ein liebevoll inszeniertes Hand- und Stabfigurentheater, das sich perfekt mit einem Herbstspaziergang durch die Lichtentaler Allee und einer heißen Schokolade in den Kurhaus-Kolonnaden verbinden lässt.",
+      "age_suitability": {
+        "min": 4,
+        "max": 8,
+        "label": "Ab 3–8 Jahren (Ideal für 4–7 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Volltreffer für 4–5-Jährige: ruhiges Erzähltempo, lustige Tierfiguren und keine gruseligen Szenen.",
+        "notes_6_9": "Für 6–7-Jährige sehr unterhaltsam; für 9-Jährige eher gemütlich."
+      },
+      "parking_info": "Kurparkgarage direkt unter dem Kurhaus (Kaiserallee 1).",
+      "booking_info": "Tickets (Kinder 10 €, Erw. 14 €) über Baden-Baden Events oder an der Tageskasse.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 8.8,
+          "reason": "Perfekt für 4–7 Jahre, für 8–9 Jahre etwas jünger angelegt."
+        },
+        "experience_value": {
+          "score": 8.8,
+          "reason": "Klassisches, handwerklich tolles Figurentheater im edlen Kurhaus-Ambiente."
+        },
+        "weather_suitability": {
+          "score": 9.5,
+          "reason": "Trocken von der Tiefgarage direkt in den Runden Saal."
+        },
+        "relaxation_parents": {
+          "score": 9.4,
+          "reason": "Sehr entspannter Sonntagnachmittag ohne Hektik."
+        },
+        "travel_parking": {
+          "score": 9.5,
+          "reason": "Unter 20 Minuten Fahrt, Parken direkt unter dem Veranstaltungsort."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Cafés, Konditoreien und Kurpark direkt vor der Tür."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachiges Figurentheater."
+        }
+      },
+      "pros": [
+        "Wunderschöner, übersichtlicher Saal mit guter Sicht für Kinder",
+        "Kurze Anfahrt (19 Min.) und direktes Parken in der Kurparkgarage"
+      ],
+      "tips_and_watchouts": [
+        "Lässt sich am Sonntagnachmittag ideal mit den beleuchteten Pavillons in den Kurhaus-Kolonnaden kombinieren."
+      ],
+      "tags": [
+        "Figurentheater",
+        "Kurhaus",
+        "Baden-Baden",
+        "Sonntag",
+        "Theater"
+      ],
+      "sources": [
+        {
+          "name": "Baden-Baden Events",
+          "url": "https://www.badenbadenevents.de/"
+        }
+      ],
+      "price_info": "Kinder: 10 € · Erwachsene: 14 €"
+    },
+    {
+      "id": "museum-frieder-burda-workshop-farbe",
+      "title": "Museum Frieder Burda: Familienworkshop „Entfaltung der Farbe“",
+      "subtitle": "Kunst-Entdeckungstour & kreatives Falt-Atelier für Kinder und Eltern",
+      "short_pin_label": "Baden-Baden · Kunst-Atelier",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Baden-Baden",
+      "city": "Baden-Baden",
+      "venue_name": "Museum Frieder Burda (Kunstwerkstatt)",
+      "address": "Lichtentaler Allee 8b, 76530 Baden-Baden",
+      "coordinates": {
+        "lat": 48.7581,
+        "lon": 8.2381
+      },
+      "drive_minutes_from_buehl": 19,
+      "distance_km_from_buehl": 16,
+      "days": [
+        "2026-11-15"
+      ],
+      "date_display": "So, 15.11.2026 · 14:00–17:00 Uhr",
+      "duration_display": "ca. 2,5 bis 3 Stunden",
+      "family_score": 9.2,
+      "summary": "Passend zur großen Simon-Hantaï-Ausstellung falten, knoten und bemalen Kinder und Erwachsene in der Kunstwerkstatt des Museums eigene großformatige Farb-Kunstwerke.",
+      "detailed_description": "Simon Hantaï malte nicht einfach auf glatte Leinwände, sondern faltete und knüllte den Stoff vorher, sodass beim Auseinanderfalten magische Muster entstanden. Nach einem kindgerechten Rundgang durch die leuchtenden Farbräume des Richard-Meier-Baus experimentieren Familien im Atelier selbst mit dieser überraschenden Technik.",
+      "age_suitability": {
+        "min": 5,
+        "max": 9,
+        "label": "Ab 5/6 bis 9 Jahren",
+        "ideal_for_4_5": false,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Für 4-Jährige ist die 3-stündige Workshop-Dauer etwas lang (eher ab 5,5/6 Jahren).",
+        "notes_6_9": "Die Falt- und Farbtechnik sorgt bei 6–9-Jährigen für sofortige Erfolgserlebnisse."
+      },
+      "parking_info": "Parkgarage Augustaplatz (3 Gehminuten durch die Lichtentaler Allee).",
+      "booking_info": "Anmeldung über die Kunstwerkstatt des Museums Frieder Burda empfohlen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 8.6,
+          "reason": "Optimal für 6–9 Jahre, für 4-Jährige etwas lang."
+        },
+        "experience_value": {
+          "score": 9.3,
+          "reason": "Echtes künstlerisches Arbeiten mit hochwertigen Materialien."
+        },
+        "weather_suitability": {
+          "score": 9.5,
+          "reason": "Komplett Indoor im hellen Museumsatelier."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Ruhige, inspirierende Atmosphäre in kleiner Gruppe."
+        },
+        "travel_parking": {
+          "score": 9.4,
+          "reason": "19 Min. Fahrt, Tiefgarage Augustaplatz direkt nebenan."
+        },
+        "infrastructure_food": {
+          "score": 8.8,
+          "reason": "Cafés am Augustaplatz direkt um die Ecke."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachige Kunstvermittlung."
+        }
+      },
+      "pros": [
+        "Falt-Maltechnik gelingt jedem Kind ohne Frust",
+        "Nebenan in der Staatlichen Kunsthalle („Bloom up!“) haben Kinder freien Eintritt"
+      ],
+      "tips_and_watchouts": [
+        "Kleidung anziehen, die beim Experimentieren mit Acryl-/Gouachefarben einen Farbklecks verträgt."
+      ],
+      "tags": [
+        "Kunst",
+        "Workshop",
+        "Malen",
+        "Baden-Baden",
+        "Museum",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Museum Frieder Burda Kunstwerkstatt",
+          "url": "https://www.museum-frieder-burda.de/de/kunstwerkstatt/"
+        }
+      ],
+      "price_info": "Kinder-Kunstworkshop: 10 € inkl. Material & Museumseintritt"
+    },
+    {
+      "id": "oberkirch-laternenumzug-stadtgarten",
+      "title": "Großer Familien-Laternenumzug im Alten Stadtgarten Oberkirch",
+      "subtitle": "Lichtermeer rund um den See mit Musik, Konzert im Pavillon & geschenktem Martinsweck",
+      "short_pin_label": "Oberkirch · Laternenumzug",
+      "category": "market",
+      "weather_type": "outdoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Ortenau / Renchtal",
+      "city": "Oberkirch",
+      "venue_name": "Alter Stadtgarten Oberkirch",
+      "address": "Stadtgartenstraße, 77704 Oberkirch",
+      "coordinates": {
+        "lat": 48.5306,
+        "lon": 8.0789
+      },
+      "drive_minutes_from_buehl": 24,
+      "distance_km_from_buehl": 22,
+      "days": [
+        "2026-11-14"
+      ],
+      "date_display": "Sa, 14.11.2026 · Beginn 17:30 Uhr (Start Umzug um den See 17:45 Uhr)",
+      "duration_display": "ca. 1,5 bis 2 Stunden",
+      "family_score": 9.2,
+      "summary": "Wer am Sankt-Martins-Tag unter der Woche keine Zeit hatte oder noch einmal Laterne laufen möchte: Am Samstagabend verwandelt der Verein „Gemeinsam aktiv für Kinder e.V.“ den Oberkircher Stadtgarten in ein funkelndes Lichtermeer – jedes Kind bekommt einen Martinsweck geschenkt!",
+      "detailed_description": "Ab 17:30 Uhr treffen sich Familien aus der ganzen Region im Alten Stadtgarten Oberkirch. Musikalisch begleitet zieht der große Laternenumzug rund um den Stadtgartensee, wo sich die bunten Lichter im Wasser spiegeln. Anschließend gibt es ein kleines Konzert im Musikpavillon, warmen Kinderpunsch, Glühwein und für jedes Kind einen gratis Martinsweck.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Perfekt für die selbstgebastelte Laterne!)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Ebener, autofreier Rundweg um den Stadtgartensee und ein gratis Martinsweck für jedes Kind.",
+        "notes_6_9": "Wunderschöne Abendstimmung mit Musikpavillon und Punsch."
+      },
+      "parking_info": "Parkplätze am Stadtgarten / Freibad Oberkirch und in der Innenstadt.",
+      "booking_info": "Kostenlos und ohne Anmeldung!",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.6,
+          "reason": "Laternenlaufen am Samstagabend ohne Schul-/Kita-Stress am nächsten Morgen."
+        },
+        "experience_value": {
+          "score": 9.3,
+          "reason": "Stimmungsvoller Umzug um den See mit Live-Blasmusik und gratis Martinsweck."
+        },
+        "weather_suitability": {
+          "score": 8.0,
+          "reason": "Outdoor-Abendveranstaltung im Park."
+        },
+        "relaxation_parents": {
+          "score": 9.5,
+          "reason": "Autofreier Park, herzliche Vereinsorganisation."
+        },
+        "travel_parking": {
+          "score": 9.5,
+          "reason": "Nur 24 Min. Fahrtzeit."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Kinderpunsch, Apfelschorle, Glühwein & gratis Martinsweck."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Am Samstagabend – kein frühes Aufstehen am Sonntagmorgen!",
+        "Jedes Kind erhält vom Verein einen Martinsweck geschenkt"
+      ],
+      "tips_and_watchouts": [
+        "Wichtig: Bitte eigene Henkelbecher/Tassen für Kinderpunsch und Glühwein von zu Hause mitbringen (Nachhaltigkeits-Aktion des Vereins)!"
+      ],
+      "tags": [
+        "Laternenumzug",
+        "Sankt Martin",
+        "Oberkirch",
+        "Ortenau",
+        "Lichter",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "Gemeinsam aktiv für Kinder e.V. Oberkirch",
+          "url": "https://www.gemeinsam-aktiv-oberkirch.de"
+        },
+        {
+          "name": "Stadt Oberkirch Veranstaltungen",
+          "url": "https://www.oberkirch.de"
+        }
+      ],
+      "price_info": "Kostenlos / Eintritt frei"
+    },
+    {
+      "id": "staatstheater-karlsruhe-wunschpunsch-daeumling",
+      "title": "Junges Staatstheater Karlsruhe: „Wunschpunsch“ (Sa) & „Nils Karlsson Däumling“ (So)",
+      "subtitle": "Michael Endes Zauber-Klassiker (ab 8 J.) & Astrid Lindgrens Kinderoper (ab 3 J.) in der INSEL",
+      "short_pin_label": "Karlsruhe · Junges Theater",
+      "category": "theater",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe",
+      "city": "Karlsruhe",
+      "venue_name": "Badisches Staatstheater – Spielstätte INSEL",
+      "address": "Karlstraße 49b, 76133 Karlsruhe",
+      "coordinates": {
+        "lat": 49.0039,
+        "lon": 8.3936
+      },
+      "drive_minutes_from_buehl": 35,
+      "distance_km_from_buehl": 40,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (15:00 Uhr: Wunschpunsch) & So, 15.11.2026 (10:30 Uhr: Nils Karlsson Däumling)",
+      "duration_display": "40 Min. (So) bzw. 90 Min. (Sa)",
+      "family_score": 9.2,
+      "summary": "In der Spielstätte INSEL zeigt das Junge Staatstheater am Samstag Michael Endes rasanten „Wunschpunsch“ (für 7–9-Jährige) und am Sonntagvormittag die zauberhafte Kinderoper „Nils Karlsson Däumling“ nach Astrid Lindgren (für 4–6-Jährige).",
+      "detailed_description": "Zwei maßgeschneiderte Theaterproduktionen für Familien: Während am Samstag Kater Maurizio di Mauro und Rabe Jakob Krakel den bösen Zauberern das Handwerk legen, entführt die Musiktheater-Produktion am Sonntag schon die Jüngsten in die winzige Wohnung unter dem Dielenboden.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–6 J. (Däumling am So) / 7–9 J. (Wunschpunsch am Sa)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Sonntag 10:30 Uhr: „Nils Karlsson Däumling“ (40 Min.) ist perfekt für 4–5-Jährige.",
+        "notes_6_9": "Samstag 15:00 Uhr: „Der satanarchäolügenialkohöllische Wunschpunsch“ ist ein Highlight für 7–9-Jährige."
+      },
+      "parking_info": "Parkhaus Stephanplatz oder Postgalerie (ca. 6 Gehminuten).",
+      "booking_info": "Tickets über staatstheater.karlsruhe.de.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.3,
+          "reason": "Durch die zwei Stücke werden beide Altersränder (4–6 und 7–9 J.) optimal bedient."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Großes Schauspiel- und Musiktheater-Erlebnis."
+        },
+        "weather_suitability": {
+          "score": 9.6,
+          "reason": "100 % Indoor."
+        },
+        "relaxation_parents": {
+          "score": 9.0,
+          "reason": "Professionelle Organisation in der INSEL."
+        },
+        "travel_parking": {
+          "score": 8.7,
+          "reason": "35 Min. Fahrt, Parkhäuser in der Innenstadt fußläufig."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Cafés und Restaurants direkt in der Karlstraße."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig (Sa zusätzlich mit Audiodeskription)."
+        }
+      },
+      "pros": [
+        "Hochkarätige Inszenierungen nach Astrid Lindgren und Michael Ende",
+        "Sonntagsvorstellung um 10:30 Uhr passt perfekt vor das Mittagessen"
+      ],
+      "tips_and_watchouts": [
+        "Auf die Stückwahl achten: Samstag für Grundschulkinder, Sonntag für Kita-Kinder."
+      ],
+      "tags": [
+        "Theater",
+        "Kinderoper",
+        "Astrid Lindgren",
+        "Michael Ende",
+        "Karlsruhe",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Junges Staatstheater Karlsruhe",
+          "url": "https://www.staatstheater-karlsruhe.de/"
+        }
+      ],
+      "price_info": "Kinder: ab 8 € · Erwachsene: ab 14 €"
+    },
+    {
+      "id": "dorotheenhuette-wolfach-kinderglashuette-weihnachtsdorf",
+      "title": "Dorotheenhütte Wolfach: Kinderglashütte, Kugel-Bemalen & Weihnachtsdorf",
+      "subtitle": "Echten Glasbläsern am 1.400 °C heißen Ofen zuschauen & eigene Weihnachtskugel gestalten",
+      "short_pin_label": "Wolfach · Glashütte",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Mittlerer Schwarzwald / Kinzigtal",
+      "city": "Wolfach",
+      "venue_name": "Dorotheenhütte Wolfach – Manufaktur & Weihnachtsdorf",
+      "address": "Glashüttenweg 4, 77709 Wolfach",
+      "coordinates": {
+        "lat": 48.2969,
+        "lon": 8.2156
+      },
+      "drive_minutes_from_buehl": 52,
+      "distance_km_from_buehl": 50,
+      "days": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Fr, 13.11., Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–16:00 Uhr (letzter Einlass 15:00 Uhr)",
+      "duration_display": "1,5 bis 2,5 Stunden",
+      "family_score": 9.2,
+      "summary": "In der letzten aktiven Mundblashütte des Schwarzwalds erleben Kinder glühendes Glas hautnah, bemalen mit Glitzer ihre eigene gläserne Christbaumkugel und schlendern durch das funkelnde Indoor-Weihnachtsdorf.",
+      "detailed_description": "Während das benachbarte Freilichtmuseum Vogtsbauernhof im November in der Winterpause ist, herrscht in der warmen Dorotheenhütte Wolfach gemütlicher Hochbetrieb. Kinder können im Mitmachbereich eine echte Glaskugel selbst bemalen und mit Glitter verzieren, den Glasbläsern an den glühenden Öfen zuschauen und die Miniatur-Krippenausstellung bestaunen.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Glaskugel bemalen & Glasbläser erleben)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Das glühende Glas, das funkelnde Weihnachtsdorf und das Glitzer-Bemalen faszinieren schon 4–5-Jährige.",
+        "notes_6_9": "6–9-Jährige verstehen die spannende Handwerkskunst der Glasmacher und gestalten tolle Kunstwerke."
+      },
+      "parking_info": "Großer kostenloser Parkplatz direkt an der Dorotheenhütte.",
+      "booking_info": "Eintritt ins Weihnachtsdorf & Gläserland frei; Glashütte vor Ort an der Kasse.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.1,
+          "reason": "Handwerk zum Staunen und Kreativ-Mitmachen für 4 bis 9 Jahre."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Echte 1.400 °C heiße Glasöfen + eigenes Souvenir gestalten."
+        },
+        "weather_suitability": {
+          "score": 9.8,
+          "reason": "100 % Indoor und wohlig warm durch die Glasöfen!"
+        },
+        "relaxation_parents": {
+          "score": 9.1,
+          "reason": "Sehr entspannter Familienausflug im Kinzigtal."
+        },
+        "travel_parking": {
+          "score": 8.6,
+          "reason": "Ca. 52 Min. Fahrt, kostenloses Parken direkt vor der Tür."
+        },
+        "infrastructure_food": {
+          "score": 8.8,
+          "reason": "Hüttenschenke / Café direkt vor Ort."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Wohlig warme Indoor-Alternative im Schwarzwald",
+        "Lässt sich am 14./15.11. perfekt mit der 12 Minuten entfernten Weihnachtsmann-Werkstatt auf Schloss Hornberg verbinden!"
+      ],
+      "tips_and_watchouts": [
+        "Auf die Öffnungszeiten achten: Letzter Einlass in die Produktion ist um 15:00 Uhr (Schließung 16:00 Uhr)."
+      ],
+      "tags": [
+        "Glasbläserei",
+        "Dorotheenhütte",
+        "Wolfach",
+        "Schwarzwald",
+        "Weihnachtsdorf",
+        "Kreativ",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Dorotheenhütte Wolfach",
+          "url": "https://www.dorotheenhuette.info"
+        }
+      ],
+      "price_info": "Weihnachtsdorf frei · Glashütte: Kinder 5,50 € / Erw. 7,50 € (Kugelblasen ca. 10 €)"
+    },
+    {
+      "id": "schloss-hornberg-weihnachtsmann-werkstatt",
+      "title": "Weihnachtsmann-Werkstatt in der Felsengrotte auf Schloss Hornberg",
+      "subtitle": "Plätzchenbacken, Basteln & Weihnachtsmann-Besuch in der Burg-Grotte über dem Schwarzwald",
+      "short_pin_label": "Hornberg · Weihnachtsmann-Burg",
+      "category": "market",
+      "weather_type": "mixed",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Mittlerer Schwarzwald / Kinzigtal",
+      "city": "Hornberg",
+      "venue_name": "Hotel Schloss Hornberg (Felsengrotte & Schlosshof)",
+      "address": "Auf dem Schlossberg 1, 78132 Hornberg",
+      "coordinates": {
+        "lat": 48.2114,
+        "lon": 8.2308
+      },
+      "drive_minutes_from_buehl": 58,
+      "distance_km_from_buehl": 56,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (14:00–20:00 Uhr) & So, 15.11.2026 (11:00–18:00 Uhr)",
+      "duration_display": "2 bis 3 Stunden",
+      "family_score": 9.2,
+      "summary": "Zwei Wochen vor dem 1. Advent öffnet auf Schloss Hornberg die zauberhafte „Weihnachtsmann-Werkstatt“ in der historischen Felsengrotte und im Gewölbekeller: Kinder backen Plätzchen, basteln Geschenke und treffen den Weihnachtsmann persönlich!",
+      "detailed_description": "Hoch über dem Städtchen Hornberg verwandeln sich die geheimnisvolle Felsengrotte, der Gewölbekeller und der Schlosshof von Schloss Hornberg in ein vorweihnachtliches Kinderparadies. Bei freiem Eintritt gibt es Mitmach-Stationen zum Keksebacken und Basteln, Kunsthandwerk und persönliche Begegnungen mit dem Weihnachtsmann.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Magische Burg- & Weihnachtswelt)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Dem Weihnachtsmann in der echten Felsengrotte den Wunschzettel übergeben und Plätzchen verzieren ist für 4–5-Jährige unvergesslich.",
+        "notes_6_9": "Burgturm besteigen, Bastelwerkstatt und das mittelalterliche Schloss-Flair begeistern 6–9-Jährige."
+      },
+      "parking_info": "Parken im Zentrum von Hornberg (Schlossberg ist für PKW gesperrt – kurzer ausgeschilderter Fußweg / Shuttle hinauf zum Schloss).",
+      "booking_info": "Eintritt komplett kostenlos, keine Anmeldung erforderlich.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.6,
+          "reason": "Weihnachtsmann-Werkstatt + Ritterburg ist eine Traumkombination für 4–9 J."
+        },
+        "experience_value": {
+          "score": 9.5,
+          "reason": "Felsengrotte, Gewölbekeller, Backen, Basteln und Burgblick."
+        },
+        "weather_suitability": {
+          "score": 8.8,
+          "reason": "Felsengrotte und Gewölbekeller bieten tollen Wetterschutz."
+        },
+        "relaxation_parents": {
+          "score": 9.0,
+          "reason": "Stimmungsvolles Ambiente auf dem Schlossberg ohne Großstadt-Hektik."
+        },
+        "travel_parking": {
+          "score": 8.4,
+          "reason": "58 Min. durch das schöne Kinzigtal; kurzer Aufstieg vom Stadt-Parkplatz zum Schloss."
+        },
+        "infrastructure_food": {
+          "score": 9.2,
+          "reason": "Schlossgastronomie, Waffeln, Punsch und herzhafte Schwarzwald-Spezialitäten."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Einzigartige Kulisse in einer echten Felsengrotte und im Burg-Gewölbekeller",
+        "Kostenloser Eintritt und wunderschöne Schwarzwald-Fahrt (kombinierbar mit Dorotheenhütte Wolfach, nur 12 Min. entfernt!)"
+      ],
+      "tips_and_watchouts": [
+        "Tipp: Auf dem Hin- oder Rückweg liegt direkt in Wolfach (12 Min. entfernt) das ganzjährig geöffnete Weihnachtsdorf der Dorotheenhütte mit Kinderglashütte!"
+      ],
+      "tags": [
+        "Weihnachtsmann",
+        "Schloss Hornberg",
+        "Schwarzwald",
+        "Basteln",
+        "Backen",
+        "Burg",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "Schloss Hornberg Veranstaltungen",
+          "url": "https://www.schloss-hornberg.de"
+        },
+        {
+          "name": "Schwarzwald Tourismus",
+          "url": "https://www.schwarzwald-tourismus.info/erleben/veranstaltungen"
+        }
+      ],
+      "price_info": "Kostenlos / Eintritt frei"
+    },
+    {
+      "id": "soufflenheim-toepferwerkstaetten-weihnachtskeramik",
+      "title": "Töpferdorf Soufflenheim: Offene Töpferwerkstätten & Weihnachts-Keramik",
+      "subtitle": "Handwerk hautnah an den Brennöfen erleben – nur 25 Minuten über den Rhein!",
+      "short_pin_label": "Soufflenheim · Töpfereien",
+      "category": "creative",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Deutsch / Elsässisch gesprochen",
+      "region": "Nord-Elsass",
+      "city": "Soufflenheim",
+      "venue_name": "Traditions-Töpfereien (Wehrling, Hausswirth, Ernewein-Haas)",
+      "address": "Grand Rue 32–56, 67620 Soufflenheim, Frankreich",
+      "coordinates": {
+        "lat": 48.8294,
+        "lon": 7.9631
+      },
+      "drive_minutes_from_buehl": 25,
+      "distance_km_from_buehl": 21,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (09:00–18:00 Uhr) & So, 15.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
+      "duration_display": "1,5 bis 3 Stunden (inkl. Waldspielplatz Gros Chêne)",
+      "family_score": 9.1,
+      "summary": "Über die Staustufe Iffezheim (nur 25 Min. Fahrt): In Soufflenheim schauen Kinder den Töpfern beim Drehen und Bemalen der bunten Weihnachts-Keramik über die Schulter – kombinierbar mit dem riesigen Waldspielplatz „Gros Chêne“ im Hagenauer Forst!",
+      "detailed_description": "Mitte November läuft in Soufflenheim die Vorweihnachtsproduktion auf Hochtouren. In Traditionsbetrieben wie der Poterie G. Wehrling & Fille (mit Kinder-Modellierkursen nach Voranmeldung), Poterie Hausswirth und Poterie Ernewein-Haas sind Werkstätten und Ausstellungsräume auch am Wochenende geöffnet. Bei trockenem Wetter liegt nur 10 Minuten weiter mitten im Hagenauer Wald der große Abenteuerspielplatz „Gros Chêne“ mit Waldwirtschaft.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Handwerk schauen + Waldspielplatz)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Das Drehen auf der Töpferscheibe zu beobachten und der anschließende Riesen-Waldspielplatz „Gros Chêne“ sind super für 4–5-Jährige.",
+        "notes_6_9": "6–9-Jährige fasziniert das feine Bemalen der Tonformen und das eigene Töpfern."
+      },
+      "parking_info": "Kostenlose Parkplätze direkt entlang der Grand Rue und am Office de Tourisme.",
+      "booking_info": "Besuch der Töpfereien kostenlos & ohne Anmeldung; für Kinder-Töpferworkshop bei Poterie Wehrling vorab anfragen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 8.8,
+          "reason": "Spannendes echtes Handwerk + toller Kombi-Spielplatz im Wald."
+        },
+        "experience_value": {
+          "score": 8.9,
+          "reason": "Authentischer Blick in echte elsässische Handwerksbetriebe."
+        },
+        "weather_suitability": {
+          "score": 8.8,
+          "reason": "Werkstätten 100 % Indoor; Waldspielplatz optional bei trockenem Wetter."
+        },
+        "relaxation_parents": {
+          "score": 9.5,
+          "reason": "Kein Touristenrummel, wunderschöne elsässische Fachwerk-Atmosphäre."
+        },
+        "travel_parking": {
+          "score": 9.8,
+          "reason": "Nur 25 Min. Fahrt über Iffezheim/Roppenheim."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Elsässische Bäckereien (Patisserien) und Flammkuchen-Restaurants direkt im Ort."
+        },
+        "language_accessibility": {
+          "score": 9.7,
+          "reason": "In Soufflenheim sprechen fast alle Töpferfamilien fließend Deutsch!"
+        }
+      },
+      "pros": [
+        "Kürzeste Anfahrt ins Elsass (nur 25 Min. Fahrt über die B500 / Iffezheim)",
+        "Fast überall wird Deutsch gesprochen",
+        "Perfekt kombinierbar mit einer echten elsässischen Brioche oder Flammkuchen"
+      ],
+      "tips_and_watchouts": [
+        "Bei trockenem Wetter unbedingt einen Stopp am Natur-Abenteuerspielplatz „Aire de jeux du Gros Chêne“ im Hagenauer Forst (10 Min. ab Soufflenheim) einlegen!"
+      ],
+      "tags": [
+        "Elsass",
+        "Töpferei",
+        "Soufflenheim",
+        "Handwerk",
+        "Keramik",
+        "Frankreich"
+      ],
+      "sources": [
+        {
+          "name": "Office de Tourisme Soufflenheim",
+          "url": "https://www.soufflenheim.net"
+        },
+        {
+          "name": "Poterie Wehrling",
+          "url": "https://www.poterie-wehrling.fr"
+        }
+      ],
+      "price_info": "Eintritt in die Werkstätten frei (Töpfer-Workshop ca. 5–10 €)"
+    },
+    {
+      "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
+      "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)",
+      "subtitle": "Vorweihnachtlicher Familienbummel in Drachenbronn (Sa/So) & Schweighouse-sur-Moder (So)",
+      "short_pin_label": "Nord-Elsass · 1. Weihnachtsmarkt",
+      "category": "market",
+      "weather_type": "indoor",
+      "country": "FR",
+      "language_badge": "Nord-Elsass (Deutsch/Elsässisch verbreitet)",
+      "region": "Nord-Elsass / Haguenau & Outre-Forêt",
+      "city": "Schweighouse-sur-Moder / Drachenbronn",
+      "venue_name": "Centre Robert Kaeufling (Schweighouse) & Salle des Fêtes (Drachenbronn)",
+      "address": "10 rue des Sports, 67590 Schweighouse-sur-Moder (bzw. 67160 Drachenbronn)",
+      "coordinates": {
+        "lat": 48.8211,
+        "lon": 7.7372
+      },
+      "drive_minutes_from_buehl": 35,
+      "distance_km_from_buehl": 34,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (Drachenbronn 14–20 Uhr) & So, 15.11.2026 (Schweighouse 10–18 Uhr / Drachenbronn 10–20 Uhr)",
+      "duration_display": "1,5 bis 2,5 Stunden",
+      "family_score": 9.1,
+      "summary": "Schon zwei Wochen vor dem großen Advents-Trubel öffnen am 14./15. November die allerersten kleinen elsässischen Hallen-Weihnachtsmärkte in Schweighouse-sur-Moder (35 Min. Fahrt) und Drachenbronn – inklusive Besuch vom Père Noël und seinem Wichtel!",
+      "detailed_description": "Wer elsässische Weihnachtsmarkt-Atmosphäre ganz ohne Menschengedränge erleben möchte, findet an diesem Wochenende zwei authentische Familienmärkte in warmen Hallen: In Drachenbronn-Birlenbach (Sa & So) schauen der Père Noël und sein Wichtel (Lutin) vorbei (nur 5 Min. weiter hat in Kutzenhausen das Bauernhofmuseum Maison Rurale von 14–18 Uhr geöffnet!). Am Sonntag lädt Schweighouse-sur-Moder von 10–18 Uhr zum Kunsthandwerkermarkt, wo der Weihnachtsmann um 15:30 Uhr Süßigkeiten verteilt.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Treffen mit dem Père Noël & Wichtel)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Straßenfreie Halle, leuchtende Deko und der Besuch vom Père Noël (So 15:30 Uhr in Schweighouse) bringen Kinderaugen zum Leuchten.",
+        "notes_6_9": "Kunsthandwerk, Crêpes, Flammkuchen und der Kombi-Besuch im alten Klassenzimmer der Maison Rurale Kutzenhausen."
+      },
+      "parking_info": "Kostenfreie Parkplätze direkt an den Gemeindehallen (Salle des Fêtes / Centre Sportif).",
+      "booking_info": "Eintritt frei, keine Anmeldung nötig.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.0,
+          "reason": "Überschaubare Familienmärkte mit Weihnachtsmann-Besuch."
+        },
+        "experience_value": {
+          "score": 8.8,
+          "reason": "Erster Weihnachtszauber, Flammkuchen und Kunsthandwerk."
+        },
+        "weather_suitability": {
+          "score": 9.3,
+          "reason": "Findet überwiegend wettergeschützt in den Festhallen statt."
+        },
+        "relaxation_parents": {
+          "score": 9.4,
+          "reason": "100 % familienfreundlich ohne das Gedränge der großen Dezember-Märkte."
+        },
+        "travel_parking": {
+          "score": 9.2,
+          "reason": "Nur 35 Min. (Schweighouse) bzw. 45 Min. (Drachenbronn) Fahrt."
+        },
+        "infrastructure_food": {
+          "score": 9.1,
+          "reason": "Flammkuchen, Crêpes, Dampfburger und Kinderpunsch direkt vor Ort."
+        },
+        "language_accessibility": {
+          "score": 9.2,
+          "reason": "Im Nord-Elsass sprechen viele Aussteller Deutsch/Elsässisch."
+        }
+      },
+      "pros": [
+        "Wettergeschützt in der Halle und völlig stressfrei für Eltern",
+        "Kurze Anfahrt über Iffezheim/Roppenheim"
+      ],
+      "tips_and_watchouts": [
+        "Wichtig bei der Planung für Drachenbronn: Der benachbarte Baumwipfelpfad (Chemin des Cimes) und die Burg Fleckenstein sind im November in der Winterpause, aber die Maison Rurale in Kutzenhausen (5 Min. entfernt) hat Sa/So von 14–18 Uhr geöffnet!"
+      ],
+      "tags": [
+        "Weihnachtsmarkt",
+        "Elsass",
+        "Père Noël",
+        "Schweighouse",
+        "Drachenbronn",
+        "Markt"
+      ],
+      "sources": [
+        {
+          "name": "Kidiklik Alsace Agenda",
+          "url": "https://67.kidiklik.fr/"
+        },
+        {
+          "name": "Visit Haguenau Agenda",
+          "url": "https://www.visithaguenau.alsace/fr"
+        }
+      ],
+      "price_info": "Kostenlos / Eintritt frei"
+    },
+    {
+      "id": "waldkirch-elztalmuseum-weihnachtsmarkt-schwarzwaldzoo",
+      "title": "Elztalmuseum Waldkirch: Großer Museums-Weihnachtsmarkt (über 4 Etagen) & Schwarzwaldzoo",
+      "subtitle": "Kunsthandwerk & Drehorgel-Klänge im Barockbau + Tierparkbesuch in Waldkirch",
+      "short_pin_label": "Waldkirch · Museums-Markt",
+      "category": "market",
+      "weather_type": "indoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Breisgau / Elztal",
+      "city": "Waldkirch",
+      "venue_name": "Elztalmuseum Waldkirch (und Schwarzwaldzoo)",
+      "address": "Kirchplatz 14, 79183 Waldkirch",
+      "coordinates": {
+        "lat": 48.0931,
+        "lon": 7.9614
+      },
+      "drive_minutes_from_buehl": 54,
+      "distance_km_from_buehl": 72,
+      "days": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Fr, 13.11. (13–19 Uhr), Sa, 14.11. (13–19 Uhr) & So, 15.11.2026 (11–18 Uhr)",
+      "duration_display": "2 bis 4 Stunden",
+      "family_score": 9.1,
+      "summary": "Im historischen Barockbau des Elztalmuseums Waldkirch erstreckt sich an diesem Wochenende auf vier Etagen ein zauberhafter Indoor-Weihnachtsmarkt zwischen den berühmten Waldkircher Jahrmarkt- und Drehorgeln! Vorab lockt der geöffnete Schwarzwaldzoo (9–17 Uhr).",
+      "detailed_description": "Rund 35 ausgewählte Kunsthandwerker verwandeln alle vier Stockwerke des Elztalmuseums in einen wetterfesten Adventsmarkt, umrahmt von den historischen Musikautomaten und Orgeln des Museums. Wer vorher frische Luft tanken möchte: Der familienfreundliche Schwarzwaldzoo Waldkirch hat im November täglich von 09:00 bis 17:00 Uhr geöffnet (mit Streichelgehege und Spielplatz).",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Drehorgeln, Markt & Schwarzwaldzoo)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Die bunten Jahrmarktorgeln im Museum und die Ziegen im Schwarzwaldzoo sind ideal für 4–5-Jährige.",
+        "notes_6_9": "6–9-Jährige entdecken auf vier Etagen handgemachte Schätze und die Mechanik der Waldkircher Orgeln."
+      },
+      "parking_info": "Parkplätze am Kirchplatz / Friedhofstraße bzw. direkt am Schwarzwaldzoo.",
+      "booking_info": "Tickets direkt am Eingang des Elztalmuseums.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 8.9,
+          "reason": "Schöne Kombination aus Tierpark (vormittags) und Museumsmarkt (nachmittags)."
+        },
+        "experience_value": {
+          "score": 9.0,
+          "reason": "Weihnachtsmarkt mitten zwischen klingenden historischen Drehorgeln."
+        },
+        "weather_suitability": {
+          "score": 9.4,
+          "reason": "Der Markt im Elztalmuseum findet auf 4 Etagen komplett im Trockenen statt!"
+        },
+        "relaxation_parents": {
+          "score": 9.1,
+          "reason": "Stilvolles Kunsthandwerk und Live-Musik im Barockpalais."
+        },
+        "travel_parking": {
+          "score": 8.4,
+          "reason": "54 Min. Fahrt über A5 (Ausfahrt Freiburg-Nord/Waldkirch)."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Museumscafé und regionale Spezialitäten im Hof."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Wetterfester Weihnachtsmarkt über vier Etagen in einem echten Orgel-Museum",
+        "Schwarzwaldzoo Waldkirch am selben Ort von 9 bis 17 Uhr geöffnet"
+      ],
+      "tips_and_watchouts": [
+        "Hinweis: Der Baumkronenweg Waldkirch ist seit dem 9. November in der Winterpause, der Schwarzwaldzoo unten im Tal ist aber regulär geöffnet!"
+      ],
+      "tags": [
+        "Weihnachtsmarkt",
+        "Elztalmuseum",
+        "Waldkirch",
+        "Drehorgel",
+        "Schwarzwaldzoo",
+        "Indoor"
+      ],
+      "sources": [
+        {
+          "name": "Elztalmuseum Waldkirch",
+          "url": "https://www.elztalmuseum.de"
+        },
+        {
+          "name": "Schwarzwaldzoo Waldkirch",
+          "url": "https://www.schwarzwaldzoo.de"
+        }
+      ],
+      "price_info": "Museumsmarkt: 3 € (Kinder frei) · Zoo: Kinder 4,50 € / Erw. 7,50 €"
+    },
+    {
+      "id": "musee-tomi-ungerer-parc-orangerie-strasbourg",
+      "title": "Musée Tomi Ungerer (Bilderbuch-Welt & Spielzeug) + Parc de l'Orangerie",
+      "subtitle": "Originalwelten von „Die drei Räuber“ & mechanisches Spielzeug + Storchenpark & Spielplätze",
+      "short_pin_label": "Straßburg · Tomi Ungerer & Park",
+      "category": "museum",
+      "weather_type": "mixed",
+      "country": "FR",
+      "language_badge": "Zweisprachig (DE/FR)",
+      "region": "Elsass / Straßburg",
+      "city": "Strasbourg",
+      "venue_name": "Musée Tomi Ungerer & Parc de l'Orangerie",
+      "address": "2 avenue de la Marseillaise, 67000 Strasbourg, Frankreich",
+      "coordinates": {
+        "lat": 48.5861,
+        "lon": 7.755
+      },
+      "drive_minutes_from_buehl": 44,
+      "distance_km_from_buehl": 44,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11.2026 · Museum 10:00–18:00 Uhr · Park 07:00–20:00 Uhr",
+      "duration_display": "2,5 bis 3,5 Stunden",
+      "family_score": 9.0,
+      "summary": "In der Villa Greiner entdecken Kinder die Originalzeichnungen zu Tomi Ungerers „Die drei Räuber“ und „Der Mondmann“ sowie seine Sammlung alter Blechspielzeuge – danach geht es zum Austoben und Störche-Schauen in den Parc de l'Orangerie!",
+      "detailed_description": "Das Musée Tomi Ungerer zeigt im Erdgeschoss die weltbekannten Kinderbuchillustrationen des Straßburger Künstlers (viele davon auf Deutsch erschienen!) und im Untergeschoss fantastisches historisches Aufzieh- und Blechspielzeug. Für Kinder unter 18 Jahren ist der Eintritt frei. Nur wenige Minuten weiter wartet der Parc de l'Orangerie mit riesigen Spielplätzen und freilaufenden Störchen.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Kinder unter 18 J. frei!)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "„Die drei Räuber“, die mechanischen Spielzeuge im Untergeschoss und die großen Spielplätze in der Orangerie sind perfekt.",
+        "notes_6_9": "6–9-Jährige entdecken den feinen Witz in Tomi Ungerers Zeichnungen."
+      },
+      "parking_info": "Parkhaus Opéra Broglie (Museum) bzw. kostenfreie Parkplätze an der Allée de la Robertsau (Orangerie).",
+      "booking_info": "Keine Anmeldung nötig, Eintritt für Kinder kostenlos.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.0,
+          "reason": "Bilderbuch-Klassiker + bester Park-Spielplatz Straßburgs."
+        },
+        "experience_value": {
+          "score": 8.8,
+          "reason": "Kombination aus Kunst/Spielzeug und Bewegung im Park."
+        },
+        "weather_suitability": {
+          "score": 8.5,
+          "reason": "Museum 100 % Indoor, Orangerie für trockene Stunden."
+        },
+        "relaxation_parents": {
+          "score": 9.4,
+          "reason": "Sehr entspanntes, kultiviertes Ausflugsziel ohne Hektik."
+        },
+        "travel_parking": {
+          "score": 8.8,
+          "reason": "44 Min. Fahrtzeit."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Waffel-/Crêpe-Stände im Park und Cafés am Place de la République."
+        },
+        "language_accessibility": {
+          "score": 9.8,
+          "reason": "Komplett zweisprachig Deutsch/Französisch."
+        }
+      },
+      "pros": [
+        "Freier Eintritt für Kinder im Museum und im Park",
+        "Hinweis für Eltern: Das 1. Obergeschoss widmet sich Kinderbüchern, das Untergeschoss dem Spielzeug (das 2. OG zeigt zeitweise Satire für Erwachsene – einfach auf EG und UG fokussieren)"
+      ],
+      "tips_and_watchouts": [
+        "Vorab zu Hause noch einmal „Die drei Räuber“ vorlesen – dann ist das Staunen vor den Originalbildern riesig!"
+      ],
+      "tags": [
+        "Bilderbuch",
+        "Tomi Ungerer",
+        "Spielplatz",
+        "Straßburg",
+        "Elsass",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "Musée Tomi Ungerer Strasbourg",
+          "url": "https://www.musees.strasbourg.eu/musee-tomi-ungerer"
+        }
+      ],
+      "price_info": "Kinder unter 18 J. kostenlos · Erwachsene: 6,50 € · Orangerie-Park frei"
+    },
+    {
+      "id": "zoo-landau-kinderuni-enkeltag",
+      "title": "Zoo Landau in der Pfalz: Kinder-Uni, Erlebnisführung & Keschdewochen",
+      "subtitle": "Kompakter Familienzoo mit Warmhäusern, Zooschule-Aktionen & Pfälzer Kastanien-Saison",
+      "short_pin_label": "Landau · Zoo & Kinder-Uni",
+      "category": "nature",
+      "weather_type": "mixed",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Südpfalz / Landau",
+      "city": "Landau in der Pfalz",
+      "venue_name": "Zoo Landau in der Pfalz",
+      "address": "Hindenburgstraße 12, 76829 Landau in der Pfalz",
+      "coordinates": {
+        "lat": 49.2025,
+        "lon": 8.1219
+      },
+      "drive_minutes_from_buehl": 50,
+      "distance_km_from_buehl": 56,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. (10:00 Kinder-Uni / 14:00 Erlebnistag) & So, 15.11.2026 (Zoo 09:00–17:00 Uhr)",
+      "duration_display": "2,5 bis 4 Stunden",
+      "family_score": 9.0,
+      "summary": "Übersichtlicher, sehr kinderfreundlicher Zoo mit begehbarem Streichelgehege, warmem Dschungelzelt & Affenhaus sowie Spezial-Führungen der Zooschule am Samstag.",
+      "detailed_description": "Der Zoo Landau ist durch seine kompakten Wege ideal für Familien mit 4–9-Jährigen. Bei kühlem Novemberwetter wärmen das Dschungelzelt und das neue Affenhaus auf. Am Samstag findet vormittags die Kinder-Uni (10:00–12:30 Uhr) und nachmittags (14:00 Uhr) die generationenübergreifende Erlebnisführung statt.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Kurze Wege + Zooschule)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Erdmännchen, Pinguine auf Augenhöhe, Ziegen-Streichelgehege und der große Spielplatz sind ideal für 4–5-Jährige.",
+        "notes_6_9": "Die Kinder-Uni und Zooschule-Führungen am Samstag begeistern wissbegierige 6–9-Jährige."
+      },
+      "parking_info": "Parkplätze direkt an der Hindenburgstraße und auf dem Alten Messplatz.",
+      "booking_info": "Regulärer Zoobesuch ohne Anmeldung; für Zooschule-Aktionen am Samstag telefonische Anmeldung empfohlen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.4,
+          "reason": "Kurze Distanzen für kleine Beine und spannende Tierbegegnungen bis 9 J."
+        },
+        "experience_value": {
+          "score": 9.0,
+          "reason": "Hautnahe Gehege, Streichelzoo und großer Abenteuerspielplatz."
+        },
+        "weather_suitability": {
+          "score": 8.0,
+          "reason": "Outdoor-Park, aber mit warmen Tierhäusern (Dschungelzelt/Affenhaus) zum Aufwärmen."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Sehr übersichtlich, im November herrlich ruhig ohne Sommer-Warteschlangen."
+        },
+        "travel_parking": {
+          "score": 8.5,
+          "reason": "Ca. 50 Min. Fahrt durch die Rheinebene/Südpfalz."
+        },
+        "infrastructure_food": {
+          "score": 8.8,
+          "reason": "Zoogastronomie direkt am großen Spielplatz."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Viel entspannter und übersichtlicher als riesige Großstadt-Zoos",
+        "Abschlusswochenende der Pfälzer Keschdewochen (Esskastanien) in der Region"
+      ],
+      "tips_and_watchouts": [
+        "Futterpäckchen für Ziegen und Dammwild direkt an der Kasse mitnehmen!"
+      ],
+      "tags": [
+        "Zoo",
+        "Tiere",
+        "Landau",
+        "Südpfalz",
+        "Kinder-Uni",
+        "Spielplatz"
+      ],
+      "sources": [
+        {
+          "name": "Zoo Landau",
+          "url": "https://www.landau.de/Verwaltung-Politik/Einrichtungen/Zoo/"
+        },
+        {
+          "name": "Pfalz mit Kids",
+          "url": "https://www.pfalzmitkids.de"
+        }
+      ],
+      "price_info": "Kinder (4–12 J.): 5 € · Erwachsene: 10 € · Familienkarte: 25 €"
+    },
+    {
+      "id": "pforzheim-mottenkaefig-winterwelt",
+      "title": "Pforzheim: Figurentheater „Juri & das AlpakaLamaDrama“ + Eröffnung Winterwelt-Eisbahn",
+      "subtitle": "Lustiges Figurentheater im Mottenkäfig (oder Kleiner König im CCP) & Schlittschuhlaufen",
+      "short_pin_label": "Pforzheim · Theater & Eis",
+      "category": "theater",
+      "weather_type": "mixed",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Nordschwarzwald / Pforzheim",
+      "city": "Pforzheim",
+      "venue_name": "Figurentheater Mottenkäfig & Waisenhausplatz",
+      "address": "Kirchenstraße 3 / Bertha-Benz-Platz 1, 75172 Pforzheim",
+      "coordinates": {
+        "lat": 48.8894,
+        "lon": 8.6853
+      },
+      "drive_minutes_from_buehl": 52,
+      "distance_km_from_buehl": 62,
+      "days": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "date_display": "Sa, 14.11. & So, 15.11. (Winterwelt ab 11 Uhr) · Theater am So, 15.11. um 14:00/15:00/16:00 Uhr",
+      "duration_display": "2 bis 3,5 Stunden",
+      "family_score": 8.9,
+      "summary": "Am Sonntag spielt das Figurentheater Mottenkäfig um 15:00 Uhr „Juri und das AlpakaLamaDrama“ (ab 4 J.) und im CCP läuft „Der kleine König feiert Weihnachten“ (14 & 16 Uhr) – direkt neben der neueröffneten Eisbahn der Pforzheimer Winterwelt!",
+      "detailed_description": "Doppeltes Sonntagsvergnügen in Pforzheim: Zuerst ins warme Figurentheater (wahlweise das urkomische „AlpakaLamaDrama“ im gemütlichen Mottenkäfig oder „Der kleine König“ im CCP) und davor oder danach auf die Eislaufbahn der Pforzheimer Winterwelt auf dem Waisenhausplatz, die genau an diesem Wochenende (13.–15.11.) eröffnet.",
+      "age_suitability": {
+        "min": 4,
+        "max": 9,
+        "label": "4–9 Jahre (Theater ab 4 J. + Eisbahn mit Pinguin-Lernhilfen)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "„Der kleine König“ (ab 3 J.) und „AlpakaLamaDrama“ (ab 4 J.) sowie Eislauf-Lernhilfen passen super.",
+        "notes_6_9": "6–9-Jährige lieben die Kombination aus humorvollem Theater und Schlittschuhlaufen."
+      },
+      "parking_info": "Parkhaus Theater / CongressCentrum direkt am Waisenhausplatz.",
+      "booking_info": "Für das Figurentheater Mottenkäfig vorab reservieren; Winterwelt ohne Anmeldung.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.1,
+          "reason": "Tolle Kombination aus Kinderkultur und Bewegung auf dem Eis."
+        },
+        "experience_value": {
+          "score": 9.0,
+          "reason": "Erstes Schlittschuhlaufen der Saison + Live-Puppentheater."
+        },
+        "weather_suitability": {
+          "score": 8.6,
+          "reason": "Theater 100 % Indoor, Eisbahn unter freiem Himmel."
+        },
+        "relaxation_parents": {
+          "score": 8.6,
+          "reason": "Kurze Wege zwischen Parkhaus, Eisbahn und Theater."
+        },
+        "travel_parking": {
+          "score": 8.2,
+          "reason": "Ca. 52 Min. Fahrt über A5/A8."
+        },
+        "infrastructure_food": {
+          "score": 9.0,
+          "reason": "Winterwelt-Hütten mit Crêpes, Kinderpunsch und Pommes direkt vor Ort."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Zwei verschiedene Puppentheater-Stücke am Sonntagnachmittag zur Auswahl",
+        "Eröffnungswochenende der Pforzheimer Winterwelt-Eisbahn direkt am Platz"
+      ],
+      "tips_and_watchouts": [
+        "Für die Eisbahn Handschuhe für die Kinder nicht vergessen (Pflicht/Schutz beim Schlittschuhlaufen!)."
+      ],
+      "tags": [
+        "Figurentheater",
+        "Eislaufen",
+        "Winterwelt",
+        "Pforzheim",
+        "Kleiner König"
+      ],
+      "sources": [
+        {
+          "name": "Figurentheater Mottenkäfig",
+          "url": "https://www.mottenkaefig.de/spielplan/"
+        },
+        {
+          "name": "Familienportal Pforzheim",
+          "url": "https://www.familie-pforzheim.de/veranstaltungen/"
+        }
+      ],
+      "price_info": "Figurentheater: Kinder 7 € / Erw. 9 € · Winterwelt-Eisbahn: Kinder 4 € / Erw. 6 €"
+    },
+    {
+      "id": "waldklassenzimmer-karlsruhe-wintertiere-igelhaus",
+      "title": "Waldklassenzimmer Karlsruhe: „Tiere bereiten sich auf den Winter vor“",
+      "subtitle": "Naturpädagogische Familien-Expedition im Hardtwald mit gemeinsamem Igelhaus-Bau",
+      "short_pin_label": "Karlsruhe · Wald & Igel",
+      "category": "nature",
+      "weather_type": "outdoor",
+      "country": "DE",
+      "language_badge": null,
+      "region": "Karlsruhe",
+      "city": "Karlsruhe",
+      "venue_name": "Waldklassenzimmer im Hardtwald",
+      "address": "Kanalweg (zwischen Linkenheimer & Grabener Allee), 76131 Karlsruhe",
+      "coordinates": {
+        "lat": 49.0355,
+        "lon": 8.4111
+      },
+      "drive_minutes_from_buehl": 39,
+      "distance_km_from_buehl": 45,
+      "days": [
+        "2026-11-15"
+      ],
+      "date_display": "So, 15.11.2026 · 14:30–16:00 Uhr",
+      "duration_display": "90 Minuten",
+      "family_score": 8.7,
+      "summary": "Mit Diplom-Biologin Heike Rösgen erforschen Kinder im Herbstwald, wie Eichhörnchen, Dachs und Igel durch den Winter kommen – und bauen gemeinsam ein echtes Überwinterungsquartier für Igel.",
+      "detailed_description": "Wer hält echten Winterschlaf, wer nur Winterruhe? Spielerisch spüren die Kinder im Hardtwald den Tricks der Waldtiere nach und packen beim Bau einer wetterfesten Igelburg aus Naturmaterialien selbst mit an.",
+      "age_suitability": {
+        "min": 5,
+        "max": 9,
+        "label": "5–9 Jahre (Fokus 6–9 J.)",
+        "ideal_for_4_5": true,
+        "ideal_for_6_9": true,
+        "notes_4_5": "Jüngere Geschwister (4–5 J.) lieben das Laub-Sammeln und Bauen der Igelburg.",
+        "notes_6_9": "Genau abgestimmt auf den Sachkunde-Wissensdurst von 6–9-Jährigen."
+      },
+      "parking_info": "Parkplätze an der Linkenheimer Allee / Ecke Kanalweg.",
+      "booking_info": "Kostenfrei (Spenden willkommen); kurzfristig Restplätze über karlsruher-kind.de / Waldklassenzimmer prüfen.",
+      "criteria_ratings": {
+        "age_fit": {
+          "score": 9.0,
+          "reason": "Sehr anschauliche Naturpädagogik für 5–9 Jahre."
+        },
+        "experience_value": {
+          "score": 9.2,
+          "reason": "Echtes Werkeln im Wald statt trockener Theorie."
+        },
+        "weather_suitability": {
+          "score": 7.0,
+          "reason": "Reines Outdoor-Event – wetterfeste Kleidung und Matschstiefel nötig."
+        },
+        "relaxation_parents": {
+          "score": 9.2,
+          "reason": "Frische Waldluft ohne Konsumtrubel."
+        },
+        "travel_parking": {
+          "score": 8.8,
+          "reason": "Knapp 40 Min. Fahrtzeit."
+        },
+        "infrastructure_food": {
+          "score": 7.8,
+          "reason": "Naturstandort im Wald (Thermoskanne & Vesper selbst mitbringen)."
+        },
+        "language_accessibility": {
+          "score": 10.0,
+          "reason": "Deutschsprachig."
+        }
+      },
+      "pros": [
+        "Wunderbarer Natur-Kontrast im November",
+        "Kinder lernen aktiv Tierschutz und bauen selbst ein Igelquartier"
+      ],
+      "tips_and_watchouts": [
+        "Wetterfeste Kleidung, Gummistiefel und eine Thermoskanne mit warmem Kinderpunsch einpacken."
+      ],
+      "tags": [
+        "Natur",
+        "Wald",
+        "Tiere",
+        "Igel",
+        "Karlsruhe",
+        "Outdoor",
+        "Kostenlos"
+      ],
+      "sources": [
+        {
+          "name": "Karlsruher Kind Termine",
+          "url": "https://www.karlsruher-kind.de/"
+        }
+      ],
+      "price_info": "Kostenfrei (Spenden auf freiwilliger Basis)"
+    }
+  ],
+  "evaluated_sources_catalog": [
+    {
+      "id": "stadt-buehl",
+      "name": "Stadt Bühl Veranstaltungskalender & Bürgerhaus Neuer Markt",
+      "region": "Bühl (77815)",
+      "country": "DE",
+      "url": "https://www.buehl.de/veranstaltungen",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Offizieller Kalender der Stadt Bühl inkl. Kindertheater-Reihe im Bürgerhaus Neuer Markt.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "tourismus-buehl-buehlertal",
+      "name": "Zweckverband Tourismus Bühl – Bühlertal – Ottersweier",
+      "region": "Bühl & Umgebung",
+      "country": "DE",
+      "url": "https://www.buehl-buehlertal-ottersweier.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Regionale Feste, Märkte und Naturerlebnisse rund um Bühl, Bühlertal und Ottersweier (Toubiz-System).",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "spieleclub-achern",
+      "name": "Stadt Achern & Spieleclub Achern e.V.",
+      "region": "Achern / Ortenau",
+      "country": "DE",
+      "url": "https://spieleclub-achern.de",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Veranstalter der jährlichen Acherner Spieletage in der Hornisgrindehalle und lokaler Familienaktionen.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "acherner-spieletage-34",
+          "title": "34. Acherner Spieletage in der Hornisgrindehalle"
+        }
+      ]
+    },
+    {
+      "id": "toccarion-baden-baden",
+      "name": "TOCCARION Kinder-Musik-Welt Baden-Baden (Festspielhaus)",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://toccarion.de/programm/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Interaktives Kindermusikmuseum der Sigmund Kiener Stiftung mit Wochenend-Workshops & Führungen ab 5 Jahren.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "toccarion-baden-baden-tuten-pfeifen",
+          "title": "TOCCARION Kinder-Musik-Welt: „Von Tuten und Pfeifen“ & Entdeckertour"
+        }
+      ]
+    },
+    {
+      "id": "baden-baden-events",
+      "name": "Baden-Baden Events & Kurhaus Kinderprogramm",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.badenbadenevents.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Gastspiele, Figurentheater im Runden Saal des Kurhauses und saisonale Familien-Highlights.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "kurhaus-baden-baden-schaf-ahoi",
+          "title": "Kindertheater im Kurhaus: „Schaf Ahoi!“ (Hohenloher Figurentheater)"
+        }
+      ]
+    },
+    {
+      "id": "theater-baden-baden",
+      "name": "Theater Baden-Baden – Junges Theater",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.theater-baden-baden.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kinder- und Familienstücke sowie Märcheninszenierungen am Goetheplatz und im TIK.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "museum-frieder-burda",
+      "name": "Museum Frieder Burda – Kunstwerkstatt für Familien",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.museum-frieder-burda.de/de/kunstwerkstatt/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Kreativ-Workshops für Kinder, Eltern und Großeltern in der Lichtentaler Allee.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "museum-frieder-burda-workshop-farbe",
+          "title": "Museum Frieder Burda: Familienworkshop „Entfaltung der Farbe“"
+        }
+      ]
+    },
+    {
+      "id": "unimog-museum-gaggenau",
+      "name": "Unimog-Museum Gaggenau – Familien- & Technikprogramm",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.unimog-museum.com/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Technik-Erlebnismuseum mit LEGO-Bautagen, Tüftel-Workshops und Mitfahrten auf dem Außenparcours.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "unimog-museum-bauen-tuefteln-lego",
+          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
+        }
+      ]
+    },
+    {
+      "id": "klag-buehne-gaggenau",
+      "name": "klag-Bühne Gaggenau – Kulturrausch für Kids",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.kulturrausch-gaggenau.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kleinkunst- und Kindertheater-Reihe für Familien im Murgtal.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "landkreis-rastatt",
+      "name": "Landkreis Rastatt & Barockschloss Rastatt Kalender",
+      "region": "Rastatt / Murgtal",
+      "country": "DE",
+      "url": "https://www.landkreis-rastatt.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Gebündelter Kalender der Kommunen im Landkreis Rastatt sowie Familienführungen im Schloss Rastatt.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "unimog-museum-bauen-tuefteln-lego",
+          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
+        }
+      ]
+    },
+    {
+      "id": "nationalpark-schwarzwald",
+      "name": "Nationalparkzentrum Ruhestein – Veranstaltungskalender",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.nationalpark-schwarzwald.de/de/erleben/veranstaltungskalender",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Ranger-Touren, Walderlebnis und Ausstellung an der Schwarzwaldhochstraße (inkl. Revisions-Infos).",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "kaltenbronn-infozentrum",
+      "name": "Infozentrum Kaltenbronn – Familien- & Naturführungen",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.infozentrum-kaltenbronn.de/",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Naturpädagogische Familienprogramme rund um Hochmoor, Wildgehege und Auerhahn.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "schloss-ettlingen",
+      "name": "Museum im Schloss Ettlingen – Kindermuseum",
+      "region": "Ettlingen / Albtal",
+      "country": "DE",
+      "url": "https://www.ettlingen.de/kunst-kultur/museum",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Interaktive Mitmach-Ausstellungen („Zeitsprung Römer“ & „Leben auf der Burg“) für Kinder.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "schloss-ettlingen-zeitsprung-roemer-burg",
+          "title": "Kindermuseum im Schloss Ettlingen: „Zeitsprung Römer“ & „Leben auf der Burg“"
+        }
+      ]
+    },
+    {
+      "id": "karlsruher-kind",
+      "name": "Karlsruher Kind – Familienmagazin & Terminkalender",
+      "region": "Karlsruhe & Umgebung",
+      "country": "DE",
+      "url": "https://www.karlsruher-kind.de/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Umfassendster tagesaktueller Familienkalender für Karlsruhe, Ettlingen, Bruchsal und die TechnologieRegion.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "marotte-figurentheater-maulwurf-knitterbart",
+          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
+        },
+        {
+          "id": "waldklassenzimmer-karlsruhe-wintertiere-igelhaus",
+          "title": "Waldklassenzimmer Karlsruhe: „Tiere bereiten sich auf den Winter vor“"
+        }
+      ]
+    },
+    {
+      "id": "kafami-karlsruhe",
+      "name": "KaFaMi – Karlsruher Familienportal",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.kafami.de/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Kostenlose Stadtteil-Events, Familienzentren, Bewegungsangebote und Fahrradparcours in Karlsruhe.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "marotte-figurentheater",
+      "name": "marotte Figurentheater Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.marotte-figurentheater.de/spielplan/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Renommiertes Figurentheater mit fast täglichen Vorstellungen für Kinder ab 3, 4 und 6 Jahren.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "marotte-figurentheater-maulwurf-knitterbart",
+          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
+        }
+      ]
+    },
+    {
+      "id": "junges-staatstheater-ka",
+      "name": "Junges Staatstheater (JUST) Karlsruhe – Spielstätte INSEL",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.staatstheater-karlsruhe.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kinderopern, Schauspiel und Sitzkissenkonzerte des Badischen Staatstheaters.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "staatstheater-karlsruhe-wunschpunsch-daeumling",
+          "title": "Junges Staatstheater Karlsruhe: „Wunschpunsch“ (Sa) & „Nils Karlsson Däumling“ (So)"
+        }
+      ]
+    },
+    {
+      "id": "zkm-karlsruhe",
+      "name": "ZKM Karlsruhe & Junge Kunsthalle – Familienprogramm",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://zkm.de/de/veranstaltungen",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Medienkunst, zkm_gameplay, Art-Action!-Sonntage und Robotik-/Kreativ-Workshops.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "zkm-kunsthalle-karlsruhe-art-action-gameplay",
+          "title": "ZKM & Junge Kunsthalle Karlsruhe: „Art-Action!“, „Open Space“ & zkm_gameplay"
+        }
+      ]
+    },
+    {
+      "id": "planet-ka-karlsruhe",
+      "name": "PLANET KA – Planetarium Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.planet-ka.de/programm/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "360°-Fulldome-Sternenshows und Kinderprogramme auf dem Kreativpark Alter Schlachthof.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "planet-ka-fritz-fliege-weltall",
+          "title": "PLANET KA Planetarium Karlsruhe: „Fritz Fliege fliegt ins Weltall“"
+        }
+      ]
+    },
+    {
+      "id": "naturkundemuseum-ka",
+      "name": "Staatliches Museum für Naturkunde Karlsruhe (SMNK)",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.smnk.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Vivarium mit lebenden Tieren, Dinosaurier-Saal und Familienführungen am Friedrichsplatz.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "kulturhalle-remchingen",
+      "name": "Kulturhalle Remchingen – Familien- & Kinderkultur",
+      "region": "Enzkreis / Remchingen",
+      "country": "DE",
+      "url": "https://www.kulturhalle-remchingen.de",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Große Familienshows, Kinderrock-Konzerte (z. B. Heavysaurus) und Kindermusicals zwischen KA und PF.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "heavysaurus-remchingen-kinderrock",
+          "title": "Heavysaurus Live in Concert – „Pommesgabel-Tour“ für Kinder"
+        }
+      ]
+    },
+    {
+      "id": "schloss-bruchsal",
+      "name": "Schloss Bruchsal & Deutsches Musikautomaten-Museum",
+      "region": "Kraichgau / Bruchsal",
+      "country": "DE",
+      "url": "https://www.schloss-bruchsal.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Barockschloss mit großen Familien-Sonderausstellungen (z. B. Faszination LEGO) und selbstspielenden Orgeln.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "schloss-bruchsal-lego-musikautomaten",
+          "title": "Schloss Bruchsal: Sonderausstellung „Faszination LEGO®“ & Musikautomaten"
+        }
+      ]
+    },
+    {
+      "id": "mottenkaefig-pforzheim",
+      "name": "Figurentheater Mottenkäfig & Familienportal Pforzheim",
+      "region": "Pforzheim / Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.familie-pforzheim.de/veranstaltungen/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Gebündelte Kindertermine in Pforzheim inkl. Figurentheater Mottenkäfig, CCP und Winterwelt.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "pforzheim-mottenkaefig-winterwelt",
+          "title": "Pforzheim: Figurentheater „Juri & das AlpakaLamaDrama“ + Eröffnung Winterwelt-Eisbahn"
+        }
+      ]
+    },
+    {
+      "id": "zoo-landau-pfalz",
+      "name": "Zoo Landau & Pfalz mit Kids",
+      "region": "Südpfalz / Landau",
+      "country": "DE",
+      "url": "https://www.landau.de/Verwaltung-Politik/Einrichtungen/Zoo/",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Familienfreundlicher Zoo mit Zooschule-Kinder-Uni sowie Ausflugstipps an der Südlichen Weinstraße.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "zoo-landau-kinderuni-enkeltag",
+          "title": "Zoo Landau in der Pfalz: Kinder-Uni, Erlebnisführung & Keschdewochen"
+        }
+      ]
+    },
+    {
+      "id": "le-vaisseau-strasbourg",
+      "name": "Le Vaisseau Strasbourg – Wissenschaftszentrum für Kinder (DE/FR)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.levaisseau.com/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Dreisprachiges Hands-on-Wissenschaftszentrum (3–12 J.) mit Wasserwelt, Baustelle und Wochenend-Ateliers.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "le-vaisseau-strasbourg-lune-workshops",
+          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
+        }
+      ]
+    },
+    {
+      "id": "planetarium-strasbourg",
+      "name": "Planétarium du Jardin des Sciences & Musée Zoologique Strasbourg",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://jardin-sciences.unistra.fr/visite/le-planetarium/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Neues 360°-Planetarium (mit deutschen Audioguides) direkt neben dem wiedereröffneten Zoologischen Museum.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "planetarium-zoologisches-museum-strasbourg",
+          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
+        }
+      ]
+    },
+    {
+      "id": "musees-strasbourg",
+      "name": "Musées de la Ville de Strasbourg (Musée Tomi Ungerer & Agenda)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.musees.strasbourg.eu/musee-tomi-ungerer",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Zweisprachiges Bilderbuch- und Spielzeugmuseum Tomi Ungerer sowie Familienprogramm der Straßburger Museen.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "planetarium-zoologisches-museum-strasbourg",
+          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
+        },
+        {
+          "id": "musee-tomi-ungerer-parc-orangerie-strasbourg",
+          "title": "Musée Tomi Ungerer (Bilderbuch-Welt & Spielzeug) + Parc de l'Orangerie"
+        }
+      ]
+    },
+    {
+      "id": "kidiklik-alsace",
+      "name": "Kidiklik Alsace – Sorties Enfants & Famille (Bas-Rhin 67)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://67.kidiklik.fr/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Wichtigstes elsässisches Familienportal mit nach Alter (3–6 J. / 7–12 J.) gefilterten Wochenend-Tipps.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
+          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
+        }
+      ]
+    },
+    {
+      "id": "jds-alsace-enfants",
+      "name": "JDS.fr – Agenda Manifestations pour Enfants Alsace",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.jds.fr/strasbourg/agenda/manifestations-pour-enfants/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Großer Veranstaltungskalender für Kinderfeste, Märkte, Ausstellungen und Shows im Elsass.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "le-vaisseau-strasbourg-lune-workshops",
+          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
+        }
+      ]
+    },
+    {
+      "id": "soufflenheim-haguenau-tourisme",
+      "name": "Office de Tourisme Soufflenheim & Visit Haguenau",
+      "region": "Nord-Elsass",
+      "country": "FR",
+      "url": "https://www.visithaguenau.alsace/fr",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Töpferwerkstätten in Soufflenheim, Waldspielplatz Gros Chêne und erste Dorf-Weihnachtsmärkte im Nord-Elsass.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "soufflenheim-toepferwerkstaetten-weihnachtskeramik",
+          "title": "Töpferdorf Soufflenheim: Offene Töpferwerkstätten & Weihnachts-Keramik"
+        },
+        {
+          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
+          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
+        }
+      ]
+    },
+    {
+      "id": "palais-pain-depices-gertwiller",
+      "name": "Le Palais du Pain d'Épices Gertwiller & Musée du Chocolat",
+      "region": "Mittel-Elsass",
+      "country": "FR",
+      "url": "https://www.lepalaisdupaindepices.com",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Lebkuchenpalast in Gertwiller und Schokoladenmuseum in Geispolsheim mit Kinder-Back- & Dekorier-Workshops.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "gertwiller-lebkuchenpalast-verzierworkshop",
+          "title": "Palais du Pain d'Épices Gertwiller: Märchen-Rundgang & Lebkuchen-Verzieren"
+        }
+      ]
+    },
+    {
+      "id": "offenburg-messe-kultur",
+      "name": "Messe Offenburg (Eisläss) & Kultur Stadt Offenburg",
+      "region": "Ortenau / Offenburg",
+      "country": "DE",
+      "url": "https://www.offenburg-kultur.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Indoor-Eislaufarena Eisläss, Museum im Ritterhaus und Familienveranstaltungen in Offenburg und Oberkirch.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "europa-park-hallowinter",
+      "name": "Europa-Park & Rulantica Rust (HALLOWinter Saison)",
+      "region": "Ortenau / Rust",
+      "country": "DE",
+      "url": "https://www.europapark.de/de/events",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Freizeitpark-Saison HALLOWinter und ganzjährige Indoor-Wasserwelt Rulantica in Rust.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "europa-park-hallowinter-rulantica-endspurt",
+          "title": "Europa-Park „HALLOWinter“ & Rulantica (Letztes Wochenende vor Revision!)"
+        }
+      ]
+    },
+    {
+      "id": "schwarzwald-tourismus-kinzigtal",
+      "name": "Schwarzwald Tourismus (Schloss Hornberg & Dorotheenhütte Wolfach)",
+      "region": "Schwarzwald / Kinzigtal",
+      "country": "DE",
+      "url": "https://www.schwarzwald-tourismus.info/erleben/veranstaltungen",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Familien-Events im mittleren Schwarzwald wie die Weihnachtsmann-Werkstatt Hornberg und Kinderglashütte Wolfach.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "dorotheenhuette-wolfach-kinderglashuette-weihnachtsdorf",
+          "title": "Dorotheenhütte Wolfach: Kinderglashütte, Kugel-Bemalen & Weihnachtsdorf"
+        },
+        {
+          "id": "schloss-hornberg-weihnachtsmann-werkstatt",
+          "title": "Weihnachtsmann-Werkstatt in der Felsengrotte auf Schloss Hornberg"
+        }
+      ]
+    },
+    {
+      "id": "elztalmuseum-waldkirch",
+      "name": "Elztalmuseum & Schwarzwaldzoo Waldkirch",
+      "region": "Breisgau / Elztal",
+      "country": "DE",
+      "url": "https://www.elztalmuseum.de",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Drehorgel- & Regionalmuseum mit großem Indoor-Weihnachtsmarkt sowie familienfreundlicher Tierpark in Waldkirch.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "waldkirch-elztalmuseum-weihnachtsmarkt-schwarzwaldzoo",
+          "title": "Elztalmuseum Waldkirch: Großer Museums-Weihnachtsmarkt (über 4 Etagen) & Schwarzwaldzoo"
+        }
+      ]
+    },
+    {
+      "id": "bz-ticket-familien",
+      "name": "Badische Zeitung Veranstaltungskalender (Ortenau & Breisgau)",
+      "region": "Südbaden",
+      "country": "DE",
+      "url": "https://www.badische-zeitung.de/veranstaltungen/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Überregionaler Veranstaltungskalender für ganz Südbaden von der Ortenau über Emmendingen bis Freiburg.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "alsace-des-petits",
+      "name": "Alsace des Petits – Familien-Freizeitführer Elsass (0–12 J.)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.alsace-des-petits.fr/agenda/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Speziell für Familien mit Kindern von 0 bis 12 Jahren kuratierter Ausflugs- und Eventkalender für das gesamte Elsass.",
+      "events_count": 0,
+      "selected_events": []
+    }
+  ]
+}

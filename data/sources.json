@@ -1,0 +1,675 @@
+{
+  "metadata": {
+    "title": "Was machen wir am Wochenende?",
+    "home_base": {
+      "name": "77815 Bühl (Baden)",
+      "lat": 48.6953,
+      "lon": 8.135,
+      "max_drive_minutes": 60
+    },
+    "target_age_group": "4–9 Jahre (Kita & Grundschule)",
+    "weekend_start": "2026-11-13",
+    "weekend_end": "2026-11-15",
+    "weekend_label": "13.–15. November",
+    "last_updated": "2026-11-09T21:35:19Z",
+    "last_updated_display": "08.11.2026",
+    "sources_checked_count": 37,
+    "total_events": 28,
+    "sources_with_events_count": 26
+  },
+  "source_types": {
+    "family_portal": {
+      "label": "Familien- & Kinderportal",
+      "icon": "👨‍👩‍👧‍👦"
+    },
+    "theater": {
+      "label": "Theater, Bühne & Konzerte",
+      "icon": "🎭"
+    },
+    "museum": {
+      "label": "Museum, Schloss & Kunst",
+      "icon": "🏛️"
+    },
+    "science_center": {
+      "label": "Wissenschaft, Technik & Planetarium",
+      "icon": "🔬"
+    },
+    "nature_center": {
+      "label": "Natur, Tierpark & Freizeitpark",
+      "icon": "🌲"
+    },
+    "municipal_calendar": {
+      "label": "Stadt- & Tourismus-Kalender",
+      "icon": "🏙️"
+    }
+  },
+  "sources": [
+    {
+      "id": "stadt-buehl",
+      "name": "Stadt Bühl Veranstaltungskalender & Bürgerhaus Neuer Markt",
+      "region": "Bühl (77815)",
+      "country": "DE",
+      "url": "https://www.buehl.de/veranstaltungen",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Offizieller Kalender der Stadt Bühl inkl. Kindertheater-Reihe im Bürgerhaus Neuer Markt.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "tourismus-buehl-buehlertal",
+      "name": "Zweckverband Tourismus Bühl – Bühlertal – Ottersweier",
+      "region": "Bühl & Umgebung",
+      "country": "DE",
+      "url": "https://www.buehl-buehlertal-ottersweier.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Regionale Feste, Märkte und Naturerlebnisse rund um Bühl, Bühlertal und Ottersweier (Toubiz-System).",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "spieleclub-achern",
+      "name": "Stadt Achern & Spieleclub Achern e.V.",
+      "region": "Achern / Ortenau",
+      "country": "DE",
+      "url": "https://spieleclub-achern.de",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Veranstalter der jährlichen Acherner Spieletage in der Hornisgrindehalle und lokaler Familienaktionen.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "acherner-spieletage-34",
+          "title": "34. Acherner Spieletage in der Hornisgrindehalle"
+        }
+      ]
+    },
+    {
+      "id": "toccarion-baden-baden",
+      "name": "TOCCARION Kinder-Musik-Welt Baden-Baden (Festspielhaus)",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://toccarion.de/programm/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Interaktives Kindermusikmuseum der Sigmund Kiener Stiftung mit Wochenend-Workshops & Führungen ab 5 Jahren.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "toccarion-baden-baden-tuten-pfeifen",
+          "title": "TOCCARION Kinder-Musik-Welt: „Von Tuten und Pfeifen“ & Entdeckertour"
+        }
+      ]
+    },
+    {
+      "id": "baden-baden-events",
+      "name": "Baden-Baden Events & Kurhaus Kinderprogramm",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.badenbadenevents.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Gastspiele, Figurentheater im Runden Saal des Kurhauses und saisonale Familien-Highlights.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "kurhaus-baden-baden-schaf-ahoi",
+          "title": "Kindertheater im Kurhaus: „Schaf Ahoi!“ (Hohenloher Figurentheater)"
+        }
+      ]
+    },
+    {
+      "id": "theater-baden-baden",
+      "name": "Theater Baden-Baden – Junges Theater",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.theater-baden-baden.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kinder- und Familienstücke sowie Märcheninszenierungen am Goetheplatz und im TIK.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "museum-frieder-burda",
+      "name": "Museum Frieder Burda – Kunstwerkstatt für Familien",
+      "region": "Baden-Baden",
+      "country": "DE",
+      "url": "https://www.museum-frieder-burda.de/de/kunstwerkstatt/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Kreativ-Workshops für Kinder, Eltern und Großeltern in der Lichtentaler Allee.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "museum-frieder-burda-workshop-farbe",
+          "title": "Museum Frieder Burda: Familienworkshop „Entfaltung der Farbe“"
+        }
+      ]
+    },
+    {
+      "id": "unimog-museum-gaggenau",
+      "name": "Unimog-Museum Gaggenau – Familien- & Technikprogramm",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.unimog-museum.com/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Technik-Erlebnismuseum mit LEGO-Bautagen, Tüftel-Workshops und Mitfahrten auf dem Außenparcours.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "unimog-museum-bauen-tuefteln-lego",
+          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
+        }
+      ]
+    },
+    {
+      "id": "klag-buehne-gaggenau",
+      "name": "klag-Bühne Gaggenau – Kulturrausch für Kids",
+      "region": "Murgtal / Gaggenau",
+      "country": "DE",
+      "url": "https://www.kulturrausch-gaggenau.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kleinkunst- und Kindertheater-Reihe für Familien im Murgtal.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "landkreis-rastatt",
+      "name": "Landkreis Rastatt & Barockschloss Rastatt Kalender",
+      "region": "Rastatt / Murgtal",
+      "country": "DE",
+      "url": "https://www.landkreis-rastatt.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Gebündelter Kalender der Kommunen im Landkreis Rastatt sowie Familienführungen im Schloss Rastatt.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "unimog-museum-bauen-tuefteln-lego",
+          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
+        }
+      ]
+    },
+    {
+      "id": "nationalpark-schwarzwald",
+      "name": "Nationalparkzentrum Ruhestein – Veranstaltungskalender",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.nationalpark-schwarzwald.de/de/erleben/veranstaltungskalender",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Ranger-Touren, Walderlebnis und Ausstellung an der Schwarzwaldhochstraße (inkl. Revisions-Infos).",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "kaltenbronn-infozentrum",
+      "name": "Infozentrum Kaltenbronn – Familien- & Naturführungen",
+      "region": "Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.infozentrum-kaltenbronn.de/",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Naturpädagogische Familienprogramme rund um Hochmoor, Wildgehege und Auerhahn.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "schloss-ettlingen",
+      "name": "Museum im Schloss Ettlingen – Kindermuseum",
+      "region": "Ettlingen / Albtal",
+      "country": "DE",
+      "url": "https://www.ettlingen.de/kunst-kultur/museum",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Interaktive Mitmach-Ausstellungen („Zeitsprung Römer“ & „Leben auf der Burg“) für Kinder.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "schloss-ettlingen-zeitsprung-roemer-burg",
+          "title": "Kindermuseum im Schloss Ettlingen: „Zeitsprung Römer“ & „Leben auf der Burg“"
+        }
+      ]
+    },
+    {
+      "id": "karlsruher-kind",
+      "name": "Karlsruher Kind – Familienmagazin & Terminkalender",
+      "region": "Karlsruhe & Umgebung",
+      "country": "DE",
+      "url": "https://www.karlsruher-kind.de/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Umfassendster tagesaktueller Familienkalender für Karlsruhe, Ettlingen, Bruchsal und die TechnologieRegion.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "marotte-figurentheater-maulwurf-knitterbart",
+          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
+        },
+        {
+          "id": "waldklassenzimmer-karlsruhe-wintertiere-igelhaus",
+          "title": "Waldklassenzimmer Karlsruhe: „Tiere bereiten sich auf den Winter vor“"
+        }
+      ]
+    },
+    {
+      "id": "kafami-karlsruhe",
+      "name": "KaFaMi – Karlsruher Familienportal",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.kafami.de/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Kostenlose Stadtteil-Events, Familienzentren, Bewegungsangebote und Fahrradparcours in Karlsruhe.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "marotte-figurentheater",
+      "name": "marotte Figurentheater Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.marotte-figurentheater.de/spielplan/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Renommiertes Figurentheater mit fast täglichen Vorstellungen für Kinder ab 3, 4 und 6 Jahren.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "marotte-figurentheater-maulwurf-knitterbart",
+          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
+        }
+      ]
+    },
+    {
+      "id": "junges-staatstheater-ka",
+      "name": "Junges Staatstheater (JUST) Karlsruhe – Spielstätte INSEL",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.staatstheater-karlsruhe.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Kinderopern, Schauspiel und Sitzkissenkonzerte des Badischen Staatstheaters.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "staatstheater-karlsruhe-wunschpunsch-daeumling",
+          "title": "Junges Staatstheater Karlsruhe: „Wunschpunsch“ (Sa) & „Nils Karlsson Däumling“ (So)"
+        }
+      ]
+    },
+    {
+      "id": "zkm-karlsruhe",
+      "name": "ZKM Karlsruhe & Junge Kunsthalle – Familienprogramm",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://zkm.de/de/veranstaltungen",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Medienkunst, zkm_gameplay, Art-Action!-Sonntage und Robotik-/Kreativ-Workshops.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "zkm-kunsthalle-karlsruhe-art-action-gameplay",
+          "title": "ZKM & Junge Kunsthalle Karlsruhe: „Art-Action!“, „Open Space“ & zkm_gameplay"
+        }
+      ]
+    },
+    {
+      "id": "planet-ka-karlsruhe",
+      "name": "PLANET KA – Planetarium Karlsruhe",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.planet-ka.de/programm/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "360°-Fulldome-Sternenshows und Kinderprogramme auf dem Kreativpark Alter Schlachthof.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "planet-ka-fritz-fliege-weltall",
+          "title": "PLANET KA Planetarium Karlsruhe: „Fritz Fliege fliegt ins Weltall“"
+        }
+      ]
+    },
+    {
+      "id": "naturkundemuseum-ka",
+      "name": "Staatliches Museum für Naturkunde Karlsruhe (SMNK)",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.smnk.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Vivarium mit lebenden Tieren, Dinosaurier-Saal und Familienführungen am Friedrichsplatz.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "kulturhalle-remchingen",
+      "name": "Kulturhalle Remchingen – Familien- & Kinderkultur",
+      "region": "Enzkreis / Remchingen",
+      "country": "DE",
+      "url": "https://www.kulturhalle-remchingen.de",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Große Familienshows, Kinderrock-Konzerte (z. B. Heavysaurus) und Kindermusicals zwischen KA und PF.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "heavysaurus-remchingen-kinderrock",
+          "title": "Heavysaurus Live in Concert – „Pommesgabel-Tour“ für Kinder"
+        }
+      ]
+    },
+    {
+      "id": "schloss-bruchsal",
+      "name": "Schloss Bruchsal & Deutsches Musikautomaten-Museum",
+      "region": "Kraichgau / Bruchsal",
+      "country": "DE",
+      "url": "https://www.schloss-bruchsal.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Barockschloss mit großen Familien-Sonderausstellungen (z. B. Faszination LEGO) und selbstspielenden Orgeln.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "schloss-bruchsal-lego-musikautomaten",
+          "title": "Schloss Bruchsal: Sonderausstellung „Faszination LEGO®“ & Musikautomaten"
+        }
+      ]
+    },
+    {
+      "id": "mottenkaefig-pforzheim",
+      "name": "Figurentheater Mottenkäfig & Familienportal Pforzheim",
+      "region": "Pforzheim / Nordschwarzwald",
+      "country": "DE",
+      "url": "https://www.familie-pforzheim.de/veranstaltungen/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Gebündelte Kindertermine in Pforzheim inkl. Figurentheater Mottenkäfig, CCP und Winterwelt.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "pforzheim-mottenkaefig-winterwelt",
+          "title": "Pforzheim: Figurentheater „Juri & das AlpakaLamaDrama“ + Eröffnung Winterwelt-Eisbahn"
+        }
+      ]
+    },
+    {
+      "id": "zoo-landau-pfalz",
+      "name": "Zoo Landau & Pfalz mit Kids",
+      "region": "Südpfalz / Landau",
+      "country": "DE",
+      "url": "https://www.landau.de/Verwaltung-Politik/Einrichtungen/Zoo/",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Familienfreundlicher Zoo mit Zooschule-Kinder-Uni sowie Ausflugstipps an der Südlichen Weinstraße.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "zoo-landau-kinderuni-enkeltag",
+          "title": "Zoo Landau in der Pfalz: Kinder-Uni, Erlebnisführung & Keschdewochen"
+        }
+      ]
+    },
+    {
+      "id": "le-vaisseau-strasbourg",
+      "name": "Le Vaisseau Strasbourg – Wissenschaftszentrum für Kinder (DE/FR)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.levaisseau.com/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Dreisprachiges Hands-on-Wissenschaftszentrum (3–12 J.) mit Wasserwelt, Baustelle und Wochenend-Ateliers.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "le-vaisseau-strasbourg-lune-workshops",
+          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
+        }
+      ]
+    },
+    {
+      "id": "planetarium-strasbourg",
+      "name": "Planétarium du Jardin des Sciences & Musée Zoologique Strasbourg",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://jardin-sciences.unistra.fr/visite/le-planetarium/",
+      "type": "science_center",
+      "type_label": "Wissenschaft, Technik & Planetarium",
+      "type_icon": "🔬",
+      "description": "Neues 360°-Planetarium (mit deutschen Audioguides) direkt neben dem wiedereröffneten Zoologischen Museum.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "planetarium-zoologisches-museum-strasbourg",
+          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
+        }
+      ]
+    },
+    {
+      "id": "musees-strasbourg",
+      "name": "Musées de la Ville de Strasbourg (Musée Tomi Ungerer & Agenda)",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.musees.strasbourg.eu/musee-tomi-ungerer",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Zweisprachiges Bilderbuch- und Spielzeugmuseum Tomi Ungerer sowie Familienprogramm der Straßburger Museen.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "planetarium-zoologisches-museum-strasbourg",
+          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
+        },
+        {
+          "id": "musee-tomi-ungerer-parc-orangerie-strasbourg",
+          "title": "Musée Tomi Ungerer (Bilderbuch-Welt & Spielzeug) + Parc de l'Orangerie"
+        }
+      ]
+    },
+    {
+      "id": "kidiklik-alsace",
+      "name": "Kidiklik Alsace – Sorties Enfants & Famille (Bas-Rhin 67)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://67.kidiklik.fr/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Wichtigstes elsässisches Familienportal mit nach Alter (3–6 J. / 7–12 J.) gefilterten Wochenend-Tipps.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
+          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
+        }
+      ]
+    },
+    {
+      "id": "jds-alsace-enfants",
+      "name": "JDS.fr – Agenda Manifestations pour Enfants Alsace",
+      "region": "Elsass / Straßburg",
+      "country": "FR",
+      "url": "https://www.jds.fr/strasbourg/agenda/manifestations-pour-enfants/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Großer Veranstaltungskalender für Kinderfeste, Märkte, Ausstellungen und Shows im Elsass.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "le-vaisseau-strasbourg-lune-workshops",
+          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
+        }
+      ]
+    },
+    {
+      "id": "soufflenheim-haguenau-tourisme",
+      "name": "Office de Tourisme Soufflenheim & Visit Haguenau",
+      "region": "Nord-Elsass",
+      "country": "FR",
+      "url": "https://www.visithaguenau.alsace/fr",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Töpferwerkstätten in Soufflenheim, Waldspielplatz Gros Chêne und erste Dorf-Weihnachtsmärkte im Nord-Elsass.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "soufflenheim-toepferwerkstaetten-weihnachtskeramik",
+          "title": "Töpferdorf Soufflenheim: Offene Töpferwerkstätten & Weihnachts-Keramik"
+        },
+        {
+          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
+          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
+        }
+      ]
+    },
+    {
+      "id": "palais-pain-depices-gertwiller",
+      "name": "Le Palais du Pain d'Épices Gertwiller & Musée du Chocolat",
+      "region": "Mittel-Elsass",
+      "country": "FR",
+      "url": "https://www.lepalaisdupaindepices.com",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Lebkuchenpalast in Gertwiller und Schokoladenmuseum in Geispolsheim mit Kinder-Back- & Dekorier-Workshops.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "gertwiller-lebkuchenpalast-verzierworkshop",
+          "title": "Palais du Pain d'Épices Gertwiller: Märchen-Rundgang & Lebkuchen-Verzieren"
+        }
+      ]
+    },
+    {
+      "id": "offenburg-messe-kultur",
+      "name": "Messe Offenburg (Eisläss) & Kultur Stadt Offenburg",
+      "region": "Ortenau / Offenburg",
+      "country": "DE",
+      "url": "https://www.offenburg-kultur.de/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Indoor-Eislaufarena Eisläss, Museum im Ritterhaus und Familienveranstaltungen in Offenburg und Oberkirch.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "europa-park-hallowinter",
+      "name": "Europa-Park & Rulantica Rust (HALLOWinter Saison)",
+      "region": "Ortenau / Rust",
+      "country": "DE",
+      "url": "https://www.europapark.de/de/events",
+      "type": "nature_center",
+      "type_label": "Natur, Tierpark & Freizeitpark",
+      "type_icon": "🌲",
+      "description": "Freizeitpark-Saison HALLOWinter und ganzjährige Indoor-Wasserwelt Rulantica in Rust.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "europa-park-hallowinter-rulantica-endspurt",
+          "title": "Europa-Park „HALLOWinter“ & Rulantica (Letztes Wochenende vor Revision!)"
+        }
+      ]
+    },
+    {
+      "id": "schwarzwald-tourismus-kinzigtal",
+      "name": "Schwarzwald Tourismus (Schloss Hornberg & Dorotheenhütte Wolfach)",
+      "region": "Schwarzwald / Kinzigtal",
+      "country": "DE",
+      "url": "https://www.schwarzwald-tourismus.info/erleben/veranstaltungen",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Familien-Events im mittleren Schwarzwald wie die Weihnachtsmann-Werkstatt Hornberg und Kinderglashütte Wolfach.",
+      "events_count": 2,
+      "selected_events": [
+        {
+          "id": "dorotheenhuette-wolfach-kinderglashuette-weihnachtsdorf",
+          "title": "Dorotheenhütte Wolfach: Kinderglashütte, Kugel-Bemalen & Weihnachtsdorf"
+        },
+        {
+          "id": "schloss-hornberg-weihnachtsmann-werkstatt",
+          "title": "Weihnachtsmann-Werkstatt in der Felsengrotte auf Schloss Hornberg"
+        }
+      ]
+    },
+    {
+      "id": "elztalmuseum-waldkirch",
+      "name": "Elztalmuseum & Schwarzwaldzoo Waldkirch",
+      "region": "Breisgau / Elztal",
+      "country": "DE",
+      "url": "https://www.elztalmuseum.de",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Drehorgel- & Regionalmuseum mit großem Indoor-Weihnachtsmarkt sowie familienfreundlicher Tierpark in Waldkirch.",
+      "events_count": 1,
+      "selected_events": [
+        {
+          "id": "waldkirch-elztalmuseum-weihnachtsmarkt-schwarzwaldzoo",
+          "title": "Elztalmuseum Waldkirch: Großer Museums-Weihnachtsmarkt (über 4 Etagen) & Schwarzwaldzoo"
+        }
+      ]
+    },
+    {
+      "id": "bz-ticket-familien",
+      "name": "Badische Zeitung Veranstaltungskalender (Ortenau & Breisgau)",
+      "region": "Südbaden",
+      "country": "DE",
+      "url": "https://www.badische-zeitung.de/veranstaltungen/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Überregionaler Veranstaltungskalender für ganz Südbaden von der Ortenau über Emmendingen bis Freiburg.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "alsace-des-petits",
+      "name": "Alsace des Petits – Familien-Freizeitführer Elsass (0–12 J.)",
+      "region": "Elsass",
+      "country": "FR",
+      "url": "https://www.alsace-des-petits.fr/agenda/",
+      "type": "family_portal",
+      "type_label": "Familien- & Kinderportal",
+      "type_icon": "👨‍👩‍👧‍👦",
+      "description": "Speziell für Familien mit Kindern von 0 bis 12 Jahren kuratierter Ausflugs- und Eventkalender für das gesamte Elsass.",
+      "events_count": 0,
+      "selected_events": []
+    }
+  ]
+}
