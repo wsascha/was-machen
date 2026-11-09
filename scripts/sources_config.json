@@ -465,6 +465,36 @@
       "type": "museum",
       "description": "Größtes lebendiges Freilichtmuseum Frankreichs mit Handwerksvorführungen, Bauernhoftieren und Mitmach-Ateliers.",
       "enabled": true
+    },
+    {
+      "id": "theater-pforzheim-junges-theater",
+      "name": "Theater Pforzheim – Junges Theater für Kinder",
+      "region": "Nordschwarzwald / Pforzheim",
+      "country": "DE",
+      "url": "https://www.theater-pforzheim.de/",
+      "type": "theater",
+      "description": "Märcheninszenierungen, Kinderopern und Figurentheater für Kinder ab 4 Jahren.",
+      "enabled": true
+    },
+    {
+      "id": "badisches-landesmuseum-karlsruhe",
+      "name": "Badisches Landesmuseum Karlsruhe – Familien- & Kinderausstellungen",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.landesmuseum.de/",
+      "type": "museum",
+      "description": "Schloss Karlsruhe mit archäologischen Mitmach-Stationen, Familien-Werkstätten und Schlossturm.",
+      "enabled": true
+    },
+    {
+      "id": "murgtal-tourismus-familien",
+      "name": "Murgtal Tourismus – Familien- & Freizeiterlebnisse",
+      "region": "Murgtal / Forbach",
+      "country": "DE",
+      "url": "https://www.murgtal.org/",
+      "type": "municipal_calendar",
+      "description": "Erlebniswege, Kletter- & Naturerlebnisse für Familien im wildromantischen Murgtal.",
+      "enabled": true
     }
   ]
 }

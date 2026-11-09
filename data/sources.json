@@ -11,9 +11,9 @@
     "weekend_start": "2026-11-13",
     "weekend_end": "2026-11-15",
     "weekend_label": "13.–15. November",
-    "last_updated": "2026-11-09T21:51:15Z",
+    "last_updated": "2026-11-09T21:54:15Z",
     "last_updated_display": "08.11.2026",
-    "sources_checked_count": 40,
+    "sources_checked_count": 43,
     "total_events": 28,
     "sources_with_events_count": 26
   },
@@ -707,6 +707,45 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Größtes lebendiges Freilichtmuseum Frankreichs mit Handwerksvorführungen, Bauernhoftieren und Mitmach-Ateliers.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "theater-pforzheim-junges-theater",
+      "name": "Theater Pforzheim – Junges Theater für Kinder",
+      "region": "Nordschwarzwald / Pforzheim",
+      "country": "DE",
+      "url": "https://www.theater-pforzheim.de/",
+      "type": "theater",
+      "type_label": "Theater, Bühne & Konzerte",
+      "type_icon": "🎭",
+      "description": "Märcheninszenierungen, Kinderopern und Figurentheater für Kinder ab 4 Jahren.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "badisches-landesmuseum-karlsruhe",
+      "name": "Badisches Landesmuseum Karlsruhe – Familien- & Kinderausstellungen",
+      "region": "Karlsruhe",
+      "country": "DE",
+      "url": "https://www.landesmuseum.de/",
+      "type": "museum",
+      "type_label": "Museum, Schloss & Kunst",
+      "type_icon": "🏛️",
+      "description": "Schloss Karlsruhe mit archäologischen Mitmach-Stationen, Familien-Werkstätten und Schlossturm.",
+      "events_count": 0,
+      "selected_events": []
+    },
+    {
+      "id": "murgtal-tourismus-familien",
+      "name": "Murgtal Tourismus – Familien- & Freizeiterlebnisse",
+      "region": "Murgtal / Forbach",
+      "country": "DE",
+      "url": "https://www.murgtal.org/",
+      "type": "municipal_calendar",
+      "type_label": "Stadt- & Tourismus-Kalender",
+      "type_icon": "🏙️",
+      "description": "Erlebniswege, Kletter- & Naturerlebnisse für Familien im wildromantischen Murgtal.",
       "events_count": 0,
       "selected_events": []
     }
