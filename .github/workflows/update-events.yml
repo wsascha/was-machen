@@ -15,6 +15,18 @@ on:
   workflow_run:
     workflows: ["Populate Sources"]
     types: [completed]
+  workflow_call:
+    inputs:
+      target_weekend:
+        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
+        type: string
+        required: false
+        default: ""
+    secrets:
+      GEMINI_API_KEY:
+        required: false
+      OPENAI_API_KEY:
+        required: false
   push:
     branches:
       - main
@@ -32,10 +44,12 @@ jobs:
   update-events:
     name: "Populate Weekend Events from Sources (Bühl + 60 min)"
     runs-on: ubuntu-latest
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_call'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Install uv & enable cache
         uses: astral-sh/setup-uv@v5
@@ -52,7 +66,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TARGET_WEEKEND: ${{ github.event.inputs.target_weekend }}
+          TARGET_WEEKEND: ${{ inputs.target_weekend || github.event.inputs.target_weekend }}
         run: uv run update-events
 
       - name: Commit and push updated event database

@@ -14,6 +14,10 @@ on:
         description: "Maximum number of new sources to discover and save"
         required: false
         default: "3"
+  workflow_call:
+    secrets:
+      GEMINI_API_KEY:
+        required: false
 
 permissions:
   contents: write

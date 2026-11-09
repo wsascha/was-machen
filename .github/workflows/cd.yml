@@ -1,0 +1,77 @@
+name: "Weekly Continuous Deployment (CD)"
+
+on:
+  schedule:
+    # Every Thursday at 06:00 UTC for weekend planning & release
+    - cron: "0 6 * * 4"
+  workflow_dispatch:
+    inputs:
+      target_weekend:
+        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "weekly-cd-pipeline"
+  cancel-in-progress: false
+
+jobs:
+  sources:
+    name: "Populate Sources"
+    uses: ./.github/workflows/discover-sources.yml
+    secrets:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+  events:
+    name: "Populate Events & Deploy"
+    needs: [sources]
+    uses: ./.github/workflows/update-events.yml
+    secrets:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    with:
+      target_weekend: ${{ inputs.target_weekend || github.event.inputs.target_weekend || '' }}
+
+  release:
+    name: "Create Weekly GitHub Release"
+    needs: [events]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv & enable cache
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync dependencies via uv
+        run: uv sync --frozen
+
+      - name: Generate release summary notes
+        id: notes
+        run: uv run release-notes --output-file release_notes.md
+
+      - name: Publish GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.notes.outputs.tag_name }}"
+          TITLE="${{ steps.notes.outputs.release_title }}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists, updating release notes..."
+            gh release edit "$TAG" --title "$TITLE" --notes-file release_notes.md
+          else
+            echo "Creating new release $TAG..."
+            gh release create "$TAG" --title "$TITLE" --notes-file release_notes.md --target main
+          fi
