@@ -1,10 +1,9 @@
 # Agent Guidelines
 
-## Language & Code Style
+## Documentation
 
-- **Alphabetical Sorting**: Prefer alphabetical sorting in unordered lists.
-- **Code in English**: All code (variables, functions, classes, expressions, comments, commit messages, and developer documentation) must be written in English.
-- **German Content**: User-facing content and regional data (e.g., event descriptions, categories, UI copy) remain in German.
+- `AGENTS.md`: Operational instructions and rules for AI coding agents.
+- `README.md`: Written in English for human readers (project overview, features, local setup).
 
 ## Git & Commits
 
@@ -21,10 +20,15 @@
 - **Linear History**: Always rebase; avoid merge commits.
 - **Pre-Commit**: Ensure hooks are installed via `pre-commit install` so linting and formatting run automatically before each commit.
 
-## Documentation
+## GitHub CLI (`gh`)
 
-- `AGENTS.md`: Operational instructions and rules for AI coding agents.
-- `README.md`: Written in English for human readers (project overview, features, local setup).
+- **GitHub CLI**: Always use the GitHub CLI (`gh`) for checking workflow runs, inspecting CI failure logs, viewing releases, and querying GitHub repository state instead of guessing or scraping. Ensure `/opt/homebrew/bin` is in `$PATH` when invoking `gh`.
+
+## Language & Code Style
+
+- **Alphabetical Sorting**: Prefer alphabetical sorting in unordered lists.
+- **Code in English**: All code (variables, functions, classes, expressions, comments, commit messages, and developer documentation) must be written in English.
+- **German Content**: User-facing content and regional data (e.g., event descriptions, categories, UI copy) remain in German.
 
 ## Testing
 
