@@ -254,7 +254,7 @@ def fetch_candidates_from_gemini(
             "- enabled: true\n"
         )
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=prompt,
         )
         raw_text = (response.text or "").strip()

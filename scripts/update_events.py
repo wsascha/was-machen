@@ -362,7 +362,7 @@ def enrich_with_gemini_if_available(
             f"Jedes Event-Objekt muss mindestens 'id', 'title', 'category', 'weather_type' enthalten."
         )
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=f"{prompt}\n\nRohdaten:\n{json.dumps(raw_candidates[:15], ensure_ascii=False)}",
         )
         raw_text = (response.text or "").strip()
