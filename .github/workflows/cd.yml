@@ -13,8 +13,8 @@ on:
 
 permissions:
   contents: write
-  pages: write
   id-token: write
+  pages: write
 
 concurrency:
   group: "weekly-cd-pipeline"
@@ -28,7 +28,7 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
   events:
-    name: "Populate Events & Deploy"
+    name: "Populate Events"
     needs: [sources]
     uses: ./.github/workflows/update-events.yml
     secrets:
@@ -37,9 +37,44 @@ jobs:
     with:
       target_weekend: ${{ inputs.target_weekend || github.event.inputs.target_weekend || '' }}
 
+  deploy-pages:
+    name: "Deploy static site to GitHub Pages"
+    needs: [events]
+    if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+        with:
+          enablement: true
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
   release:
     name: "Create Weekly GitHub Release"
-    needs: [events]
+    needs: [events, deploy-pages]
     if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped')
     runs-on: ubuntu-latest
     permissions:

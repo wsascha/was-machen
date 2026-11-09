@@ -1,4 +1,4 @@
-name: "Populate Events & Deploy (uv)"
+name: "Populate Events"
 
 on:
   schedule:
@@ -12,9 +12,6 @@ on:
         description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
         required: false
         default: ""
-  workflow_run:
-    workflows: ["Populate Sources"]
-    types: [completed]
   workflow_call:
     inputs:
       target_weekend:
@@ -27,40 +24,28 @@ on:
         required: false
       OPENAI_API_KEY:
         required: false
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages-and-data-update"
+  group: "events-pipeline"
   cancel-in-progress: false
 
 jobs:
   update-events:
-    name: "Populate Weekend Events from Sources (Bühl + 60 min)"
+    name: "Populate Weekend Events from Sources"
     runs-on: ubuntu-latest
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_call'
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: main
 
-      - name: Install uv & enable cache
-        uses: astral-sh/setup-uv@v5
+      - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
 
-      - name: Sync dependencies via uv
-        run: uv sync --frozen
-
-      - name: Run unit tests
-        run: uv run pytest
+      - run: uv sync --frozen
 
       - name: Run multi-source aggregator and scoring
         env:
@@ -80,34 +65,3 @@ jobs:
             git commit -m "chore(data): populate weekend events from sources [skip ci]"
             git push
           fi
-
-  deploy-pages:
-    name: "Deploy static site to GitHub Pages"
-    needs: [update-events]
-    if: always() && (needs.update-events.result == 'success' || needs.update-events.result == 'skipped')
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        continue-on-error: true
-        with:
-          enablement: true
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        continue-on-error: true
-        with:
-          path: "."
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        continue-on-error: true
-        uses: actions/deploy-pages@v4

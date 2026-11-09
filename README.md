@@ -58,16 +58,17 @@ uv run discover-sources --max-sources 3
 
 ## 🔄 Automated Workflows
 
-The repository uses two decoupled GitHub Actions workflows with distinct responsibilities:
+The repository uses decoupled GitHub Actions workflows with distinct responsibilities:
 
 1. **Populate Sources** (`.github/workflows/discover-sources.yml`):
    - Autonomous pipeline that discovers, validates, and populates regional event sources in `scripts/sources_config.json` and compiles `data/sources.json`.
    - Runs every Monday at 03:00 UTC and on manual dispatch.
 2. **Populate Events from Sources** (`.github/workflows/update-events.yml`):
-   - Crawls active sources, extracts weekend events, computes driving distances from Bühl, scores activities across the 7 family criteria, writes `data/events.json`, and deploys the app to GitHub Pages.
-   - Runs Wednesdays at 06:00 UTC, Fridays at 05:00 UTC, on manual dispatch, and automatically after "Populate Sources" completes.
+   - Crawls active sources, extracts weekend events, computes driving distances from Bühl, scores activities across the 7 family criteria, and writes `data/events.json`.
+   - Runs Wednesdays at 06:00 UTC, Fridays at 05:00 UTC, and on manual dispatch.
 3. **Weekly Continuous Deployment (CD)** (`.github/workflows/cd.yml`):
-   - End-to-end orchestration pipeline calling "Populate Sources" and "Populate Events & Deploy".
+   - End-to-end orchestration pipeline calling "Populate Sources" and "Populate Events".
+   - Deploys the static web app to GitHub Pages.
    - Generates release notes summarizing newly added sources and events by title via `uv run release-notes`.
-   - Publishes a tagged GitHub release (e.g. `vYYYY.WW`) and deploys the updated app to GitHub Pages.
+   - Publishes a tagged GitHub release (e.g. `vYYYY.WW`).
    - Runs every Thursday at 06:00 UTC and on manual dispatch.
