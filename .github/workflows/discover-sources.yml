@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: "sources-pipeline"
@@ -59,7 +60,9 @@ jobs:
             uv run discover-sources
           fi
 
-      - name: Commit and push newly populated sources
+      - name: Commit, create pull request and auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -67,6 +70,18 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new sources discovered or changed."
           else
-            git commit -m "chore(crawler): discover and populate event sources [skip ci]"
-            git push
+            BRANCH="data/update-sources-$(date +%s)"
+            git checkout -b "$BRANCH"
+            git commit -m "chore(crawler): discover and populate event sources"
+            git push origin "$BRANCH"
+            PR_URL=$(gh pr create \
+              --title "chore(crawler): discover and populate event sources" \
+              --body "Automated source discovery pipeline added new regional event sources." \
+              --base main \
+              --head "$BRANCH")
+            echo "Created PR: $PR_URL"
+            if ! gh pr merge "$PR_URL" --rebase --delete-branch 2>/dev/null; then
+              gh pr merge "$PR_URL" --auto --rebase --delete-branch
+              gh pr checks "$PR_URL" --watch || true
+            fi
           fi
