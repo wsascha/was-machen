@@ -12,18 +12,6 @@ on:
         description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
         required: false
         default: ""
-  workflow_call:
-    inputs:
-      target_weekend:
-        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
-        type: string
-        required: false
-        default: ""
-    secrets:
-      GEMINI_API_KEY:
-        required: false
-      OPENAI_API_KEY:
-        required: false
 
 permissions:
   contents: write
