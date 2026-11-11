@@ -66,9 +66,7 @@ The repository uses decoupled GitHub Actions workflows with distinct responsibil
 2. **Populate Events from Sources** (`.github/workflows/update-events.yml`):
    - Crawls active sources, extracts weekend events, computes driving distances from Bühl, scores activities across the 7 family criteria, and writes `data/events.json`.
    - Runs Wednesdays at 06:00 UTC, Fridays at 05:00 UTC, and on manual dispatch.
-3. **Weekly Continuous Deployment (CD)** (`.github/workflows/cd.yml`):
-   - End-to-end orchestration pipeline calling "Populate Sources" and "Populate Events".
-   - Deploys the static web app to GitHub Pages.
+3. **Continuous Deployment (CD)** (`.github/workflows/cd.yml`):
+   - Deploys the static web app to GitHub Pages on every change to `main`.
    - Generates release notes summarizing newly added sources and events by title via `uv run release-notes`.
-   - Publishes a tagged GitHub release (e.g. `vYYYY.WW`).
-   - Runs every Thursday at 06:00 UTC and on manual dispatch.
+   - Publishes a tagged weekly GitHub release (e.g. `vYYYY.WW`) every Thursday at 06:00 UTC and on manual dispatch.
