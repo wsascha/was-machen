@@ -31,8 +31,17 @@ jobs:
     name: "Discover & Populate Sources"
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub App token for PR & auto-merge
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Install uv & enable cache
         uses: astral-sh/setup-uv@v10.3.3
@@ -58,10 +67,10 @@ jobs:
 
       - name: Commit, create pull request and auto-merge
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "5718090+was-machen-bot[bot]@users.noreply.github.com"
+          git config --local user.name "was-machen-bot[bot]"
           git add scripts/sources_config.json data/sources.json
           if git diff --staged --quiet; then
             echo "No new sources discovered or changed."
@@ -76,8 +85,7 @@ jobs:
               --base main \
               --head "$BRANCH")
             echo "Created PR: $PR_URL"
-            if ! gh pr merge "$PR_URL" --rebase --delete-branch 2>/dev/null; then
-              gh pr merge "$PR_URL" --auto --rebase --delete-branch
-              gh pr checks "$PR_URL" --watch || true
+            if ! gh pr merge "$PR_URL" --auto --rebase --delete-branch 2>/dev/null; then
+              gh pr merge "$PR_URL" --rebase --delete-branch
             fi
           fi
