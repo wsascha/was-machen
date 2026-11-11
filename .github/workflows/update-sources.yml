@@ -23,9 +23,6 @@ concurrency:
   group: "sources-pipeline"
   cancel-in-progress: false
 
-env:
-  PYTHONUNBUFFERED: "1"
-
 jobs:
   populate-sources:
     name: "Discover & Populate Sources"
@@ -58,6 +55,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MAX_SOURCES: ${{ github.event.inputs.max_sources || '3' }}
+          PYTHONUNBUFFERED: "1"
         run: |
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             uv run discover-sources --dry-run
@@ -79,13 +77,10 @@ jobs:
             git checkout -b "$BRANCH"
             git commit -m "chore(crawler): discover and populate event sources"
             git push origin "$BRANCH"
-            PR_URL=$(gh pr create \
+            gh pr create \
               --title "chore(crawler): discover and populate event sources" \
               --body "Automated source discovery pipeline added new regional event sources." \
               --base main \
-              --head "$BRANCH")
-            echo "Created PR: $PR_URL"
-            if ! gh pr merge "$PR_URL" --auto --rebase --delete-branch 2>/dev/null; then
-              gh pr merge "$PR_URL" --rebase --delete-branch
-            fi
+              --head "$BRANCH"
+            gh pr merge --auto --rebase --delete-branch
           fi

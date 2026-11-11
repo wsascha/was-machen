@@ -60,7 +60,7 @@ uv run discover-sources --max-sources 3
 
 The repository uses automated GitHub Actions workflows with distinct responsibilities:
 
-1. **Populate Sources** (`.github/workflows/discover-sources.yml`):
+1. **Populate Sources** (`.github/workflows/update-sources.yml`):
    - Decoupled autonomous pipeline that discovers, validates, and populates regional event sources in `scripts/sources_config.json` and compiles `data/sources.json`.
    - Runs every Friday at 03:00 UTC and on manual dispatch.
 2. **Populate Events from Sources** (`.github/workflows/update-events.yml`):
