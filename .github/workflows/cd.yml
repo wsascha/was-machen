@@ -2,9 +2,7 @@ name: "Continuous Deployment (CD)"
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC for start-of-week planning & release
     - cron: "0 6 * * 1"
-    # Every Wednesday at 06:00 UTC for midweek weekend updates & release
     - cron: "0 6 * * 3"
   workflow_dispatch:
     inputs:
@@ -30,9 +28,6 @@ permissions:
 concurrency:
   group: "cd-pipeline"
   cancel-in-progress: false
-
-env:
-  PYTHONUNBUFFERED: "1"
 
 jobs:
   events:

@@ -23,9 +23,6 @@ concurrency:
   group: "events-pipeline"
   cancel-in-progress: false
 
-env:
-  PYTHONUNBUFFERED: "1"
-
 jobs:
   update-events:
     name: "Populate Weekend Events from Sources"
@@ -53,6 +50,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
           TARGET_WEEKEND: ${{ inputs.target_weekend || github.event.inputs.target_weekend }}
         run: uv run update-events
 
@@ -70,26 +68,10 @@ jobs:
             git checkout -b "$BRANCH"
             git commit -m "chore(data): populate weekend events from sources"
             git push origin "$BRANCH"
-            PR_URL=$(gh pr create \
+            gh pr create \
               --title "chore(data): populate weekend events from sources" \
               --body "Automated weekend event crawler updated events and sources data." \
               --base main \
-              --head "$BRANCH")
-            echo "Created PR: $PR_URL"
-            if ! gh pr merge "$PR_URL" --auto --rebase --delete-branch 2>/dev/null; then
-              gh pr merge "$PR_URL" --rebase --delete-branch
-            fi
-            echo "Waiting for PR to merge..."
-            for i in $(seq 1 30); do
-              STATE=$(gh pr view "$PR_URL" --json state --jq .state)
-              if [ "$STATE" = "MERGED" ]; then
-                echo "PR $PR_URL successfully merged into main."
-                break
-              elif [ "$STATE" = "CLOSED" ]; then
-                echo "PR $PR_URL was closed."
-                break
-              fi
-              echo "Waiting for PR $PR_URL to merge (attempt $i/30)..."
-              sleep 10
-            done
+              --head "$BRANCH"
+            gh pr merge --auto --rebase --delete-branch
           fi
