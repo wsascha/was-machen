@@ -1,11 +1,13 @@
 name: "Populate Events"
 
 on:
-  schedule:
-    # Every Wednesday at 06:00 UTC for weekend planning
-    - cron: "0 6 * * 3"
-    # Every Friday at 05:00 UTC for a final update before the weekend
-    - cron: "0 5 * * 5"
+  workflow_call:
+    inputs:
+      target_weekend:
+        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
+        type: string
+        required: false
+        default: ""
   workflow_dispatch:
     inputs:
       target_weekend:
@@ -77,4 +79,17 @@ jobs:
             if ! gh pr merge "$PR_URL" --auto --rebase --delete-branch 2>/dev/null; then
               gh pr merge "$PR_URL" --rebase --delete-branch
             fi
+            echo "Waiting for PR to merge..."
+            for i in $(seq 1 30); do
+              STATE=$(gh pr view "$PR_URL" --json state --jq .state)
+              if [ "$STATE" = "MERGED" ]; then
+                echo "PR $PR_URL successfully merged into main."
+                break
+              elif [ "$STATE" = "CLOSED" ]; then
+                echo "PR $PR_URL was closed."
+                break
+              fi
+              echo "Waiting for PR $PR_URL to merge (attempt $i/30)..."
+              sleep 10
+            done
           fi
