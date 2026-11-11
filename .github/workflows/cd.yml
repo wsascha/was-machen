@@ -2,9 +2,21 @@ name: "Continuous Deployment (CD)"
 
 on:
   schedule:
-    # Every Thursday at 06:00 UTC for weekly release
-    - cron: "0 6 * * 4"
+    # Every Monday at 06:00 UTC for start-of-week planning & release
+    - cron: "0 6 * * 1"
+    # Every Wednesday at 06:00 UTC for midweek weekend updates & release
+    - cron: "0 6 * * 3"
   workflow_dispatch:
+    inputs:
+      skip_crawler:
+        description: "Skip crawling and immediately deploy static site to GitHub Pages"
+        type: boolean
+        required: false
+        default: false
+      target_weekend:
+        description: "Target weekend Saturday date in YYYY-MM-DD format (empty = next weekend)"
+        required: false
+        default: ""
   push:
     branches:
       - main
@@ -13,6 +25,7 @@ permissions:
   contents: write
   id-token: write
   pages: write
+  pull-requests: write
 
 concurrency:
   group: "cd-pipeline"
@@ -22,8 +35,18 @@ env:
   PYTHONUNBUFFERED: "1"
 
 jobs:
+  events:
+    name: "Populate Events"
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_crawler != true
+    uses: ./.github/workflows/update-events.yml
+    secrets: inherit
+    with:
+      target_weekend: ${{ inputs.target_weekend || github.event.inputs.target_weekend || '' }}
+
   deploy-pages:
     name: "Deploy static site to GitHub Pages"
+    needs: [events]
+    if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped')
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -52,8 +75,8 @@ jobs:
 
   release:
     name: "Create Weekly GitHub Release"
-    needs: [deploy-pages]
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: [events, deploy-pages]
+    if: always() && (needs.events.result == 'success' || needs.events.result == 'skipped') && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     permissions:
       contents: write
