@@ -1419,3 +1419,99 @@ details.info-accordion[open] summary {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* ==========================================================================
+   Back to Top ("Nach oben") Floating Button
+   Modern Web Guidance: scroll-position-aware-elements
+   ========================================================================== */
+.scroll-sentinel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.btn-back-to-top {
+  position: fixed;
+  bottom: max(1.25rem, env(safe-area-inset-bottom, 1.25rem));
+  right: max(1.25rem, env(safe-area-inset-right, 1.25rem));
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--brand-primary, #0c7c59);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+  padding: 0.65rem 1.1rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  translate: 0 16px;
+  transition:
+    visibility 0.25s,
+    opacity 0.25s ease,
+    translate 0.25s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 44px;
+}
+
+.btn-back-to-top:hover {
+  background: var(--brand-primary-hover, #085e43);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
+}
+
+.btn-back-to-top:active {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back-to-top:focus-visible {
+  outline: 3px solid var(--brand-primary, #0c7c59);
+  outline-offset: 3px;
+}
+
+.btn-back-to-top.visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  translate: 0 0;
+}
+
+.btn-back-to-top .icon-arrow-up {
+  display: inline-block;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-back-to-top:hover .icon-arrow-up {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .btn-back-to-top {
+    padding: 0.55rem 0.95rem;
+    font-size: 0.82rem;
+    bottom: max(1rem, env(safe-area-inset-bottom, 1rem));
+    right: max(1rem, env(safe-area-inset-right, 1rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-back-to-top {
+    transition: none;
+  }
+  .btn-back-to-top:hover .icon-arrow-up {
+    transform: none;
+  }
+}
