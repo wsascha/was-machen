@@ -13,9 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- App Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=20261109_16">
+  <link rel="stylesheet" href="css/styles.css?v=20261112_01">
 </head>
 <body>
+  <!-- Scroll sentinel for Back to Top detection per Modern Web Guidance -->
+  <div id="scroll-sentinel" class="scroll-sentinel" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="header-inner">
       <div class="brand-group">
@@ -226,9 +229,24 @@
     </div>
   </dialog>
 
+  <!-- Floating Back to Top Button per Modern Web Guidance: scroll-position-aware-elements -->
+  <button
+    type="button"
+    id="btn-back-to-top"
+    class="btn-back-to-top"
+    aria-label="Nach oben scrollen"
+    title="Nach oben scrollen"
+    tabindex="-1"
+  >
+    <svg class="icon-arrow-up" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+    <span class="btn-back-to-top-text">Nach oben</span>
+  </button>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- App Logic -->
-  <script src="js/app.js?v=20261109_19" defer></script>
+  <script src="js/app.js?v=20261112_01" defer></script>
 </body>
 </html>

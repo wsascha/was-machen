@@ -725,6 +725,55 @@ async function initApp() {
   document.getElementById('btn-open-methodology').addEventListener('click', () => {
     document.getElementById('methodology-dialog').showModal();
   });
+
+  // Wire Back to Top Floating Button (Modern Web Guidance: scroll-position-aware-elements)
+  initBackToTop();
+}
+
+/**
+ * Initializes floating "Back to top" button with IntersectionObserver
+ * and accessible smooth-scrolling behavior.
+ */
+function initBackToTop() {
+  const btn = document.getElementById('btn-back-to-top');
+  if (!btn) return;
+
+  const sentinel = document.getElementById('scroll-sentinel');
+  const toggleVisibility = (show) => {
+    btn.classList.toggle('visible', show);
+    btn.setAttribute('tabindex', show ? '0' : '-1');
+  };
+
+  if ('IntersectionObserver' in window && sentinel) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // When sentinel is out of view, the user has scrolled down
+          toggleVisibility(!entry.isIntersecting);
+        });
+      },
+      { threshold: 0 }
+    );
+    observer.observe(sentinel);
+  } else {
+    // Fallback scroll listener
+    window.addEventListener(
+      'scroll',
+      () => {
+        toggleVisibility(window.scrollY > 250);
+      },
+      { passive: true }
+    );
+  }
+
+  btn.addEventListener('click', () => {
+    const prefersReducedMotion =
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? 'auto' : 'smooth',
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
