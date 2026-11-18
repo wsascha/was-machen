@@ -487,7 +487,6 @@ def enrich_with_gemini_if_available(
 
         gen_config: Any = {
             "response_mime_type": "application/json",
-            "response_schema": list[Event],
         }
         response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
