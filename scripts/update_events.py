@@ -278,97 +278,18 @@ def format_weekend_label(friday: dt.date, sunday: dt.date) -> str:
     )
 
 
-def roll_events_to_weekend(
-    events: list[Event],
-    target_weekend: tuple[dt.date, dt.date, dt.date],
-    old_weekend_start: str | None = None,
-) -> list[Event]:
-    """Roll event dates to the target weekend for recurring and venue attractions."""
-    friday, saturday, sunday = target_weekend
-    fri_iso = friday.isoformat()
-    sat_iso = saturday.isoformat()
-    sun_iso = sunday.isoformat()
-
-    replacements: list[tuple[str, str]] = []
-    if old_weekend_start and old_weekend_start.strip():
-        try:
-            old_fri = dt.date.fromisoformat(old_weekend_start.strip())
-            old_sat = old_fri + dt.timedelta(days=1)
-            old_sun = old_fri + dt.timedelta(days=2)
-
-            replacements = [
-                (old_fri.isoformat(), fri_iso),
-                (old_sat.isoformat(), sat_iso),
-                (old_sun.isoformat(), sun_iso),
-                (old_fri.strftime("%d.%m."), friday.strftime("%d.%m.")),
-                (old_sat.strftime("%d.%m."), saturday.strftime("%d.%m.")),
-                (old_sun.strftime("%d.%m."), sunday.strftime("%d.%m.")),
-                (
-                    f"{old_fri.day}.{old_fri.month:02d}.",
-                    f"{friday.day}.{friday.month:02d}.",
-                ),
-                (
-                    f"{old_sat.day}.{old_sat.month:02d}.",
-                    f"{saturday.day}.{saturday.month:02d}.",
-                ),
-                (
-                    f"{old_sun.day}.{old_sun.month:02d}.",
-                    f"{sunday.day}.{sunday.month:02d}.",
-                ),
-                (
-                    f"{old_fri.day}.–{old_sun.day}. {GERMAN_MONTHS[old_sun.month]}",
-                    f"{friday.day}.–{sunday.day}. {GERMAN_MONTHS[sunday.month]}",
-                ),
-                (
-                    f"{old_sat.day}.–{old_sun.day}. {GERMAN_MONTHS[old_sun.month]}",
-                    f"{saturday.day}.–{sunday.day}. {GERMAN_MONTHS[sunday.month]}",
-                ),
-            ]
-        except ValueError:
-            pass
-
-    for ev in events:
-        if not ev.days:
-            ev.days = [sat_iso, sun_iso]
-        else:
-            new_days: list[str] = []
-            for d_str in ev.days:
-                try:
-                    d = dt.date.fromisoformat(d_str)
-                    if d < friday:
-                        weekday = d.weekday()
-                        if weekday == 4:
-                            new_days.append(fri_iso)
-                        elif weekday == 5:
-                            new_days.append(sat_iso)
-                        elif weekday == 6:
-                            new_days.append(sun_iso)
-                        else:
-                            new_days.append(sat_iso)
-                    else:
-                        new_days.append(d_str)
-                except ValueError:
-                    new_days.append(sat_iso)
-            ev.days = sorted(list(set(new_days)))
-
-        for old_txt, new_txt in replacements:
-            if old_txt in ev.date_display:
-                ev.date_display = ev.date_display.replace(old_txt, new_txt)
-            if old_txt in ev.subtitle:
-                ev.subtitle = ev.subtitle.replace(old_txt, new_txt)
-
-    return events
-
-
 def archive_past_events(
     database: EventsDatabase,
     target_friday: dt.date,
-    past_events_path: Path = PAST_EVENTS_JSON_PATH,
+    past_events_path: Path | None = None,
 ) -> PastEventsDatabase:
     """Archive events occurring before the target weekend into data/past_events.json."""
-    if past_events_path.exists():
+    archive_path = (
+        past_events_path if past_events_path is not None else PAST_EVENTS_JSON_PATH
+    )
+    if archive_path.exists():
         try:
-            raw_past = json.loads(past_events_path.read_text(encoding="utf-8"))
+            raw_past = json.loads(archive_path.read_text(encoding="utf-8"))
             past_db = PastEventsDatabase.model_validate(raw_past)
         except Exception as exc:
             print(
@@ -384,7 +305,7 @@ def archive_past_events(
     newly_archived = 0
 
     for ev in database.events:
-        if ev.days and max(ev.days) < fri_iso:
+        if not ev.days or max(ev.days) < fri_iso:
             key = (ev.id, tuple(sorted(ev.days)))
             if key not in existing_keys:
                 past_db.events.append(ev.model_copy(deep=True))
@@ -397,12 +318,12 @@ def archive_past_events(
         "%Y-%m-%dT%H:%M:%SZ"
     )
 
-    past_events_path.write_text(
+    archive_path.write_text(
         json.dumps(past_db.model_dump(), ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     if newly_archived > 0:
-        print(f"[INFO] Archived {newly_archived} past events to {past_events_path}.")
+        print(f"[INFO] Archived {newly_archived} past events to {archive_path}.")
 
     return past_db
 
@@ -648,8 +569,18 @@ def run_aggregator(settings: Settings) -> None:
     sources_cfg = load_modular_sources(config)
     criteria_cfg = config.get("evaluation_criteria", [])
     old_weekend_start = database.metadata.weekend_start or None
+    target_weekend_start = friday.isoformat()
 
-    archive_past_events(database, friday)
+    # For each new weekend, events are reset with no carry-over
+    if old_weekend_start != target_weekend_start:
+        archive_past_events(database, friday, past_events_path=PAST_EVENTS_JSON_PATH)
+        database.events = []
+        print(
+            f"[INFO] New target weekend detected ({target_weekend_start} to {sunday.isoformat()}). "
+            f"Reset active events (no carry-over)."
+        )
+    else:
+        archive_past_events(database, friday, past_events_path=PAST_EVENTS_JSON_PATH)
 
     if not settings.skip_network_check:
         print(
@@ -682,11 +613,11 @@ def run_aggregator(settings: Settings) -> None:
             f"(network check skipped)."
         )
 
-    database.events = roll_events_to_weekend(
-        database.events,
-        (friday, saturday, sunday),
-        old_weekend_start=old_weekend_start,
-    )
+    # Ensure no past-dated events linger in database.events
+    fri_iso = friday.isoformat()
+    database.events = [
+        ev for ev in database.events if not ev.days or max(ev.days) >= fri_iso
+    ]
 
     valid_events: list[Event] = []
     for ev in database.events:

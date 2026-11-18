@@ -27,7 +27,6 @@ from scripts.update_events import (
     haversine_km,
     load_modular_sources,
     main,
-    roll_events_to_weekend,
     run_aggregator,
     slugify,
 )
@@ -403,40 +402,66 @@ class TestFormatWeekendLabel:
         assert format_weekend_label(fri, sun) == "31. Dezember 2026 – 2. Januar 2027"
 
 
-class TestRollEventsToWeekend:
-    """Tests for rolling recurring event dates forward to target weekends."""
+class TestWeekendResetNoCarryOver:
+    """Tests ensuring events reset for each new weekend with zero carry-over."""
 
-    def test_rolls_past_dates_and_updates_display(self) -> None:
-        from scripts.schema import Event
-
-        ev = Event(
-            id="test-venue",
-            title="Museum Schloss",
-            days=["2026-11-14", "2026-11-15"],
-            date_display="Sa, 14.11. & So, 15.11.2026 · jeweils 10:00 Uhr",
-            subtitle="14.–15. November",
+    def test_new_weekend_resets_events_and_archives_prior(self, tmp_path: Path) -> None:
+        config_file = tmp_path / "sources_config.json"
+        config_file.write_text(
+            json.dumps({"sources": [], "source_types": {}}), encoding="utf-8"
         )
-        target = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
-        rolled = roll_events_to_weekend([ev], target, old_weekend_start="2026-11-13")
+        events_file = tmp_path / "events.json"
+        past_events_file = tmp_path / "past_events.json"
+        sources_file = tmp_path / "sources.json"
 
-        assert len(rolled) == 1
-        assert rolled[0].days == ["2026-11-21", "2026-11-22"]
-        assert "Sa, 21.11. & So, 22.11.2026" in rolled[0].date_display
-        assert "21.–22. November" in rolled[0].subtitle
-
-    def test_keeps_current_dates_intact(self) -> None:
-        from scripts.schema import Event
-
-        ev = Event(
-            id="already-current",
-            title="Aktuelles Event",
-            days=["2026-11-21"],
-            date_display="Sa, 21.11.2026",
+        # Previous weekend database with past events
+        events_file.write_text(
+            json.dumps(
+                {
+                    "metadata": {
+                        "weekend_start": "2026-11-13",
+                        "weekend_end": "2026-11-15",
+                        "weekend_label": "13.–15. November 2026",
+                    },
+                    "events": [
+                        {
+                            "id": "acherner-spieletage-34",
+                            "title": "34. Acherner Spieletage",
+                            "days": ["2026-11-14", "2026-11-15"],
+                            "coordinates": {"lat": BUEHL_LAT, "lon": BUEHL_LON},
+                            "drive_minutes": 15,
+                            "distance_km": 12,
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
         )
-        target = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
-        rolled = roll_events_to_weekend([ev], target, old_weekend_start="2026-11-20")
 
-        assert rolled[0].days == ["2026-11-21"]
+        settings = Settings(
+            skip_network_check=True,
+            target_weekend="2026-11-21",
+        )
+
+        with (
+            patch("scripts.update_events.CONFIG_PATH", config_file),
+            patch("scripts.update_events.EVENTS_JSON_PATH", events_file),
+            patch("scripts.update_events.PAST_EVENTS_JSON_PATH", past_events_file),
+            patch("scripts.update_events.SOURCES_JSON_PATH", sources_file),
+        ):
+            run_aggregator(settings)
+
+            updated = json.loads(events_file.read_text(encoding="utf-8"))
+            # Must be empty - NO carry-over!
+            assert len(updated["events"]) == 0
+            assert updated["metadata"]["weekend_start"] == "2026-11-20"
+            assert updated["metadata"]["total_events"] == 0
+
+            # Prior event must be in past_events.json
+            assert past_events_file.exists()
+            past = json.loads(past_events_file.read_text(encoding="utf-8"))
+            assert len(past["events"]) == 1
+            assert past["events"][0]["id"] == "acherner-spieletage-34"
 
 
 class TestArchivePastEvents:
@@ -560,7 +585,7 @@ class TestRunAggregator:
         events_file.write_text(
             json.dumps(
                 {
-                    "metadata": {},
+                    "metadata": {"weekend_start": "2026-11-13"},
                     "events": [
                         {
                             "id": "ev-nearby",
@@ -568,6 +593,7 @@ class TestRunAggregator:
                             "coordinates": {"lat": BUEHL_LAT, "lon": BUEHL_LON},
                             "drive_minutes": 10,
                             "distance_km": 5,
+                            "days": ["2026-11-14"],
                             "criteria_ratings": {"hands_on": {"score": 9.0}},
                             "sources": [
                                 {
@@ -582,6 +608,7 @@ class TestRunAggregator:
                             "coordinates": {"lat": 50.0, "lon": 10.0},
                             "drive_minutes": 120,
                             "distance_km": 150,
+                            "days": ["2026-11-14"],
                             "criteria_ratings": {"hands_on": {"score": 8.0}},
                         },
                     ],
@@ -694,8 +721,8 @@ class TestCliExecution:
         assert "Saved" in captured.out
 
         updated_events = json.loads(test_events.read_text(encoding="utf-8"))
-        assert len(updated_events["events"]) > 0
-        assert updated_events["metadata"]["total_events"] > 0
+        assert updated_events["metadata"]["weekend_start"] == "2026-11-13"
+        assert updated_events["metadata"]["total_events"] == 0
         assert test_sources.exists()
         updated_sources = json.loads(test_sources.read_text(encoding="utf-8"))
         assert len(updated_sources["sources"]) > 0

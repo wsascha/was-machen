@@ -208,7 +208,7 @@ class TestDatabaseSchema:
 
         raw_events = json.loads(events_file.read_text(encoding="utf-8"))
         events_db = EventsDatabase.model_validate(raw_events)
-        assert len(events_db.events) > 0
+        assert isinstance(events_db.events, list)
         assert events_db.metadata.home_base.name == "77815 Bühl (Baden)"
         assert events_db.metadata.total_events == len(events_db.events)
 
