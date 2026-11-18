@@ -244,6 +244,120 @@ def get_next_weekend(
     return friday, saturday, sunday
 
 
+GERMAN_MONTHS = [
+    "",
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember",
+]
+
+
+def format_weekend_label(friday: dt.date, sunday: dt.date) -> str:
+    """Format human-readable weekend label, handling month and year transitions."""
+    if friday.year == sunday.year:
+        if friday.month == sunday.month:
+            return f"{friday.day}.–{sunday.day}. {GERMAN_MONTHS[sunday.month]} {sunday.year}"
+        return (
+            f"{friday.day}. {GERMAN_MONTHS[friday.month]} – "
+            f"{sunday.day}. {GERMAN_MONTHS[sunday.month]} {sunday.year}"
+        )
+    return (
+        f"{friday.day}. {GERMAN_MONTHS[friday.month]} {friday.year} – "
+        f"{sunday.day}. {GERMAN_MONTHS[sunday.month]} {sunday.year}"
+    )
+
+
+def roll_events_to_weekend(
+    events: list[Event],
+    target_weekend: tuple[dt.date, dt.date, dt.date],
+    old_weekend_start: str | None = None,
+) -> list[Event]:
+    """Roll event dates to the target weekend for recurring and venue attractions."""
+    friday, saturday, sunday = target_weekend
+    fri_iso = friday.isoformat()
+    sat_iso = saturday.isoformat()
+    sun_iso = sunday.isoformat()
+
+    replacements: list[tuple[str, str]] = []
+    if old_weekend_start and old_weekend_start.strip():
+        try:
+            old_fri = dt.date.fromisoformat(old_weekend_start.strip())
+            old_sat = old_fri + dt.timedelta(days=1)
+            old_sun = old_fri + dt.timedelta(days=2)
+
+            replacements = [
+                (old_fri.isoformat(), fri_iso),
+                (old_sat.isoformat(), sat_iso),
+                (old_sun.isoformat(), sun_iso),
+                (old_fri.strftime("%d.%m."), friday.strftime("%d.%m.")),
+                (old_sat.strftime("%d.%m."), saturday.strftime("%d.%m.")),
+                (old_sun.strftime("%d.%m."), sunday.strftime("%d.%m.")),
+                (
+                    f"{old_fri.day}.{old_fri.month:02d}.",
+                    f"{friday.day}.{friday.month:02d}.",
+                ),
+                (
+                    f"{old_sat.day}.{old_sat.month:02d}.",
+                    f"{saturday.day}.{saturday.month:02d}.",
+                ),
+                (
+                    f"{old_sun.day}.{old_sun.month:02d}.",
+                    f"{sunday.day}.{sunday.month:02d}.",
+                ),
+                (
+                    f"{old_fri.day}.–{old_sun.day}. {GERMAN_MONTHS[old_sun.month]}",
+                    f"{friday.day}.–{sunday.day}. {GERMAN_MONTHS[sunday.month]}",
+                ),
+                (
+                    f"{old_sat.day}.–{old_sun.day}. {GERMAN_MONTHS[old_sun.month]}",
+                    f"{saturday.day}.–{sunday.day}. {GERMAN_MONTHS[sunday.month]}",
+                ),
+            ]
+        except ValueError:
+            pass
+
+    for ev in events:
+        if not ev.days:
+            ev.days = [sat_iso, sun_iso]
+        else:
+            new_days: list[str] = []
+            for d_str in ev.days:
+                try:
+                    d = dt.date.fromisoformat(d_str)
+                    if d < friday:
+                        weekday = d.weekday()
+                        if weekday == 4:
+                            new_days.append(fri_iso)
+                        elif weekday == 5:
+                            new_days.append(sat_iso)
+                        elif weekday == 6:
+                            new_days.append(sun_iso)
+                        else:
+                            new_days.append(sat_iso)
+                    else:
+                        new_days.append(d_str)
+                except ValueError:
+                    new_days.append(sat_iso)
+            ev.days = sorted(list(set(new_days)))
+
+        for old_txt, new_txt in replacements:
+            if old_txt in ev.date_display:
+                ev.date_display = ev.date_display.replace(old_txt, new_txt)
+            if old_txt in ev.subtitle:
+                ev.subtitle = ev.subtitle.replace(old_txt, new_txt)
+
+    return events
+
+
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Calculate great-circle distance between two coordinates in kilometers."""
     radius_km = 6371.0
@@ -338,13 +452,14 @@ def enrich_with_gemini_if_available(
     raw_candidates: list[dict[str, Any]],
     weekend_dates: tuple[dt.date, dt.date, dt.date],
     api_key: str | None = None,
+    sources_catalog: list[dict[str, Any]] | None = None,
 ) -> list[Event]:
     """
     Optional AI evaluation step using Google Gemini API to rate newly
-    crawled raw events for children (4-9 years) based on the 7 criteria.
+    crawled raw events or discover fresh weekend activities for children (4-9 years).
     """
     key = (api_key or "").strip()
-    if not key or not raw_candidates:
+    if not key or (not raw_candidates and not sources_catalog):
         return []
 
     new_events: list[Event] = []
@@ -353,19 +468,41 @@ def enrich_with_gemini_if_available(
 
         client = genai.Client(api_key=key)
         fri, _sat, sun = weekend_dates
-        prompt = (
-            f"Du bist ein Familien-Freizeit-Experte für die Region Bühl (77815), "
-            f"Baden, Schwarzwald und Elsass. Bewerte die folgenden Roh-Veranstaltungen "
-            f"für das Wochenende {fri.isoformat()} bis {sun.isoformat()} speziell für "
-            f"Familien mit Kindern von 4 bis 9 Jahren. "
-            f"Gib eine JSON-Liste aus passenden Event-Objekten zurück, falls unter den Rohdaten neue Top-Events sind. "
-            f"Jedes Event-Objekt muss mindestens 'id', 'title', 'category', 'weather_type' enthalten."
-        )
+        if raw_candidates:
+            prompt = (
+                f"Du bist ein Familien-Freizeit-Experte für die Region Bühl (77815), "
+                f"Baden, Schwarzwald und Elsass. Bewerte die folgenden Roh-Veranstaltungen "
+                f"für das Wochenende {fri.isoformat()} bis {sun.isoformat()} speziell für "
+                f"Familien mit Kindern von 4 bis 9 Jahren. "
+                f"Gib eine JSON-Liste aus passenden Event-Objekten zurück, falls unter den Rohdaten neue Top-Events sind. "
+                f"Jedes Event-Objekt muss mindestens 'id', 'title', 'category', 'weather_type' enthalten."
+            )
+            contents = f"{prompt}\n\nRohdaten:\n{json.dumps(raw_candidates[:15], ensure_ascii=False)}"
+        else:
+            sources_summary = [
+                {
+                    "name": s.get("name"),
+                    "region": s.get("region"),
+                    "url": s.get("url"),
+                    "type": s.get("type"),
+                }
+                for s in (sources_catalog or [])[:30]
+            ]
+            prompt = (
+                f"Du bist ein Familien-Freizeit-Experte für die Region 77815 Bühl, "
+                f"Baden, Nordschwarzwald und Elsass (max. 60 Min. Fahrzeit). "
+                f"Recherchiere und schlage 3 bis 6 konkrete, herausragende Wochenend-Aktivitäten "
+                f"für das Wochenende Freitag {fri.isoformat()} bis Sonntag {sun.isoformat()} vor, "
+                f"speziell für Familien mit Kindern von 4 bis 9 Jahren, basierend auf den folgenden regionalen Quellen. "
+                f"Gib ausschließlich ein valides JSON-Array von Event-Objekten zurück."
+            )
+            contents = f"{prompt}\n\nRegionale Quellen:\n{json.dumps(sources_summary, ensure_ascii=False)}"
+
         response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
-            contents=f"{prompt}\n\nRohdaten:\n{json.dumps(raw_candidates[:15], ensure_ascii=False)}",
+            contents=contents,
         )
-        print("[AI STREAM: Event Enrichment] Rating raw candidates...", flush=True)
+        print("[AI STREAM: Event Enrichment] Querying Gemini...", flush=True)
         chunks: list[str] = []
         try:
             for chunk in response_stream:
@@ -461,6 +598,7 @@ def run_aggregator(settings: Settings) -> None:
     database = EventsDatabase.model_validate(current_data)
     sources_cfg = load_modular_sources(config)
     criteria_cfg = config.get("evaluation_criteria", [])
+    old_weekend_start = database.metadata.weekend_start or None
 
     if not settings.skip_network_check:
         print(
@@ -476,6 +614,7 @@ def run_aggregator(settings: Settings) -> None:
             raw_candidates,
             (friday, saturday, sunday),
             api_key=settings.gemini_api_key,
+            sources_catalog=sources_cfg,
         )
         if new_events:
             print(
@@ -491,6 +630,12 @@ def run_aggregator(settings: Settings) -> None:
             f"[INFO] Synchronizing {len(sources_cfg)} modular sources "
             f"(network check skipped)."
         )
+
+    database.events = roll_events_to_weekend(
+        database.events,
+        (friday, saturday, sunday),
+        old_weekend_start=old_weekend_start,
+    )
 
     valid_events: list[Event] = []
     for ev in database.events:
@@ -556,8 +701,23 @@ def run_aggregator(settings: Settings) -> None:
         if matched:
             active_sources_count += 1
 
-    database.metadata.last_updated = dt.datetime.now(dt.UTC).strftime(
-        "%Y-%m-%dT%H:%M:%SZ"
+    database.metadata.weekend_start = friday.isoformat()
+    database.metadata.weekend_end = sunday.isoformat()
+    database.metadata.weekend_label = format_weekend_label(friday, sunday)
+
+    now_utc = dt.datetime.now(dt.UTC)
+    database.metadata.last_updated = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    try:
+        from zoneinfo import ZoneInfo
+
+        now_local = now_utc.astimezone(ZoneInfo("Europe/Berlin"))
+    except Exception:
+        now_local = now_utc.astimezone(dt.timezone(dt.timedelta(hours=1)))
+
+    database.metadata.last_updated_display = (
+        f"{now_local.day}. {GERMAN_MONTHS[now_local.month]} {now_local.year}, "
+        f"{now_local.strftime('%H:%M')} Uhr"
     )
     database.metadata.home_base.max_drive_minutes = settings.max_drive_minutes
     database.metadata.sources_checked_count = len(sources_cfg)
@@ -589,3 +749,7 @@ def run_aggregator(settings: Settings) -> None:
 def main() -> None:
     """CLI entrypoint."""
     CliApp.run(Settings)
+
+
+if __name__ == "__main__":
+    main()

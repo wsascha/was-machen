@@ -21,10 +21,12 @@ from scripts.update_events import (
     compute_driving_route_from_buehl,
     enrich_with_gemini_if_available,
     extract_jsonld_events,
+    format_weekend_label,
     get_next_weekend,
     haversine_km,
     load_modular_sources,
     main,
+    roll_events_to_weekend,
     run_aggregator,
     slugify,
 )
@@ -345,6 +347,96 @@ class TestEnrichWithGeminiIfAvailable:
         assert "[AI STREAM: Event Enrichment]" in captured.out
         assert "Puppentheater Zauberwald" in captured.out
 
+    @patch("google.genai.Client")
+    def test_falls_back_to_sources_catalog_when_raw_candidates_empty(
+        self, mock_client_cls: MagicMock
+    ) -> None:
+        mock_client = MagicMock()
+        mock_client_cls.return_value = mock_client
+        chunk = MagicMock()
+        chunk.text = json.dumps(
+            [
+                {
+                    "id": "gemini-discovered-event",
+                    "title": "Naturerlebnis Nordschwarzwald",
+                    "category": "nature",
+                    "weather_type": "outdoor",
+                    "country": "DE",
+                    "region": "Baden",
+                    "city": "Bühlertal",
+                }
+            ]
+        )
+        mock_client.models.generate_content_stream.return_value = [chunk]
+
+        weekend = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
+        results = enrich_with_gemini_if_available(
+            [],
+            weekend,
+            api_key="valid-key",
+            sources_catalog=[
+                {"name": "Nationalpark Schwarzwald", "url": "https://nationalpark.de"}
+            ],
+        )
+        assert len(results) == 1
+        assert results[0].id == "gemini-discovered-event"
+        assert results[0].title == "Naturerlebnis Nordschwarzwald"
+
+
+class TestFormatWeekendLabel:
+    """Tests for weekend display label formatting."""
+
+    def test_same_month_label(self) -> None:
+        fri = dt.date(2026, 11, 20)
+        sun = dt.date(2026, 11, 22)
+        assert format_weekend_label(fri, sun) == "20.–22. November 2026"
+
+    def test_month_transition_label(self) -> None:
+        fri = dt.date(2026, 10, 30)
+        sun = dt.date(2026, 11, 1)
+        assert format_weekend_label(fri, sun) == "30. Oktober – 1. November 2026"
+
+    def test_year_transition_label(self) -> None:
+        fri = dt.date(2026, 12, 31)
+        sun = dt.date(2027, 1, 2)
+        assert format_weekend_label(fri, sun) == "31. Dezember 2026 – 2. Januar 2027"
+
+
+class TestRollEventsToWeekend:
+    """Tests for rolling recurring event dates forward to target weekends."""
+
+    def test_rolls_past_dates_and_updates_display(self) -> None:
+        from scripts.schema import Event
+
+        ev = Event(
+            id="test-venue",
+            title="Museum Schloss",
+            days=["2026-11-14", "2026-11-15"],
+            date_display="Sa, 14.11. & So, 15.11.2026 · jeweils 10:00 Uhr",
+            subtitle="14.–15. November",
+        )
+        target = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
+        rolled = roll_events_to_weekend([ev], target, old_weekend_start="2026-11-13")
+
+        assert len(rolled) == 1
+        assert rolled[0].days == ["2026-11-21", "2026-11-22"]
+        assert "Sa, 21.11. & So, 22.11.2026" in rolled[0].date_display
+        assert "21.–22. November" in rolled[0].subtitle
+
+    def test_keeps_current_dates_intact(self) -> None:
+        from scripts.schema import Event
+
+        ev = Event(
+            id="already-current",
+            title="Aktuelles Event",
+            days=["2026-11-21"],
+            date_display="Sa, 21.11.2026",
+        )
+        target = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
+        rolled = roll_events_to_weekend([ev], target, old_weekend_start="2026-11-20")
+
+        assert rolled[0].days == ["2026-11-21"]
+
 
 class TestCheckSourcesHealth:
     """Tests for source pinging and health verification."""
@@ -477,6 +569,11 @@ class TestRunAggregator:
             assert updated["events"][0]["family_score"] == 9.0
             assert updated["metadata"]["total_events"] == 1
             assert updated["metadata"]["home_base"]["max_drive_minutes"] == 60
+            assert updated["metadata"]["weekend_start"] == "2026-11-13"
+            assert updated["metadata"]["weekend_end"] == "2026-11-15"
+            assert updated["metadata"]["weekend_label"] == "13.–15. November 2026"
+            assert "Stand:" in f"Stand: {updated['metadata']['last_updated_display']}"
+            assert updated["metadata"]["last_updated"] != ""
 
             updated_sources = json.loads(sources_file.read_text(encoding="utf-8"))
             assert len(updated_sources["sources"]) == 1
