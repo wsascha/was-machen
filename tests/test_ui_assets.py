@@ -74,3 +74,20 @@ class TestBackToTopScripts:
         assert "IntersectionObserver" in js
         assert "prefers-reduced-motion" in js
         assert "window.scrollTo" in js
+
+
+class TestDayFilterMarkupAndBehavior:
+    """Tests for dynamic day filter dropdown markup and script logic."""
+
+    def test_index_html_has_day_filter_select(self) -> None:
+        html = INDEX_HTML.read_text(encoding="utf-8")
+        assert '<select id="filter-day"' in html
+        assert 'name="day"' in html
+        assert 'value="all"' in html
+
+    def test_app_js_implements_populate_day_filter(self) -> None:
+        js = APP_JS.read_text(encoding="utf-8")
+        assert "function populateDayFilter(weekendStartStr)" in js
+        assert "populateDayFilter(data.metadata.weekend_start);" in js
+        assert "filter-day" in js
+        assert "Date.UTC" in js

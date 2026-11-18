@@ -112,6 +112,46 @@ function initMap() {
 }
 
 /**
+ * Dynamically populate day filter options based on target weekend start date (ISO YYYY-MM-DD)
+ */
+function populateDayFilter(weekendStartStr) {
+  const select = document.getElementById('filter-day');
+  if (!select || !weekendStartStr) return;
+
+  const [year, month, day] = weekendStartStr.split('-').map(Number);
+  if (!year || !month || !day) return;
+
+  // Use UTC to prevent local DST or timezone offsets shifting the date
+  const fri = new Date(Date.UTC(year, month - 1, day));
+  const sat = new Date(Date.UTC(year, month - 1, day + 1));
+  const sun = new Date(Date.UTC(year, month - 1, day + 2));
+
+  const pad = (n) => String(n).padStart(2, '0');
+  const toIso = (d) =>
+    `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`;
+  const toDisplay = (d) =>
+    `${pad(d.getUTCDate())}.${pad(d.getUTCMonth() + 1)}.`;
+
+  const friIso = toIso(fri);
+  const satIso = toIso(sat);
+  const sunIso = toIso(sun);
+
+  const prevValue = select.value;
+  select.innerHTML = `
+    <option value="all">📅 Wochentag: Alle (Fr–So)</option>
+    <option value="${friIso}">Freitag, ${toDisplay(fri)}</option>
+    <option value="${satIso}">Samstag, ${toDisplay(sat)}</option>
+    <option value="${sunIso}">Sonntag, ${toDisplay(sun)}</option>
+  `;
+
+  if ([friIso, satIso, sunIso].includes(prevValue)) {
+    select.value = prevValue;
+  } else {
+    select.value = 'all';
+  }
+}
+
+/**
  * Filter & Sort Events based on current UI controls
  */
 function getFilteredEvents() {
@@ -683,6 +723,9 @@ async function initApp() {
     if (data.metadata?.last_updated_display) {
       const datePart = data.metadata.last_updated_display.split(' ')[0];
       document.getElementById('feed-updated').textContent = `Stand: ${datePart}`;
+    }
+    if (data.metadata?.weekend_start) {
+      populateDayFilter(data.metadata.weekend_start);
     }
   } catch (err) {
     console.error('Failed to load data/events.json:', err);
