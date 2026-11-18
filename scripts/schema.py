@@ -281,6 +281,20 @@ class EventsDatabase(BaseModel):
     )
 
 
+class PastEventsDatabase(BaseModel):
+    """Archived past events database structure stored in data/past_events.json."""
+
+    metadata: Metadata = Field(
+        default_factory=lambda: Metadata(
+            title="Was machen wir am Wochenende? – Archiv vergangener Veranstaltungen"
+        ),
+        description="Archive metadata",
+    )
+    events: list[Event] = Field(
+        default_factory=list, description="List of archived past family events"
+    )
+
+
 class SourcesDatabase(BaseModel):
     """Sources directory database structure stored in data/sources.json."""
 

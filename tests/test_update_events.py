@@ -16,6 +16,7 @@ from scripts.update_events import (
     BUEHL_LON,
     Settings,
     add_source_via_cli,
+    archive_past_events,
     calculate_weighted_score,
     check_sources_health,
     compute_driving_route_from_buehl,
@@ -438,6 +439,44 @@ class TestRollEventsToWeekend:
         assert rolled[0].days == ["2026-11-21"]
 
 
+class TestArchivePastEvents:
+    """Tests for past events archival."""
+
+    def test_archives_past_events_and_skips_current(self, tmp_path: Path) -> None:
+        from scripts.schema import Event, EventsDatabase
+
+        archive_file = tmp_path / "past_events.json"
+        database = EventsDatabase(
+            events=[
+                Event(
+                    id="past-event",
+                    title="Altes Fest",
+                    days=["2026-11-14", "2026-11-15"],
+                ),
+                Event(
+                    id="upcoming-event",
+                    title="Neues Event",
+                    days=["2026-11-21", "2026-11-22"],
+                ),
+            ]
+        )
+
+        target_fri = dt.date(2026, 11, 20)
+        past_db = archive_past_events(
+            database, target_fri, past_events_path=archive_file
+        )
+
+        assert len(past_db.events) == 1
+        assert past_db.events[0].id == "past-event"
+        assert archive_file.exists()
+
+        # Running again with duplicate event does not duplicate
+        past_db2 = archive_past_events(
+            database, target_fri, past_events_path=archive_file
+        )
+        assert len(past_db2.events) == 1
+
+
 class TestCheckSourcesHealth:
     """Tests for source pinging and health verification."""
 
@@ -516,6 +555,7 @@ class TestRunAggregator:
         )
 
         events_file = tmp_path / "events.json"
+        past_events_file = tmp_path / "past_events.json"
         sources_file = tmp_path / "sources.json"
         events_file.write_text(
             json.dumps(
@@ -559,6 +599,7 @@ class TestRunAggregator:
         with (
             patch("scripts.update_events.CONFIG_PATH", config_file),
             patch("scripts.update_events.EVENTS_JSON_PATH", events_file),
+            patch("scripts.update_events.PAST_EVENTS_JSON_PATH", past_events_file),
             patch("scripts.update_events.SOURCES_JSON_PATH", sources_file),
         ):
             run_aggregator(settings)
@@ -630,6 +671,7 @@ class TestCliExecution:
 
         test_config = tmp_path / "sources_config.json"
         test_events = tmp_path / "events.json"
+        test_past_events = tmp_path / "past_events.json"
         test_sources = tmp_path / "sources.json"
         shutil.copyfile(CONFIG_PATH, test_config)
         shutil.copyfile(EVENTS_JSON_PATH, test_events)
@@ -637,6 +679,7 @@ class TestCliExecution:
         with (
             patch("scripts.update_events.CONFIG_PATH", test_config),
             patch("scripts.update_events.EVENTS_JSON_PATH", test_events),
+            patch("scripts.update_events.PAST_EVENTS_JSON_PATH", test_past_events),
             patch("scripts.update_events.SOURCES_JSON_PATH", test_sources),
         ):
             settings = CliApp.run(

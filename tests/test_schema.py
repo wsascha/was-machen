@@ -18,6 +18,7 @@ from scripts.schema import (
     HomeBase,
     Metadata,
     ModularSourceEntry,
+    PastEventsDatabase,
     SelectedEventRef,
     SourceCatalogEntry,
     SourceTypeMeta,
@@ -216,6 +217,16 @@ class TestDatabaseSchema:
         assert len(sources_db.sources) > 0
         assert len(sources_db.source_types) > 0
         assert sources_db.metadata.sources_checked_count == len(sources_db.sources)
+
+    def test_past_events_database_validation_against_real_dataset(self) -> None:
+        data_dir = Path(__file__).resolve().parent.parent / "data"
+        past_events_file = data_dir / "past_events.json"
+        assert past_events_file.exists()
+
+        raw_past = json.loads(past_events_file.read_text(encoding="utf-8"))
+        past_db = PastEventsDatabase.model_validate(raw_past)
+        assert len(past_db.events) > 0
+        assert past_db.metadata.total_events == len(past_db.events)
 
     def test_metadata_defaults(self) -> None:
         meta = Metadata()

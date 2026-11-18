@@ -33,6 +33,7 @@ from pydantic_settings import BaseSettings, CliApp, CliImplicitFlag, SettingsCon
 from scripts.schema import (
     Event,
     EventsDatabase,
+    PastEventsDatabase,
     SelectedEventRef,
     SourceCatalogEntry,
     SourcesDatabase,
@@ -41,6 +42,7 @@ from scripts.schema import (
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT_DIR / "scripts" / "sources_config.json"
 EVENTS_JSON_PATH = ROOT_DIR / "data" / "events.json"
+PAST_EVENTS_JSON_PATH = ROOT_DIR / "data" / "past_events.json"
 SOURCES_JSON_PATH = ROOT_DIR / "data" / "sources.json"
 
 # Default origin coordinates: 77815 Bühl, Germany (Market square / city center)
@@ -358,6 +360,53 @@ def roll_events_to_weekend(
     return events
 
 
+def archive_past_events(
+    database: EventsDatabase,
+    target_friday: dt.date,
+    past_events_path: Path = PAST_EVENTS_JSON_PATH,
+) -> PastEventsDatabase:
+    """Archive events occurring before the target weekend into data/past_events.json."""
+    if past_events_path.exists():
+        try:
+            raw_past = json.loads(past_events_path.read_text(encoding="utf-8"))
+            past_db = PastEventsDatabase.model_validate(raw_past)
+        except Exception as exc:
+            print(
+                f"[WARN] Failed to load existing past events ({exc}), creating fresh archive."
+            )
+            past_db = PastEventsDatabase()
+    else:
+        past_db = PastEventsDatabase()
+
+    existing_keys = {(ev.id, tuple(sorted(ev.days))) for ev in past_db.events}
+
+    fri_iso = target_friday.isoformat()
+    newly_archived = 0
+
+    for ev in database.events:
+        if ev.days and max(ev.days) < fri_iso:
+            key = (ev.id, tuple(sorted(ev.days)))
+            if key not in existing_keys:
+                past_db.events.append(ev.model_copy(deep=True))
+                existing_keys.add(key)
+                newly_archived += 1
+
+    past_db.events.sort(key=lambda x: max(x.days) if x.days else "", reverse=True)
+    past_db.metadata.total_events = len(past_db.events)
+    past_db.metadata.last_updated = dt.datetime.now(dt.UTC).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+
+    past_events_path.write_text(
+        json.dumps(past_db.model_dump(), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    if newly_archived > 0:
+        print(f"[INFO] Archived {newly_archived} past events to {past_events_path}.")
+
+    return past_db
+
+
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Calculate great-circle distance between two coordinates in kilometers."""
     radius_km = 6371.0
@@ -600,6 +649,8 @@ def run_aggregator(settings: Settings) -> None:
     criteria_cfg = config.get("evaluation_criteria", [])
     old_weekend_start = database.metadata.weekend_start or None
 
+    archive_past_events(database, friday)
+
     if not settings.skip_network_check:
         print(
             f"[INFO] Checking {len(sources_cfg)} modular sources in Baden, "
@@ -741,8 +792,9 @@ def run_aggregator(settings: Settings) -> None:
         encoding="utf-8",
     )
     print(
-        f"[SUCCESS] Saved {len(valid_events)} family events to {EVENTS_JSON_PATH} "
-        f"and {len(sources_cfg)} data sources to {SOURCES_JSON_PATH}."
+        f"[SUCCESS] Saved {len(valid_events)} family events to {EVENTS_JSON_PATH}, "
+        f"{len(sources_cfg)} data sources to {SOURCES_JSON_PATH}, "
+        f"and updated past events archive at {PAST_EVENTS_JSON_PATH}."
     )
 
 
