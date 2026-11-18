@@ -437,15 +437,33 @@ def enrich_with_gemini_if_available(
         from google import genai
 
         client = genai.Client(api_key=key)
-        fri, _sat, sun = weekend_dates
+        fri, sat, sun = weekend_dates
+        schema_hint = (
+            "Jedes Event-Objekt muss dem Schema entsprechen:\n"
+            "- id: eindeutiger Slug (z.B. 'unimog-museum-gaggenau-2026-11-21')\n"
+            "- title: deutscher Titel\n"
+            "- subtitle: kurzer Untertitel\n"
+            "- short_pin_label: kurzes Label für die Karte\n"
+            "- category: exakt einer aus ['action', 'creative', 'market', 'museum', 'nature', 'theater']\n"
+            "- weather_type: exakt einer aus ['indoor', 'mixed', 'outdoor']\n"
+            "- country: 'DE' oder 'FR'\n"
+            "- region, city, venue_name, address\n"
+            "- coordinates: {'lat': float, 'lon': float}\n"
+            f"- days: Liste aus passenden ISO-Daten dieses Wochenendes, z.B. ['{sat.isoformat()}', '{sun.isoformat()}']\n"
+            "- date_display: formatiertes Datum + Uhrzeiten (z.B. 'Sa, 21.11. & So, 22.11.2026 · 10:00–17:00 Uhr')\n"
+            "- duration_display: z.B. '2–3 Stunden'\n"
+            "- summary, detailed_description, parking_info, booking_info, price_info\n"
+            "- age_suitability: {'min': 4, 'max': 9, 'label': '4–9 Jahre', 'ideal_for_4_5': true, 'ideal_for_6_9': true}\n"
+            "- criteria_ratings: Bewertungen (1.0–10.0) für 'age_fit', 'experience_value', 'weather_suitability', 'relaxation_parents', 'travel_parking', 'infrastructure_food', 'language_accessibility'\n"
+            "- pros, tips_and_watchouts, tags: Listen von Strings\n"
+            "- sources: Liste von {'name': '...', 'url': 'https://...'}\n"
+        )
         if raw_candidates:
             prompt = (
                 f"Du bist ein Familien-Freizeit-Experte für die Region Bühl (77815), "
                 f"Baden, Schwarzwald und Elsass. Bewerte die folgenden Roh-Veranstaltungen "
                 f"für das Wochenende {fri.isoformat()} bis {sun.isoformat()} speziell für "
-                f"Familien mit Kindern von 4 bis 9 Jahren. "
-                f"Gib eine JSON-Liste aus passenden Event-Objekten zurück, falls unter den Rohdaten neue Top-Events sind. "
-                f"Jedes Event-Objekt muss mindestens 'id', 'title', 'category', 'weather_type' enthalten."
+                f"Familien mit Kindern von 4 bis 9 Jahren.\n\n{schema_hint}"
             )
             contents = f"{prompt}\n\nRohdaten:\n{json.dumps(raw_candidates[:15], ensure_ascii=False)}"
         else:
@@ -461,16 +479,20 @@ def enrich_with_gemini_if_available(
             prompt = (
                 f"Du bist ein Familien-Freizeit-Experte für die Region 77815 Bühl, "
                 f"Baden, Nordschwarzwald und Elsass (max. 60 Min. Fahrzeit). "
-                f"Recherchiere und schlage 3 bis 6 konkrete, herausragende Wochenend-Aktivitäten "
-                f"für das Wochenende Freitag {fri.isoformat()} bis Sonntag {sun.isoformat()} vor, "
-                f"speziell für Familien mit Kindern von 4 bis 9 Jahren, basierend auf den folgenden regionalen Quellen. "
-                f"Gib ausschließlich ein valides JSON-Array von Event-Objekten zurück."
+                f"Wähle 8 bis 12 konkrete, herausragende Wochenend-Aktivitäten und Veranstaltungen "
+                f"für das Wochenende Freitag {fri.isoformat()} bis Sonntag {sun.isoformat()} aus, "
+                f"speziell für Familien mit Kindern von 4 bis 9 Jahren, basierend auf den folgenden regionalen Quellen.\n\n{schema_hint}"
             )
             contents = f"{prompt}\n\nRegionale Quellen:\n{json.dumps(sources_summary, ensure_ascii=False)}"
 
+        gen_config: Any = {
+            "response_mime_type": "application/json",
+            "response_schema": list[Event],
+        }
         response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
             contents=contents,
+            config=gen_config,
         )
         print("[AI STREAM: Event Enrichment] Querying Gemini...", flush=True)
         chunks: list[str] = []
@@ -493,9 +515,12 @@ def enrich_with_gemini_if_available(
         if isinstance(payload, list):
             for item in payload:
                 if isinstance(item, dict):
+                    if not item.get("id") and item.get("title"):
+                        item["id"] = slugify(str(item["title"]))
                     try:
                         new_events.append(Event.model_validate(item))
-                    except Exception:
+                    except Exception as val_exc:
+                        print(f"[WARN] Skipped invalid Gemini event: {val_exc}")
                         continue
     except Exception as exc:
         print(f"[INFO] Gemini enrichment skipped ({exc}). Using curated database.")
