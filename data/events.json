@@ -8,11 +8,11 @@
       "max_drive_minutes": 60
     },
     "target_age_group": "4–9 Jahre (Kita & Grundschule)",
-    "weekend_start": "2026-11-13",
-    "weekend_end": "2026-11-15",
-    "weekend_label": "13.–15. November",
-    "last_updated": "2026-11-18T15:24:30Z",
-    "last_updated_display": "08.11.2026",
+    "weekend_start": "2026-11-20",
+    "weekend_end": "2026-11-22",
+    "weekend_label": "20.–22. November 2026",
+    "last_updated": "2026-11-18T20:24:05Z",
+    "last_updated_display": "18. November 2026, 21:24 Uhr",
     "sources_checked_count": 46,
     "total_events": 28,
     "sources_with_events_count": 26
@@ -38,10 +38,10 @@
       "drive_minutes_from_buehl": 42,
       "distance_km_from_buehl": 44,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–18:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 · jeweils 10:00–18:00 Uhr",
       "duration_display": "3,5 bis 5 Stunden (Tageshighlight)",
       "family_score": 9.7,
       "summary": "Der absolute Schlechtwetter-Champion für 4–9-Jährige im Elsass: Über 120 interaktive Stationen (riesige Wasserbaustelle, Kinder-Kranbauplatz, Ameisenbau) plus die neue Sonderausstellung „LUNE“ (Mond-Expedition) und Wochenend-Workshops – alles komplett auf Deutsch!",
@@ -137,10 +137,10 @@
       "drive_minutes_from_buehl": 13,
       "distance_km_from_buehl": 10,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (ab 13:00 Uhr) & So, 15.11.2026 (11:00–18:00 Uhr)",
+      "date_display": "Sa, 21.11. (ab 13:00 Uhr) & So, 22.11.2026 (11:00–18:00 Uhr)",
       "duration_display": "2 bis 4 Stunden",
       "family_score": 9.6,
       "summary": "Hunderte Kinder-, Geschicklichkeits- und Familienspiele kostenlos ausleihen und mit Hilfe von „Erklärbären“ sofort losspielen – inklusive großem Spieleflohmarkt und Puzzle-Aktionen.",
@@ -234,10 +234,10 @@
       "drive_minutes_from_buehl": 23,
       "distance_km_from_buehl": 22,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–17:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 · jeweils 10:00–17:00 Uhr",
       "duration_display": "2,5 bis 4 Stunden",
       "family_score": 9.6,
       "summary": "In Kooperation mit Schwabenstein 2×4 e.V. verwandelt sich das Unimog-Museum in ein riesiges LEGO®-Paradies mit freiem Baubereich, Kurbelbahn, LEGO®-Education-Challenge, Kinder-Robotik und echten Unimogs.",
@@ -333,11 +333,11 @@
       "drive_minutes_from_buehl": 38,
       "distance_km_from_buehl": 52,
       "days": [
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Fr, 13.11. bis So, 15.11.2026 · Europa-Park 11:00–19:00 Uhr · Rulantica 09:30–22:00 Uhr",
+      "date_display": "Fr, 20.11. bis So, 22.11.2026 · Europa-Park 11:00–19:00 Uhr · Rulantica 09:30–22:00 Uhr",
       "duration_display": "Ganztagesausflug (5 bis 8 Stunden)",
       "family_score": 9.6,
       "summary": "Geheimtipp für Familien, bei denen Kosten keine Rolle spielen: Mitte November („HALLOWinter“) erlebt ihr den Europa-Park mit Kürbis- UND Tannenbaum-Deko fast ohne Warteschlangen! Und Achtung: Für die Indoor-Wasserwelt Rulantica ist der 14./15.11. das letzte geöffnete Wochenende vor der jährlichen November-Revision (ab 16.11. geschlossen)!",
@@ -427,10 +427,10 @@
       "drive_minutes_from_buehl": 17,
       "distance_km_from_buehl": 15,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 (Führungen) · Spezial-Workshop So, 15.11. um 14:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 (Führungen) · Spezial-Workshop So, 22.11. um 14:00 Uhr",
       "duration_display": "75 bis 90 Minuten",
       "family_score": 9.5,
       "summary": "Im interaktiven Kindermusikmuseum im Festspielhaus Baden-Baden tanzen Kinder über ein Riesenklavier, dirigieren ein virtuelles Orchester oder bauen am Sonntag um 14 Uhr gemeinsam eine echte funktionierende Orgel.",
@@ -521,10 +521,10 @@
       "drive_minutes_from_buehl": 33,
       "distance_km_from_buehl": 39,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (15:00 Führung) & So, 15.11.2026 (11:00–14:00 Art-Action!) · Ausstellung 11–18 Uhr",
+      "date_display": "Sa, 21.11. (15:00 Führung) & So, 22.11.2026 (11:00–14:00 Art-Action!) · Ausstellung 11–18 Uhr",
       "duration_display": "2 bis 4 Stunden",
       "family_score": 9.5,
       "summary": "Im ZKM warten an diesem Wochenende gleich mehrere kostenlose Familien-Formate: die interaktive Spielewelt „zkm_gameplay“, die sensorische Familienführung „Wahrnehmen und spüren“ (Sa 15 Uhr) und das offene Mitmach-Format „Art-Action!“ (So 11–14 Uhr).",
@@ -618,9 +618,9 @@
       "drive_minutes_from_buehl": 35,
       "distance_km_from_buehl": 43,
       "days": [
-        "2026-11-15"
+        "2026-11-22"
       ],
-      "date_display": "So, 15.11.2026 · 13:30 Uhr",
+      "date_display": "So, 22.11.2026 · 13:30 Uhr",
       "duration_display": "ca. 50 Minuten",
       "family_score": 9.5,
       "summary": "Im neuen Karlsruher Planetarium auf dem Kreativpark Alter Schlachthof startet Fritz Fliege mit einer Pusteblumenrakete zu einer kindgerechten 360°-Reise zu Sonne, Mond und Planeten.",
@@ -708,10 +708,10 @@
       "drive_minutes_from_buehl": 29,
       "distance_km_from_buehl": 34,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 11:00–18:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 · jeweils 11:00–18:00 Uhr",
       "duration_display": "1,5 bis 2,5 Stunden",
       "family_score": 9.4,
       "summary": "Im Ettlinger Schloss dürfen Kinder zwischen 4 und 9 Jahren fast alles anfassen: Kettenhemden und Römerhelme aufsetzen, Marschgepäck heben, in der Burgküche kochen und geheime Schubladen öffnen.",
@@ -800,10 +800,10 @@
       "drive_minutes_from_buehl": 35,
       "distance_km_from_buehl": 41,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (11:00 Uhr: Kleiner Maulwurf) & So, 15.11.2026 (11:00 & 14:00 Uhr: Käpten Knitterbart)",
+      "date_display": "Sa, 21.11. (11:00 Uhr: Kleiner Maulwurf) & So, 22.11.2026 (11:00 & 14:00 Uhr: Käpten Knitterbart)",
       "duration_display": "ca. 45–50 Minuten",
       "family_score": 9.4,
       "summary": "Am Samstag sucht der kleine Maulwurf den Übeltäter auf seinem Kopf (ab 3 J.), am Sonntag kapert Cornelia Funkes „Käpten Knitterbart und seine Bande“ (ab 4 J.) die Bühne der Marotte!",
@@ -896,10 +896,10 @@
       "drive_minutes_from_buehl": 44,
       "distance_km_from_buehl": 45,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (14:00 Polaris / 15:30 Sonnensystem) & So, 15.11.2026 (11:00 Polaris / 14:00 Sonnensystem) · Museum 10–18 Uhr",
+      "date_display": "Sa, 21.11. (14:00 Polaris / 15:30 Sonnensystem) & So, 22.11.2026 (11:00 Polaris / 14:00 Sonnensystem) · Museum 10–18 Uhr",
       "duration_display": "2,5 bis 4 Stunden (Kombi)",
       "family_score": 9.4,
       "summary": "Zwei Tür-an-Tür-Highlights im Universitätsgarten Straßburg: Erst im spektakulären neuen Holz-Planetarium die Kindershow „Polaris“ (ab 5 J., mit deutschem Kopfhörer!) oder „Système solaire“ (ab 8 J.) erleben und direkt nebenan das frisch sanierte Zoologische Museum besuchen (Kinder unter 18 J. frei!).",
@@ -993,10 +993,10 @@
       "drive_minutes_from_buehl": 45,
       "distance_km_from_buehl": 58,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–17:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 · jeweils 10:00–17:00 Uhr",
       "duration_display": "2,5 bis 3,5 Stunden",
       "family_score": 9.4,
       "summary": "Im prächtigen Barockschloss Bruchsal staunen Familien über riesige LEGO®-Landschaften und entdecken im selben Gebäude das Deutsche Musikautomaten-Museum mit Kinder-Klangwand und Jahrmarktorgeln.",
@@ -1089,10 +1089,10 @@
       "drive_minutes_from_buehl": 56,
       "distance_km_from_buehl": 68,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (09:00–12:00 & 14:00–18:00 Uhr) & So, 15.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
+      "date_display": "Sa, 21.11. (09:00–12:00 & 14:00–18:00 Uhr) & So, 22.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
       "duration_display": "1,5 bis 2 Stunden",
       "family_score": 9.4,
       "summary": "Im Lebkuchen-Dorf Gertwiller duftet es schon Mitte November herrlich nach Zimt und Honig: Kinder wandern durch eine bunt beleuchtete Hänsel-&-Gretel-Erlebniswelt und verzieren im Workshop ihr eigenes Lebkuchenmännchen („Mannele“).",
@@ -1183,11 +1183,11 @@
       "drive_minutes_from_buehl": 28,
       "distance_km_from_buehl": 33,
       "days": [
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Fr, 13.11. (18–22 Uhr Opening) · Sa, 14.11. (10–21 Uhr) & So, 15.11.2026 (10–20 Uhr)",
+      "date_display": "Fr, 20.11. (18–22 Uhr Opening) · Sa, 21.11. (10–21 Uhr) & So, 22.11.2026 (10–20 Uhr)",
       "duration_display": "2 bis 3,5 Stunden",
       "family_score": 9.3,
       "summary": "Genau am Samstag, 14. November 2026, startet die große überdachte Eislaufarena „Eisläss“ in der Messe Offenburg in die Wintersaison! 100 % regensicher in Halle 1 mit Schlittschuhverleih ab kleinsten Kindergrößen und Pinguin-Lernhilfen.",
@@ -1276,9 +1276,9 @@
       "drive_minutes_from_buehl": 42,
       "distance_km_from_buehl": 50,
       "days": [
-        "2026-11-14"
+        "2026-11-21"
       ],
-      "date_display": "Sa, 14.11.2026 · 11:00 Uhr",
+      "date_display": "Sa, 21.11.2026 · 11:00 Uhr",
       "duration_display": "ca. 75–90 Minuten",
       "family_score": 9.3,
       "summary": "Mr. Heavysaurus und seine Dino-Band rocken am Samstagvormittag die Kulturhalle Remchingen! Ein mitreißendes Familienspektakel mit deutschen Mitsing-Hits („Kaugummi ist mega!“) und kinderfreundlichem Dezibel-Pegel.",
@@ -1368,10 +1368,10 @@
       "drive_minutes_from_buehl": 45,
       "distance_km_from_buehl": 52,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (10:00–19:00 Uhr) & So, 15.11.2026 (14:00–18:00 Uhr) · Workshops 14/15/16 Uhr",
+      "date_display": "Sa, 21.11. (10:00–19:00 Uhr) & So, 22.11.2026 (14:00–18:00 Uhr) · Workshops 14/15/16 Uhr",
       "duration_display": "1,5 bis 2 Stunden",
       "family_score": 9.3,
       "summary": "Südlich von Straßburg tauchen Familien in die Welt der Schokolade ein: mit Maya-Tempel, historischem Kolonialwarenladen, Schoko-Verkostung an mehreren Stationen und Nachmittags-Workshops zum Selbergießen.",
@@ -1460,9 +1460,9 @@
       "drive_minutes_from_buehl": 19,
       "distance_km_from_buehl": 16,
       "days": [
-        "2026-11-15"
+        "2026-11-22"
       ],
-      "date_display": "So, 15.11.2026 · 15:00 Uhr",
+      "date_display": "So, 22.11.2026 · 15:00 Uhr",
       "duration_display": "ca. 50 Minuten (plus Kurpark-Bummel)",
       "family_score": 9.2,
       "summary": "Im wunderschönen Runden Saal des Kurhauses erzählt das Hohenloher Figurentheater die poetische und lustige Geschichte von Jungschaf Berthold auf einer kleinen Nordseeinsel.",
@@ -1550,9 +1550,9 @@
       "drive_minutes_from_buehl": 19,
       "distance_km_from_buehl": 16,
       "days": [
-        "2026-11-15"
+        "2026-11-22"
       ],
-      "date_display": "So, 15.11.2026 · 14:00–17:00 Uhr",
+      "date_display": "So, 22.11.2026 · 14:00–17:00 Uhr",
       "duration_display": "ca. 2,5 bis 3 Stunden",
       "family_score": 9.2,
       "summary": "Passend zur großen Simon-Hantaï-Ausstellung falten, knoten und bemalen Kinder und Erwachsene in der Kunstwerkstatt des Museums eigene großformatige Farb-Kunstwerke.",
@@ -1641,9 +1641,9 @@
       "drive_minutes_from_buehl": 24,
       "distance_km_from_buehl": 22,
       "days": [
-        "2026-11-14"
+        "2026-11-21"
       ],
-      "date_display": "Sa, 14.11.2026 · Beginn 17:30 Uhr (Start Umzug um den See 17:45 Uhr)",
+      "date_display": "Sa, 21.11.2026 · Beginn 17:30 Uhr (Start Umzug um den See 17:45 Uhr)",
       "duration_display": "ca. 1,5 bis 2 Stunden",
       "family_score": 9.2,
       "summary": "Wer am Sankt-Martins-Tag unter der Woche keine Zeit hatte oder noch einmal Laterne laufen möchte: Am Samstagabend verwandelt der Verein „Gemeinsam aktiv für Kinder e.V.“ den Oberkircher Stadtgarten in ein funkelndes Lichtermeer – jedes Kind bekommt einen Martinsweck geschenkt!",
@@ -1736,10 +1736,10 @@
       "drive_minutes_from_buehl": 35,
       "distance_km_from_buehl": 40,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (15:00 Uhr: Wunschpunsch) & So, 15.11.2026 (10:30 Uhr: Nils Karlsson Däumling)",
+      "date_display": "Sa, 21.11. (15:00 Uhr: Wunschpunsch) & So, 22.11.2026 (10:30 Uhr: Nils Karlsson Däumling)",
       "duration_display": "40 Min. (So) bzw. 90 Min. (Sa)",
       "family_score": 9.2,
       "summary": "In der Spielstätte INSEL zeigt das Junge Staatstheater am Samstag Michael Endes rasanten „Wunschpunsch“ (für 7–9-Jährige) und am Sonntagvormittag die zauberhafte Kinderoper „Nils Karlsson Däumling“ nach Astrid Lindgren (für 4–6-Jährige).",
@@ -1828,11 +1828,11 @@
       "drive_minutes_from_buehl": 52,
       "distance_km_from_buehl": 50,
       "days": [
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Fr, 13.11., Sa, 14.11. & So, 15.11.2026 · jeweils 10:00–16:00 Uhr (letzter Einlass 15:00 Uhr)",
+      "date_display": "Fr, 20.11., Sa, 21.11. & So, 22.11.2026 · jeweils 10:00–16:00 Uhr (letzter Einlass 15:00 Uhr)",
       "duration_display": "1,5 bis 2,5 Stunden",
       "family_score": 9.2,
       "summary": "In der letzten aktiven Mundblashütte des Schwarzwalds erleben Kinder glühendes Glas hautnah, bemalen mit Glitzer ihre eigene gläserne Christbaumkugel und schlendern durch das funkelnde Indoor-Weihnachtsdorf.",
@@ -1922,10 +1922,10 @@
       "drive_minutes_from_buehl": 58,
       "distance_km_from_buehl": 56,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (14:00–20:00 Uhr) & So, 15.11.2026 (11:00–18:00 Uhr)",
+      "date_display": "Sa, 21.11. (14:00–20:00 Uhr) & So, 22.11.2026 (11:00–18:00 Uhr)",
       "duration_display": "2 bis 3 Stunden",
       "family_score": 9.2,
       "summary": "Zwei Wochen vor dem 1. Advent öffnet auf Schloss Hornberg die zauberhafte „Weihnachtsmann-Werkstatt“ in der historischen Felsengrotte und im Gewölbekeller: Kinder backen Plätzchen, basteln Geschenke und treffen den Weihnachtsmann persönlich!",
@@ -2019,10 +2019,10 @@
       "drive_minutes_from_buehl": 25,
       "distance_km_from_buehl": 21,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (09:00–18:00 Uhr) & So, 15.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
+      "date_display": "Sa, 21.11. (09:00–18:00 Uhr) & So, 22.11.2026 (10:00–12:00 & 14:00–18:00 Uhr)",
       "duration_display": "1,5 bis 3 Stunden (inkl. Waldspielplatz Gros Chêne)",
       "family_score": 9.1,
       "summary": "Über die Staustufe Iffezheim (nur 25 Min. Fahrt): In Soufflenheim schauen Kinder den Töpfern beim Drehen und Bemalen der bunten Weihnachts-Keramik über die Schulter – kombinierbar mit dem riesigen Waldspielplatz „Gros Chêne“ im Hagenauer Forst!",
@@ -2116,10 +2116,10 @@
       "drive_minutes_from_buehl": 35,
       "distance_km_from_buehl": 34,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (Drachenbronn 14–20 Uhr) & So, 15.11.2026 (Schweighouse 10–18 Uhr / Drachenbronn 10–20 Uhr)",
+      "date_display": "Sa, 21.11. (Drachenbronn 14–20 Uhr) & So, 22.11.2026 (Schweighouse 10–18 Uhr / Drachenbronn 10–20 Uhr)",
       "duration_display": "1,5 bis 2,5 Stunden",
       "family_score": 9.1,
       "summary": "Schon zwei Wochen vor dem großen Advents-Trubel öffnen am 14./15. November die allerersten kleinen elsässischen Hallen-Weihnachtsmärkte in Schweighouse-sur-Moder (35 Min. Fahrt) und Drachenbronn – inklusive Besuch vom Père Noël und seinem Wichtel!",
@@ -2212,11 +2212,11 @@
       "drive_minutes_from_buehl": 54,
       "distance_km_from_buehl": 72,
       "days": [
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-20",
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Fr, 13.11. (13–19 Uhr), Sa, 14.11. (13–19 Uhr) & So, 15.11.2026 (11–18 Uhr)",
+      "date_display": "Fr, 20.11. (13–19 Uhr), Sa, 21.11. (13–19 Uhr) & So, 22.11.2026 (11–18 Uhr)",
       "duration_display": "2 bis 4 Stunden",
       "family_score": 9.1,
       "summary": "Im historischen Barockbau des Elztalmuseums Waldkirch erstreckt sich an diesem Wochenende auf vier Etagen ein zauberhafter Indoor-Weihnachtsmarkt zwischen den berühmten Waldkircher Jahrmarkt- und Drehorgeln! Vorab lockt der geöffnete Schwarzwaldzoo (9–17 Uhr).",
@@ -2309,10 +2309,10 @@
       "drive_minutes_from_buehl": 44,
       "distance_km_from_buehl": 44,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11.2026 · Museum 10:00–18:00 Uhr · Park 07:00–20:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11.2026 · Museum 10:00–18:00 Uhr · Park 07:00–20:00 Uhr",
       "duration_display": "2,5 bis 3,5 Stunden",
       "family_score": 9.0,
       "summary": "In der Villa Greiner entdecken Kinder die Originalzeichnungen zu Tomi Ungerers „Die drei Räuber“ und „Der Mondmann“ sowie seine Sammlung alter Blechspielzeuge – danach geht es zum Austoben und Störche-Schauen in den Parc de l'Orangerie!",
@@ -2401,10 +2401,10 @@
       "drive_minutes_from_buehl": 50,
       "distance_km_from_buehl": 56,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. (10:00 Kinder-Uni / 14:00 Erlebnistag) & So, 15.11.2026 (Zoo 09:00–17:00 Uhr)",
+      "date_display": "Sa, 21.11. (10:00 Kinder-Uni / 14:00 Erlebnistag) & So, 22.11.2026 (Zoo 09:00–17:00 Uhr)",
       "duration_display": "2,5 bis 4 Stunden",
       "family_score": 9.0,
       "summary": "Übersichtlicher, sehr kinderfreundlicher Zoo mit begehbarem Streichelgehege, warmem Dschungelzelt & Affenhaus sowie Spezial-Führungen der Zooschule am Samstag.",
@@ -2497,10 +2497,10 @@
       "drive_minutes_from_buehl": 52,
       "distance_km_from_buehl": 62,
       "days": [
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-21",
+        "2026-11-22"
       ],
-      "date_display": "Sa, 14.11. & So, 15.11. (Winterwelt ab 11 Uhr) · Theater am So, 15.11. um 14:00/15:00/16:00 Uhr",
+      "date_display": "Sa, 21.11. & So, 22.11. (Winterwelt ab 11 Uhr) · Theater am So, 22.11. um 14:00/15:00/16:00 Uhr",
       "duration_display": "2 bis 3,5 Stunden",
       "family_score": 8.9,
       "summary": "Am Sonntag spielt das Figurentheater Mottenkäfig um 15:00 Uhr „Juri und das AlpakaLamaDrama“ (ab 4 J.) und im CCP läuft „Der kleine König feiert Weihnachten“ (14 & 16 Uhr) – direkt neben der neueröffneten Eisbahn der Pforzheimer Winterwelt!",
@@ -2592,9 +2592,9 @@
       "drive_minutes_from_buehl": 39,
       "distance_km_from_buehl": 45,
       "days": [
-        "2026-11-15"
+        "2026-11-22"
       ],
-      "date_display": "So, 15.11.2026 · 14:30–16:00 Uhr",
+      "date_display": "So, 22.11.2026 · 14:30–16:00 Uhr",
       "duration_display": "90 Minuten",
       "family_score": 8.7,
       "summary": "Mit Diplom-Biologin Heike Rösgen erforschen Kinder im Herbstwald, wie Eichhörnchen, Dachs und Igel durch den Winter kommen – und bauen gemeinsam ein echtes Überwinterungsquartier für Igel.",
