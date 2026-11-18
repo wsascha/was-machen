@@ -272,6 +272,17 @@ function renderEventsFeed(events) {
   countEl.textContent = `${events.length} Events`;
   listEl.innerHTML = '';
 
+  if (allEvents.length === 0) {
+    const emptyLi = document.createElement('li');
+    emptyLi.className = 'event-card';
+    emptyLi.innerHTML = `
+      <h3 class="card-title">Noch keine Events für das kommende Wochenende eingetragen</h3>
+      <p class="card-summary">Der automatische Crawler sucht mittwochs und freitags nach neuen Wochenend-Highlights für Familien in der Region Bühl, Baden und Elsass.</p>
+    `;
+    listEl.appendChild(emptyLi);
+    return;
+  }
+
   if (events.length === 0) {
     const emptyLi = document.createElement('li');
     emptyLi.className = 'event-card';
