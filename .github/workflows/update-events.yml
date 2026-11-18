@@ -60,9 +60,9 @@ jobs:
         run: |
           git config --local user.email "5718090+was-machen-bot[bot]@users.noreply.github.com"
           git config --local user.name "was-machen-bot[bot]"
-          git add data/events.json data/sources.json
+          git add data/events.json data/past_events.json data/sources.json
           if git diff --staged --quiet; then
-            echo "No changes detected in data/events.json or data/sources.json."
+            echo "No changes detected in data/events.json, data/past_events.json, or data/sources.json."
           else
             BRANCH="data/update-events-$(date +%s)"
             git checkout -b "$BRANCH"

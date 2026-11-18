@@ -13,7 +13,7 @@
   - **Scopes**:
     - `ci`: GitHub Actions workflows (`.github/workflows/`).
     - `crawler`: Ingestion, scoring, and source discovery pipeline (`scripts/discover_sources.py`, `scripts/release_notes.py`, `scripts/update_events.py`).
-    - `data`: Event database and sources configuration (`data/events.json`, `data/sources.json`, `sources_config.json`).
+    - `data`: Event database and sources configuration (`data/events.json`, `data/past_events.json`, `data/sources.json`, `sources_config.json`).
     - `deps`: Dependencies and lockfile (`pyproject.toml`, `uv.lock`).
     - `docs`: Documentation files.
     - `ui`: Web app interface, maps, styles, scripts (`index.html`, `sources.html`, `js/`, `css/`).
