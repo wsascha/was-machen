@@ -11,11 +11,11 @@
     "weekend_start": "2026-11-20",
     "weekend_end": "2026-11-22",
     "weekend_label": "20.–22. November 2026",
-    "last_updated": "2026-11-18T20:36:15Z",
-    "last_updated_display": "18. November 2026, 21:36 Uhr",
+    "last_updated": "2026-11-18T20:41:08Z",
+    "last_updated_display": "18. November 2026, 21:41 Uhr",
     "sources_checked_count": 46,
-    "total_events": 28,
-    "sources_with_events_count": 26
+    "total_events": 0,
+    "sources_with_events_count": 0
   },
   "source_types": {
     "family_portal": {
@@ -80,13 +80,8 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Veranstalter der jährlichen Acherner Spieletage in der Hornisgrindehalle und lokaler Familienaktionen.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "acherner-spieletage-34",
-          "title": "34. Acherner Spieletage in der Hornisgrindehalle"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "toccarion-baden-baden",
@@ -98,13 +93,8 @@
       "type_label": "Wissenschaft, Technik & Planetarium",
       "type_icon": "🔬",
       "description": "Interaktives Kindermusikmuseum der Sigmund Kiener Stiftung mit Wochenend-Workshops & Führungen ab 5 Jahren.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "toccarion-baden-baden-tuten-pfeifen",
-          "title": "TOCCARION Kinder-Musik-Welt: „Von Tuten und Pfeifen“ & Entdeckertour"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "baden-baden-events",
@@ -116,13 +106,8 @@
       "type_label": "Theater, Bühne & Konzerte",
       "type_icon": "🎭",
       "description": "Gastspiele, Figurentheater im Runden Saal des Kurhauses und saisonale Familien-Highlights.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "kurhaus-baden-baden-schaf-ahoi",
-          "title": "Kindertheater im Kurhaus: „Schaf Ahoi!“ (Hohenloher Figurentheater)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "theater-baden-baden",
@@ -147,13 +132,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Kreativ-Workshops für Kinder, Eltern und Großeltern in der Lichtentaler Allee.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "museum-frieder-burda-workshop-farbe",
-          "title": "Museum Frieder Burda: Familienworkshop „Entfaltung der Farbe“"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "unimog-museum-gaggenau",
@@ -165,13 +145,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Technik-Erlebnismuseum mit LEGO-Bautagen, Tüftel-Workshops und Mitfahrten auf dem Außenparcours.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "unimog-museum-bauen-tuefteln-lego",
-          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "klag-buehne-gaggenau",
@@ -196,13 +171,8 @@
       "type_label": "Stadt- & Tourismus-Kalender",
       "type_icon": "🏙️",
       "description": "Gebündelter Kalender der Kommunen im Landkreis Rastatt sowie Familienführungen im Schloss Rastatt.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "unimog-museum-bauen-tuefteln-lego",
-          "title": "Steine-Event „Bauen & Tüfteln“ (LEGO® & Robotik-Wochenende)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "nationalpark-schwarzwald",
@@ -240,13 +210,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Interaktive Mitmach-Ausstellungen („Zeitsprung Römer“ & „Leben auf der Burg“) für Kinder.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "schloss-ettlingen-zeitsprung-roemer-burg",
-          "title": "Kindermuseum im Schloss Ettlingen: „Zeitsprung Römer“ & „Leben auf der Burg“"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "karlsruher-kind",
@@ -258,17 +223,8 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Umfassendster tagesaktueller Familienkalender für Karlsruhe, Ettlingen, Bruchsal und die TechnologieRegion.",
-      "events_count": 2,
-      "selected_events": [
-        {
-          "id": "marotte-figurentheater-maulwurf-knitterbart",
-          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
-        },
-        {
-          "id": "waldklassenzimmer-karlsruhe-wintertiere-igelhaus",
-          "title": "Waldklassenzimmer Karlsruhe: „Tiere bereiten sich auf den Winter vor“"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "kafami-karlsruhe",
@@ -293,13 +249,8 @@
       "type_label": "Theater, Bühne & Konzerte",
       "type_icon": "🎭",
       "description": "Renommiertes Figurentheater mit fast täglichen Vorstellungen für Kinder ab 3, 4 und 6 Jahren.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "marotte-figurentheater-maulwurf-knitterbart",
-          "title": "Marotte Figurentheater: „Vom kleinen Maulwurf“ (Sa) & „Käpten Knitterbart“ (So)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "junges-staatstheater-ka",
@@ -311,13 +262,8 @@
       "type_label": "Theater, Bühne & Konzerte",
       "type_icon": "🎭",
       "description": "Kinderopern, Schauspiel und Sitzkissenkonzerte des Badischen Staatstheaters.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "staatstheater-karlsruhe-wunschpunsch-daeumling",
-          "title": "Junges Staatstheater Karlsruhe: „Wunschpunsch“ (Sa) & „Nils Karlsson Däumling“ (So)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "zkm-karlsruhe",
@@ -329,13 +275,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Medienkunst, zkm_gameplay, Art-Action!-Sonntage und Robotik-/Kreativ-Workshops.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "zkm-kunsthalle-karlsruhe-art-action-gameplay",
-          "title": "ZKM & Junge Kunsthalle Karlsruhe: „Art-Action!“, „Open Space“ & zkm_gameplay"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "planet-ka-karlsruhe",
@@ -347,13 +288,8 @@
       "type_label": "Wissenschaft, Technik & Planetarium",
       "type_icon": "🔬",
       "description": "360°-Fulldome-Sternenshows und Kinderprogramme auf dem Kreativpark Alter Schlachthof.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "planet-ka-fritz-fliege-weltall",
-          "title": "PLANET KA Planetarium Karlsruhe: „Fritz Fliege fliegt ins Weltall“"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "naturkundemuseum-ka",
@@ -378,13 +314,8 @@
       "type_label": "Theater, Bühne & Konzerte",
       "type_icon": "🎭",
       "description": "Große Familienshows, Kinderrock-Konzerte (z. B. Heavysaurus) und Kindermusicals zwischen KA und PF.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "heavysaurus-remchingen-kinderrock",
-          "title": "Heavysaurus Live in Concert – „Pommesgabel-Tour“ für Kinder"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "schloss-bruchsal",
@@ -396,13 +327,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Barockschloss mit großen Familien-Sonderausstellungen (z. B. Faszination LEGO) und selbstspielenden Orgeln.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "schloss-bruchsal-lego-musikautomaten",
-          "title": "Schloss Bruchsal: Sonderausstellung „Faszination LEGO®“ & Musikautomaten"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "mottenkaefig-pforzheim",
@@ -414,13 +340,8 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Gebündelte Kindertermine in Pforzheim inkl. Figurentheater Mottenkäfig, CCP und Winterwelt.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "pforzheim-mottenkaefig-winterwelt",
-          "title": "Pforzheim: Figurentheater „Juri & das AlpakaLamaDrama“ + Eröffnung Winterwelt-Eisbahn"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "zoo-landau-pfalz",
@@ -432,13 +353,8 @@
       "type_label": "Natur, Tierpark & Freizeitpark",
       "type_icon": "🌲",
       "description": "Familienfreundlicher Zoo mit Zooschule-Kinder-Uni sowie Ausflugstipps an der Südlichen Weinstraße.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "zoo-landau-kinderuni-enkeltag",
-          "title": "Zoo Landau in der Pfalz: Kinder-Uni, Erlebnisführung & Keschdewochen"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "le-vaisseau-strasbourg",
@@ -450,13 +366,8 @@
       "type_label": "Wissenschaft, Technik & Planetarium",
       "type_icon": "🔬",
       "description": "Dreisprachiges Hands-on-Wissenschaftszentrum (3–12 J.) mit Wasserwelt, Baustelle und Wochenend-Ateliers.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "le-vaisseau-strasbourg-lune-workshops",
-          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "planetarium-strasbourg",
@@ -468,13 +379,8 @@
       "type_label": "Wissenschaft, Technik & Planetarium",
       "type_icon": "🔬",
       "description": "Neues 360°-Planetarium (mit deutschen Audioguides) direkt neben dem wiedereröffneten Zoologischen Museum.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "planetarium-zoologisches-museum-strasbourg",
-          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "musees-strasbourg",
@@ -486,17 +392,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Zweisprachiges Bilderbuch- und Spielzeugmuseum Tomi Ungerer sowie Familienprogramm der Straßburger Museen.",
-      "events_count": 2,
-      "selected_events": [
-        {
-          "id": "planetarium-zoologisches-museum-strasbourg",
-          "title": "Neues Planetarium & wiedereröffnetes Musée Zoologique Straßburg"
-        },
-        {
-          "id": "musee-tomi-ungerer-parc-orangerie-strasbourg",
-          "title": "Musée Tomi Ungerer (Bilderbuch-Welt & Spielzeug) + Parc de l'Orangerie"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "kidiklik-alsace",
@@ -508,13 +405,8 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Wichtigstes elsässisches Familienportal mit nach Alter (3–6 J. / 7–12 J.) gefilterten Wochenend-Tipps.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
-          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "jds-alsace-enfants",
@@ -526,13 +418,8 @@
       "type_label": "Familien- & Kinderportal",
       "type_icon": "👨‍👩‍👧‍👦",
       "description": "Großer Veranstaltungskalender für Kinderfeste, Märkte, Ausstellungen und Shows im Elsass.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "le-vaisseau-strasbourg-lune-workshops",
-          "title": "Le Vaisseau Straßburg: Neue Astronauten-Ausstellung „LUNE“ & Herbst-Workshops"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "soufflenheim-haguenau-tourisme",
@@ -544,17 +431,8 @@
       "type_label": "Stadt- & Tourismus-Kalender",
       "type_icon": "🏙️",
       "description": "Töpferwerkstätten in Soufflenheim, Waldspielplatz Gros Chêne und erste Dorf-Weihnachtsmärkte im Nord-Elsass.",
-      "events_count": 2,
-      "selected_events": [
-        {
-          "id": "soufflenheim-toepferwerkstaetten-weihnachtskeramik",
-          "title": "Töpferdorf Soufflenheim: Offene Töpferwerkstätten & Weihnachts-Keramik"
-        },
-        {
-          "id": "nordelsass-erste-dorf-weihnachtsmaerkte-schweighouse-drachenbronn",
-          "title": "Erste gemütliche Dorf-Weihnachtsmärkte im Nord-Elsass (mit Père Noël)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "palais-pain-depices-gertwiller",
@@ -566,13 +444,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Lebkuchenpalast in Gertwiller und Schokoladenmuseum in Geispolsheim mit Kinder-Back- & Dekorier-Workshops.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "gertwiller-lebkuchenpalast-verzierworkshop",
-          "title": "Palais du Pain d'Épices Gertwiller: Märchen-Rundgang & Lebkuchen-Verzieren"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "offenburg-messe-kultur",
@@ -597,13 +470,8 @@
       "type_label": "Natur, Tierpark & Freizeitpark",
       "type_icon": "🌲",
       "description": "Freizeitpark-Saison HALLOWinter und ganzjährige Indoor-Wasserwelt Rulantica in Rust.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "europa-park-hallowinter-rulantica-endspurt",
-          "title": "Europa-Park „HALLOWinter“ & Rulantica (Letztes Wochenende vor Revision!)"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "schwarzwald-tourismus-kinzigtal",
@@ -615,17 +483,8 @@
       "type_label": "Stadt- & Tourismus-Kalender",
       "type_icon": "🏙️",
       "description": "Familien-Events im mittleren Schwarzwald wie die Weihnachtsmann-Werkstatt Hornberg und Kinderglashütte Wolfach.",
-      "events_count": 2,
-      "selected_events": [
-        {
-          "id": "dorotheenhuette-wolfach-kinderglashuette-weihnachtsdorf",
-          "title": "Dorotheenhütte Wolfach: Kinderglashütte, Kugel-Bemalen & Weihnachtsdorf"
-        },
-        {
-          "id": "schloss-hornberg-weihnachtsmann-werkstatt",
-          "title": "Weihnachtsmann-Werkstatt in der Felsengrotte auf Schloss Hornberg"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "elztalmuseum-waldkirch",
@@ -637,13 +496,8 @@
       "type_label": "Museum, Schloss & Kunst",
       "type_icon": "🏛️",
       "description": "Drehorgel- & Regionalmuseum mit großem Indoor-Weihnachtsmarkt sowie familienfreundlicher Tierpark in Waldkirch.",
-      "events_count": 1,
-      "selected_events": [
-        {
-          "id": "waldkirch-elztalmuseum-weihnachtsmarkt-schwarzwaldzoo",
-          "title": "Elztalmuseum Waldkirch: Großer Museums-Weihnachtsmarkt (über 4 Etagen) & Schwarzwaldzoo"
-        }
-      ]
+      "events_count": 0,
+      "selected_events": []
     },
     {
       "id": "bz-ticket-familien",
