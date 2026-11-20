@@ -576,7 +576,7 @@ async function populateInfoDialogs() {
       const resp = await fetch('data/sources.json');
       if (resp.ok) {
         const sdata = await resp.json();
-        sourcesCatalog = sdata.sources || sdata.evaluated_sources_catalog || [];
+        sourcesCatalog = sdata.sources || [];
       }
     } catch {
       // sources catalog is optional for main event view

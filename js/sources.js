@@ -11,7 +11,7 @@ async function initSourcesPage() {
   try {
     const response = await fetch('data/sources.json');
     const data = await response.json();
-    sourcesCatalog = data.sources || data.evaluated_sources_catalog || [];
+    sourcesCatalog = data.sources || [];
     totalEventsCount = (data.metadata && data.metadata.total_events !== undefined)
       ? data.metadata.total_events
       : (data.events || []).length;
