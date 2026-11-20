@@ -12,6 +12,7 @@ from scripts.schema import (
     AgeSuitability,
     Coordinates,
     CriteriaRating,
+    CriteriaRatings,
     Event,
     EventSourceRef,
     EventsDatabase,
@@ -21,6 +22,7 @@ from scripts.schema import (
     PastEventsDatabase,
     SelectedEventRef,
     SourceCatalogEntry,
+    SourceConfigEntry,
     SourceTypeMeta,
     SourcesDatabase,
 )
@@ -241,3 +243,27 @@ class TestDatabaseSchema:
     def test_home_base_bounds(self) -> None:
         with pytest.raises(ValidationError):
             HomeBase(max_drive_minutes=0)
+
+    def test_criteria_ratings_scores_returns_all_seven_criteria(self) -> None:
+        ratings = CriteriaRatings(
+            age_fit=CriteriaRating(score=9.5, reason="Great for kids"),
+            experience_value=CriteriaRating(score=9.0, reason="Hands-on"),
+        )
+        scores = ratings.scores()
+        assert len(scores) == 7
+        assert scores["age_fit"] == 9.5
+        assert scores["experience_value"] == 9.0
+        assert scores["weather_suitability"] == 8.0
+
+    def test_gemini_developer_api_response_schema_compatibility(self) -> None:
+        """Verify Event and SourceConfigEntry compile for Gemini Developer API without additionalProperties."""
+        from google import genai
+        from google.genai import _transformers
+
+        client = genai.Client(api_key="test-key")
+        event_schema = _transformers.t_schema(client._api_client, list[Event])
+        assert event_schema is not None
+        source_schema = _transformers.t_schema(
+            client._api_client, list[SourceConfigEntry]
+        )
+        assert source_schema is not None

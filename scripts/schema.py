@@ -30,6 +30,51 @@ class CriteriaRating(BaseModel):
     reason: str = Field(default="", description="Justification for the criterion score")
 
 
+class CriteriaRatings(BaseModel):
+    """Typed ratings across the 7 fixed family evaluation criteria."""
+
+    age_fit: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Suitability for children aged 4 to 9",
+    )
+    experience_value: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Hands-on, interactive, and memorable experience factor",
+    )
+    weather_suitability: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Weather resilience and seasonal suitability",
+    )
+    relaxation_parents: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Low stress and relaxation factor for parents",
+    )
+    travel_parking: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Ease of drive from Bühl and parking availability",
+    )
+    infrastructure_food: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="Restrooms, cafes, and family amenities on site",
+    )
+    language_accessibility: CriteriaRating = Field(
+        default_factory=lambda: CriteriaRating(score=8.0),
+        description="German/French language comfort for families",
+    )
+
+    def scores(self) -> dict[str, float]:
+        """Return mapping of criterion IDs to numeric scores."""
+        return {
+            "age_fit": self.age_fit.score,
+            "experience_value": self.experience_value.score,
+            "weather_suitability": self.weather_suitability.score,
+            "relaxation_parents": self.relaxation_parents.score,
+            "travel_parking": self.travel_parking.score,
+            "infrastructure_food": self.infrastructure_food.score,
+            "language_accessibility": self.language_accessibility.score,
+        }
+
+
 class AgeSuitability(BaseModel):
     """Suitability assessment tailored for children aged 4 to 9."""
 
@@ -177,8 +222,8 @@ class Event(BaseModel):
     booking_info: str = Field(
         default="", description="Ticketing and reservation guidance"
     )
-    criteria_ratings: dict[str, CriteriaRating] = Field(
-        default_factory=dict,
+    criteria_ratings: CriteriaRatings = Field(
+        default_factory=CriteriaRatings,
         description="Ratings across the 7 family evaluation criteria",
     )
     pros: list[str] = Field(

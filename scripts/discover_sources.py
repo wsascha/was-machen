@@ -253,9 +253,14 @@ def fetch_candidates_from_gemini(
             "- description: Kurze deutsche Beschreibung (1-2 Sätze)\n"
             "- enabled: true\n"
         )
+        gen_config: Any = {
+            "response_mime_type": "application/json",
+            "response_schema": list[SourceConfigEntry],
+        }
         response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
             contents=prompt,
+            config=gen_config,
         )
         print("[AI STREAM: Source Discovery] Generating candidates...", flush=True)
         chunks: list[str] = []

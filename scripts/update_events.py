@@ -487,6 +487,7 @@ def enrich_with_gemini_if_available(
 
         gen_config: Any = {
             "response_mime_type": "application/json",
+            "response_schema": list[Event],
         }
         response_stream = client.models.generate_content_stream(
             model="gemini-3.8-flash",
@@ -660,7 +661,7 @@ def run_aggregator(settings: Settings) -> None:
             )
             continue
 
-        crit_scores = {k: v.score for k, v in ev.criteria_ratings.items()}
+        crit_scores = ev.criteria_ratings.scores()
         if crit_scores:
             ev.family_score = calculate_weighted_score(crit_scores, criteria_cfg)
 

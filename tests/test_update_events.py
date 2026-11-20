@@ -572,7 +572,7 @@ class TestRunAggregator:
                     ],
                     "source_types": {"museum": {"label": "Museum", "icon": "🏛️"}},
                     "evaluation_criteria": [
-                        {"id": "hands_on", "weight": 1.0},
+                        {"id": "experience_value", "weight": 1.0},
                     ],
                 }
             ),
@@ -594,7 +594,7 @@ class TestRunAggregator:
                             "drive_minutes": 10,
                             "distance_km": 5,
                             "days": ["2026-11-14"],
-                            "criteria_ratings": {"hands_on": {"score": 9.0}},
+                            "criteria_ratings": {"experience_value": {"score": 9.0}},
                             "sources": [
                                 {
                                     "name": "Mock Portal",
@@ -609,7 +609,7 @@ class TestRunAggregator:
                             "drive_minutes": 120,
                             "distance_km": 150,
                             "days": ["2026-11-14"],
-                            "criteria_ratings": {"hands_on": {"score": 8.0}},
+                            "criteria_ratings": {"experience_value": {"score": 8.0}},
                         },
                     ],
                 }
