@@ -321,9 +321,6 @@ class EventsDatabase(BaseModel):
     events: list[Event] = Field(
         default_factory=list, description="List of validated family events"
     )
-    evaluated_sources_catalog: list[SourceCatalogEntry] = Field(
-        default_factory=list, description="Catalog of evaluated sources"
-    )
 
 
 class PastEventsDatabase(BaseModel):

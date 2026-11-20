@@ -209,6 +209,8 @@ class TestDatabaseSchema:
         assert sources_file.exists()
 
         raw_events = json.loads(events_file.read_text(encoding="utf-8"))
+        assert "evaluated_sources_catalog" not in raw_events
+        assert "sources" not in raw_events
         events_db = EventsDatabase.model_validate(raw_events)
         assert isinstance(events_db.events, list)
         assert events_db.metadata.home_base.name == "77815 Bühl (Baden)"
