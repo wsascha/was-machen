@@ -40,6 +40,8 @@ USER_AGENT = (
     "+https://github.com/sascha/was-tun-am-wochenende)"
 )
 
+GEMINI_MODELS: tuple[str, ...] = ("gemini-4-hydrogen", "gemini-3.8-flash")
+
 SUPPORTED_SOURCE_TYPES = {
     "family_portal",
     "municipal_calendar",
@@ -257,23 +259,44 @@ def fetch_candidates_from_gemini(
             "response_mime_type": "application/json",
             "response_schema": list[SourceConfigEntry],
         }
-        response_stream = client.models.generate_content_stream(
-            model="gemini-3.8-flash",
-            contents=prompt,
-            config=gen_config,
-        )
-        print("[AI STREAM: Source Discovery] Generating candidates...", flush=True)
-        chunks: list[str] = []
-        try:
-            for chunk in response_stream:
-                chunk_text = getattr(chunk, "text", "") or ""
-                if chunk_text:
-                    print(chunk_text, end="", flush=True)
-                    chunks.append(chunk_text)
-            raw_text = "".join(chunks).strip()
-        except TypeError:
-            raw_text = (getattr(response_stream, "text", "") or "").strip()
-        print("\n[AI STREAM: Source Discovery] Stream complete.\n", flush=True)
+        raw_text = ""
+        last_exc: Exception | None = None
+        for model_name in GEMINI_MODELS:
+            try:
+                print(
+                    f"[AI STREAM: Source Discovery] Generating candidates ({model_name})...",
+                    flush=True,
+                )
+                response_stream = client.models.generate_content_stream(
+                    model=model_name,
+                    contents=prompt,
+                    config=gen_config,
+                )
+                chunks: list[str] = []
+                try:
+                    for chunk in response_stream:
+                        chunk_text = getattr(chunk, "text", "") or ""
+                        if chunk_text:
+                            print(chunk_text, end="", flush=True)
+                            chunks.append(chunk_text)
+                    raw_text = "".join(chunks).strip()
+                except TypeError:
+                    raw_text = (getattr(response_stream, "text", "") or "").strip()
+                print(
+                    f"\n[AI STREAM: Source Discovery] Stream complete ({model_name}).\n",
+                    flush=True,
+                )
+                last_exc = None
+                break
+            except Exception as model_exc:
+                last_exc = model_exc
+                print(
+                    f"[WARN] Gemini model '{model_name}' failed ({model_exc}).",
+                    flush=True,
+                )
+
+        if last_exc is not None and not raw_text:
+            raise last_exc
         if "```json" in raw_text:
             raw_text = raw_text.split("```json")[1].split("```")[0].strip()
         elif "```" in raw_text:
@@ -286,7 +309,8 @@ def fetch_candidates_from_gemini(
                 if isinstance(item, dict):
                     try:
                         candidates.append(SourceConfigEntry.model_validate(item))
-                    except Exception:
+                    except Exception as val_exc:
+                        print(f"[WARN] Skipped invalid Gemini source: {val_exc}")
                         continue
         return candidates
     except Exception as exc:

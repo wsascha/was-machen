@@ -186,6 +186,41 @@ class TestFetchCandidatesFromGemini:
         assert candidates[0].country == "FR"
 
     @patch("google.genai.Client")
+    def test_falls_back_to_3_8_flash_when_hydrogen_unavailable(
+        self, mock_client_cls: MagicMock
+    ) -> None:
+        mock_client = MagicMock()
+        mock_client_cls.return_value = mock_client
+        chunk = MagicMock()
+        chunk.text = json.dumps(
+            [
+                {
+                    "id": "fallback-museum",
+                    "name": "Fallback Museum",
+                    "region": "Baden",
+                    "country": "DE",
+                    "url": "https://fallback-museum.de",
+                    "type": "museum",
+                    "description": "Familienmuseum",
+                    "enabled": True,
+                }
+            ]
+        )
+        mock_client.models.generate_content_stream.side_effect = [
+            RuntimeError("503 UNAVAILABLE"),
+            [chunk],
+        ]
+
+        candidates = fetch_candidates_from_gemini("test-key", ["existing"])
+        assert len(candidates) == 1
+        assert candidates[0].id == "fallback-museum"
+        models_called = [
+            c.kwargs["model"]
+            for c in mock_client.models.generate_content_stream.call_args_list
+        ]
+        assert models_called == ["gemini-4-hydrogen", "gemini-3.8-flash"]
+
+    @patch("google.genai.Client")
     def test_handles_api_exception_gracefully(self, mock_client_cls: MagicMock) -> None:
         mock_client = MagicMock()
         mock_client_cls.return_value = mock_client

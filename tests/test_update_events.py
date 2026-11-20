@@ -382,6 +382,40 @@ class TestEnrichWithGeminiIfAvailable:
         assert results[0].id == "gemini-discovered-event"
         assert results[0].title == "Naturerlebnis Nordschwarzwald"
 
+    @patch("google.genai.Client")
+    def test_falls_back_to_3_8_flash_when_hydrogen_unavailable(
+        self, mock_client_cls: MagicMock
+    ) -> None:
+        mock_client = MagicMock()
+        mock_client_cls.return_value = mock_client
+        chunk = MagicMock()
+        chunk.text = json.dumps(
+            [
+                {
+                    "id": "fallback-event",
+                    "title": "Fallback Familien-Event",
+                    "category": "museum",
+                    "weather_type": "indoor",
+                }
+            ]
+        )
+        mock_client.models.generate_content_stream.side_effect = [
+            RuntimeError("503 UNAVAILABLE"),
+            [chunk],
+        ]
+
+        weekend = (dt.date(2026, 11, 20), dt.date(2026, 11, 21), dt.date(2026, 11, 22))
+        results = enrich_with_gemini_if_available(
+            [{"title": "Raw event"}], weekend, api_key="valid-key"
+        )
+        assert len(results) == 1
+        assert results[0].id == "fallback-event"
+        models_called = [
+            c.kwargs["model"]
+            for c in mock_client.models.generate_content_stream.call_args_list
+        ]
+        assert models_called == ["gemini-4-hydrogen", "gemini-3.8-flash"]
+
 
 class TestFormatWeekendLabel:
     """Tests for weekend display label formatting."""

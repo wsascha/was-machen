@@ -54,6 +54,8 @@ USER_AGENT = (
     "+https://github.com/wsascha/was-machen)"
 )
 
+GEMINI_MODELS: tuple[str, ...] = ("gemini-4-hydrogen", "gemini-3.8-flash")
+
 SourceType = Literal[
     "family_portal",
     "municipal_calendar",
@@ -489,23 +491,44 @@ def enrich_with_gemini_if_available(
             "response_mime_type": "application/json",
             "response_schema": list[Event],
         }
-        response_stream = client.models.generate_content_stream(
-            model="gemini-3.8-flash",
-            contents=contents,
-            config=gen_config,
-        )
-        print("[AI STREAM: Event Enrichment] Querying Gemini...", flush=True)
-        chunks: list[str] = []
-        try:
-            for chunk in response_stream:
-                chunk_text = getattr(chunk, "text", "") or ""
-                if chunk_text:
-                    print(chunk_text, end="", flush=True)
-                    chunks.append(chunk_text)
-            raw_text = "".join(chunks).strip()
-        except TypeError:
-            raw_text = (getattr(response_stream, "text", "") or "").strip()
-        print("\n[AI STREAM: Event Enrichment] Stream complete.\n", flush=True)
+        raw_text = ""
+        last_exc: Exception | None = None
+        for model_name in GEMINI_MODELS:
+            try:
+                print(
+                    f"[AI STREAM: Event Enrichment] Querying Gemini ({model_name})...",
+                    flush=True,
+                )
+                response_stream = client.models.generate_content_stream(
+                    model=model_name,
+                    contents=contents,
+                    config=gen_config,
+                )
+                chunks: list[str] = []
+                try:
+                    for chunk in response_stream:
+                        chunk_text = getattr(chunk, "text", "") or ""
+                        if chunk_text:
+                            print(chunk_text, end="", flush=True)
+                            chunks.append(chunk_text)
+                    raw_text = "".join(chunks).strip()
+                except TypeError:
+                    raw_text = (getattr(response_stream, "text", "") or "").strip()
+                print(
+                    f"\n[AI STREAM: Event Enrichment] Stream complete ({model_name}).\n",
+                    flush=True,
+                )
+                last_exc = None
+                break
+            except Exception as model_exc:
+                last_exc = model_exc
+                print(
+                    f"[WARN] Gemini model '{model_name}' failed ({model_exc}).",
+                    flush=True,
+                )
+
+        if last_exc is not None and not raw_text:
+            raise last_exc
         if "```json" in raw_text:
             raw_text = raw_text.split("```json")[1].split("```")[0].strip()
         elif "```" in raw_text:
